@@ -1,0 +1,20 @@
+.navbar{
+    width: 100%;
+    height: 54px;
+    background-color: var(--main-color);
+}
+.navbar_flex{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.navbar_h2,
+.navbar_p,
+.navbar_h3,
+.navbar_h4{
+    font-weight: 600;
+    font-size: 14px;
+}

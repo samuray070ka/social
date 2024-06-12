@@ -6,6 +6,7 @@ import Map from '../../icons/map'
 import Location from '../../icons/location'
 
 function Navbar() {
+
   return (
     <div className='navbar'>
       <div className="container">
@@ -20,7 +21,7 @@ function Navbar() {
           </div>
           <div className='navbar_loc'>
           <Visible/>
-            <h3 className='navbar_h3'> Zarif ko'ruvchilar uchun</h3>
+            <h3 className='navbar_h3' id='visibility'> Zarif ko'ruvchilar uchun</h3>
           </div>
           <div className='navbar_loc'>
           <Map/>

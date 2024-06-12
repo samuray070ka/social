@@ -8,13 +8,17 @@
 .ijtimoiy_logo{
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
+}
+.to{
+    flex: 1;
 }
 .ijtimoiy_h2{
     flex: 1;
     font-size: 20px;
     font-weight: 700;
     margin-left: 10px;
+    color: #000000;
 }
 .ijtimoiy_logo img{
     width: 80px;
@@ -42,10 +46,111 @@
     font-weight: 700;
     margin-top: 10px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 .ijtimoiy_item_ml{
     margin-left: 40px;
 }
 .ijtimoiy_item svg{
     transform: translateY(3px);
+}
+.ijtimoiy_banner{
+    width: 100%;
+    /* position: absolute; */
+    display: flex;
+    min-height: 100vh;
+    background-color: #F9FAFC;
+}
+.banner_big{
+    width: 65%;
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+.banner_text{
+    width: 221px;
+    margin-top: 50px;
+    height: 335px;
+    margin-left: -250px;
+    background-color: #fff;
+}
+.ijti_ban{
+    width: 100%;
+    /* position: absolute; */
+    display: flex;
+    min-height: 100vh;
+    background-color: #F9FAFC;
+    margin-left: -140px;
+}
+.banner_big h3{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.banner_big p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.text_collaction{
+    margin-top: 20px;
+}
+.text_item{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.text_item span{
+    font-weight: 700;
+}
+.banner_big h2{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.banner_big h4{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.nimadur h1{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.funksiya_item{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.banner_item{
+    list-style: none;
+    display: flex;
+    padding: 10px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    transition: .1s;
+}
+.one{
+    font-size: 14px;
+    color: #689B63;
+    font-weight: 700;
+}
+.banner_collaction hr{
+    width: 200px;
+    height: 1px;
+    background-color: #000000;
+    /* box-shadow: 0px 0px 5px #0008; */
+    margin: auto;
+}
+.banner_item:active{
+    color: #689B63;
 }

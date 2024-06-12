@@ -10,8 +10,10 @@ function Ijtimoiy() {
     <div className='ijtimoiy'>
       <div className='container'>
         <div className="ijtimoiy_logo">
-          <img src={homeImgOne} alt="" />
-          <h2 className='ijtimoiy_h2'>Ijtimoiy inspeksiya</h2>
+          <Link to={'/'} className='ijtimoiy_logo link to'>
+            <img src={homeImgOne} alt="" />
+            <h2 className='ijtimoiy_h2'>Ijtimoiy inspeksiya</h2>
+          </Link>
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
@@ -38,8 +40,11 @@ function Ijtimoiy() {
                   <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Aloqa</li>
                 {/* </Link> */}
         </ul>
-        <div className="ijtimoiy_banner">
-          <div className='banner_big'>
+        
+      </div>
+      <div className="ijtimoiy_banner ">
+        <div className='ijti_ban'>
+          <div className='banner_big container'>
             <h3>O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiya</h3>
 
             <p>O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiya (keyingi o‘rinlarda Inspeksiya deb yuritiladi) O‘zbekiston Respublikasi Prezidentining 2023-yil 1-iyundagi “Aholiga sifatli ijtimoiy xizmat va yordam ko‘rsatish hamda uning samarali nazorat tizimini yo‘lga qo‘yish bo‘yicha kompleks chora-tadbirlar to‘g‘risida”gi Farmoni bilan tashkil etilgan.
@@ -70,7 +75,7 @@ function Ijtimoiy() {
             </ul>
             <br />
             <h4>Ijtimoiy inspeksiyaning funksiyalari</h4>
-            <div>
+            <div className='nimadur'>
               <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
@@ -92,15 +97,15 @@ function Ijtimoiy() {
                 ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
               </ul>
             </div>
-            <div>
-              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+            <div className='nimadur'>
+              <h1>II. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
 
                 <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
                 
-                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
 
                 <li className='funksiya_item'>
 
@@ -114,15 +119,15 @@ function Ijtimoiy() {
                 ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
               </ul>
             </div>
-            <div>
-              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+            <div  className='nimadur'>
+              <h1>III. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
 
                 <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
                 
-                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
 
                 <li className='funksiya_item'>
 
@@ -136,15 +141,15 @@ function Ijtimoiy() {
                 ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
               </ul>
             </div>
-            <div>
-              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+            <div   className='nimadur'>
+              <h1>IV. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
 
                 <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
                 
-                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
 
                 <li className='funksiya_item'>
 
@@ -158,15 +163,15 @@ function Ijtimoiy() {
                 ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
               </ul>
             </div>
-            <div>
-              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+            <div   className='nimadur'>
+              <h1>V. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
 
                 <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
                 
-                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
 
                 <li className='funksiya_item'>
 
@@ -180,15 +185,15 @@ function Ijtimoiy() {
                 ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
               </ul>
             </div>
-            <div>
-              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+            <div   className='nimadur'>
+              <h1>VI. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
 
                 <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
                 
-                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
 
                 <li className='funksiya_item'>
 
@@ -202,15 +207,15 @@ function Ijtimoiy() {
                 ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
               </ul>
             </div>
-            <div>
-              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+            <div   className='nimadur'>
+              <h1>VII. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
 
                 <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
                 
-                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
 
                 <li className='funksiya_item'>
 
@@ -224,15 +229,15 @@ function Ijtimoiy() {
                 ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
               </ul>
             </div>
-            <div>
-              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+            <div   className='nimadur'>
+              <h1>VIII. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
 
                 <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
                 
-                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
 
                 <li className='funksiya_item'>
 
@@ -247,11 +252,30 @@ function Ijtimoiy() {
               </ul>
             </div>
           </div>
-          <div className='banner_text'></div>
+          <div className='banner_text '>
+            <ul className='banner_collaction'>
+              <li className='banner_item one'>Ijtimoiy inspeksiya</li>
+              <hr />
+              <li className='banner_item '>Inspeksiya haqida</li>
+              <hr />
+              <li className='banner_item '>Nizom</li>
+              <hr />
+              <li className='banner_item '>Tuzilma</li>
+              <hr />
+              <li className='banner_item '>Rahbariyat</li>
+              <hr />
+              <li className='banner_item '>Markaziy apparat</li>
+              <hr />
+              <li className='banner_item '>Hududiy boshqarmalar</li>
+              <hr />
+              <li className='banner_item '>Hamkorlik</li>
+              <hr />
+              <li className='banner_item '>Hamkorlik</li>
+            </ul>
+          </div>
         </div>
-      </div>
+        </div>
     </div>
   )
 }
-
 export default Ijtimoiy

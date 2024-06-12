@@ -1,0 +1,51 @@
+.ijtimoiy_logo svg{
+    background-color: #F9FAFC;
+    height: 28px;
+    fill: black !important;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+.ijtimoiy_logo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.ijtimoiy_h2{
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.ijtimoiy_logo img{
+    width: 80px;
+    height: 80px;
+}
+.ijtimoiy_logo input{
+    width: 310px;
+    height: 28px;
+    background-color: #F9FAFC;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.ijtimoiy_hr{
+    margin-top: 20px;
+    background-color: black;
+}
+.ijtimoiy_collaction{
+    display: flex;
+    list-style: none;
+}
+.ijtimoiy_item{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.ijtimoiy_item_ml{
+    margin-left: 40px;
+}
+.ijtimoiy_item svg{
+    transform: translateY(3px);
+}

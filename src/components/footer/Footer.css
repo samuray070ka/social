@@ -2,6 +2,7 @@
     width: 100%;
     height: 330px;
     background-color: #689B63;
+    margin-top: 100px;
 }
 .footer_flex{
     display: flex;
@@ -21,6 +22,15 @@
     margin-bottom: 10px;
     color: #fff;
     
+}
+.footer_{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.footer_ svg{
+    fill: #fff !important;
+    transform: translateY(-8px) translateX(-5px);
 }
 .footer_img{
     width: 237px;

@@ -18,3 +18,24 @@
     font-weight: 600;
     font-size: 14px;
 }
+.navbar_loc{
+    display: flex;
+}
+.navbar_loc svg{
+    fill: #fff !important;
+    transform: translateY(2px) translateX(-1px);
+}
+.navbar_tel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.svg_tel{
+    color: #fff;
+}
+.navbar_loc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

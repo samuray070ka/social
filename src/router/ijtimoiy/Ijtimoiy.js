@@ -62,15 +62,193 @@ function Ijtimoiy() {
               
               <li className='text_item'> odam savdosi jabrdiydalari, tazyiq va zo‘ravonlikdan jabr ko‘rgan xotin-qizlar va voyaga yetmaganlar hamda muayyan yashash joyiga ega bo‘lmagan shaxslarga ijtimoiy xizmatlar va yordam ko‘rsatishga doir <span>talab va standartlarga rioya etilishini nazorat qilish;</span></li>
               
-              <li className='text_item'></li>
-              <li className='text_item'></li>
-              <li className='text_item'></li>
+              <li className='text_item'>aholining ijtimoiy himoyaga muhtoj qatlamlariga <span>ish o‘rinlarining eng kam soni belgilanishi va o‘qish uchun kvotalar ajratilishini nazorat qilish;</span></li>
+              
+              <li className='text_item'>imkoniyati cheklangan va nogironligi bo‘lgan shaxslarni  <span>parasport turlariga jalb qilinishini nazorat qilish;</span></li>
+              
+              <li className='text_item'>ijtimoiy himoyaga muhtoj aholini muhofaza qilish zaruriyati, talab va shartlari to‘g‘risida keng  <span>jamoatchilik o‘rtasida axborot-tushuntirish va targ‘ibot tadbirlarini tashkil etish va o‘tkazish.</span></li>
             </ul>
+            <br />
+            <h4>Ijtimoiy inspeksiyaning funksiyalari</h4>
+            <div>
+              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <ul className='funksiya_collaction'>
+
+                <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
+
+                <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
+                
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+
+                <li className='funksiya_item'>
+
+                kafolatlangan ijtimoiy xizmatlar va yordam   standartlariga rioya etilishini nazorat qilish</li>
+
+                <li className='funksiya_item'>bolalarga nisbatan zo‘ravonlik holatlarining   oldini olish bo‘yicha ishlab chiqilgan dasturlar ijrosini nazorat qiladi;</li>
+
+                <li className='funksiya_item'>Agentlik tomonidan muvofiqlashtiriladigan va   monitoring qilinadigan faoliyat yo‘nalishlari bo‘yicha ijtimoiy himoyaga   muhtoj aholiga ijtimoiy xizmatlar va yordam ko‘rsatish faoliyatini o‘rganadi   va takliflar ishlab chiqadi;</li>
+
+                <li className='funksiya_item'>
+                ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
+              </ul>
+            </div>
+            <div>
+              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <ul className='funksiya_collaction'>
+
+                <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
+
+                <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
+                
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+
+                <li className='funksiya_item'>
+
+                kafolatlangan ijtimoiy xizmatlar va yordam   standartlariga rioya etilishini nazorat qilish</li>
+
+                <li className='funksiya_item'>bolalarga nisbatan zo‘ravonlik holatlarining   oldini olish bo‘yicha ishlab chiqilgan dasturlar ijrosini nazorat qiladi;</li>
+
+                <li className='funksiya_item'>Agentlik tomonidan muvofiqlashtiriladigan va   monitoring qilinadigan faoliyat yo‘nalishlari bo‘yicha ijtimoiy himoyaga   muhtoj aholiga ijtimoiy xizmatlar va yordam ko‘rsatish faoliyatini o‘rganadi   va takliflar ishlab chiqadi;</li>
+
+                <li className='funksiya_item'>
+                ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
+              </ul>
+            </div>
+            <div>
+              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <ul className='funksiya_collaction'>
+
+                <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
+
+                <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
+                
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+
+                <li className='funksiya_item'>
+
+                kafolatlangan ijtimoiy xizmatlar va yordam   standartlariga rioya etilishini nazorat qilish</li>
+
+                <li className='funksiya_item'>bolalarga nisbatan zo‘ravonlik holatlarining   oldini olish bo‘yicha ishlab chiqilgan dasturlar ijrosini nazorat qiladi;</li>
+
+                <li className='funksiya_item'>Agentlik tomonidan muvofiqlashtiriladigan va   monitoring qilinadigan faoliyat yo‘nalishlari bo‘yicha ijtimoiy himoyaga   muhtoj aholiga ijtimoiy xizmatlar va yordam ko‘rsatish faoliyatini o‘rganadi   va takliflar ishlab chiqadi;</li>
+
+                <li className='funksiya_item'>
+                ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
+              </ul>
+            </div>
+            <div>
+              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <ul className='funksiya_collaction'>
+
+                <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
+
+                <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
+                
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+
+                <li className='funksiya_item'>
+
+                kafolatlangan ijtimoiy xizmatlar va yordam   standartlariga rioya etilishini nazorat qilish</li>
+
+                <li className='funksiya_item'>bolalarga nisbatan zo‘ravonlik holatlarining   oldini olish bo‘yicha ishlab chiqilgan dasturlar ijrosini nazorat qiladi;</li>
+
+                <li className='funksiya_item'>Agentlik tomonidan muvofiqlashtiriladigan va   monitoring qilinadigan faoliyat yo‘nalishlari bo‘yicha ijtimoiy himoyaga   muhtoj aholiga ijtimoiy xizmatlar va yordam ko‘rsatish faoliyatini o‘rganadi   va takliflar ishlab chiqadi;</li>
+
+                <li className='funksiya_item'>
+                ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
+              </ul>
+            </div>
+            <div>
+              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <ul className='funksiya_collaction'>
+
+                <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
+
+                <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
+                
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+
+                <li className='funksiya_item'>
+
+                kafolatlangan ijtimoiy xizmatlar va yordam   standartlariga rioya etilishini nazorat qilish</li>
+
+                <li className='funksiya_item'>bolalarga nisbatan zo‘ravonlik holatlarining   oldini olish bo‘yicha ishlab chiqilgan dasturlar ijrosini nazorat qiladi;</li>
+
+                <li className='funksiya_item'>Agentlik tomonidan muvofiqlashtiriladigan va   monitoring qilinadigan faoliyat yo‘nalishlari bo‘yicha ijtimoiy himoyaga   muhtoj aholiga ijtimoiy xizmatlar va yordam ko‘rsatish faoliyatini o‘rganadi   va takliflar ishlab chiqadi;</li>
+
+                <li className='funksiya_item'>
+                ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
+              </ul>
+            </div>
+            <div>
+              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <ul className='funksiya_collaction'>
+
+                <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
+
+                <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
+                
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+
+                <li className='funksiya_item'>
+
+                kafolatlangan ijtimoiy xizmatlar va yordam   standartlariga rioya etilishini nazorat qilish</li>
+
+                <li className='funksiya_item'>bolalarga nisbatan zo‘ravonlik holatlarining   oldini olish bo‘yicha ishlab chiqilgan dasturlar ijrosini nazorat qiladi;</li>
+
+                <li className='funksiya_item'>Agentlik tomonidan muvofiqlashtiriladigan va   monitoring qilinadigan faoliyat yo‘nalishlari bo‘yicha ijtimoiy himoyaga   muhtoj aholiga ijtimoiy xizmatlar va yordam ko‘rsatish faoliyatini o‘rganadi   va takliflar ishlab chiqadi;</li>
+
+                <li className='funksiya_item'>
+                ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
+              </ul>
+            </div>
+            <div>
+              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <ul className='funksiya_collaction'>
+
+                <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
+
+                <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
+                
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+
+                <li className='funksiya_item'>
+
+                kafolatlangan ijtimoiy xizmatlar va yordam   standartlariga rioya etilishini nazorat qilish</li>
+
+                <li className='funksiya_item'>bolalarga nisbatan zo‘ravonlik holatlarining   oldini olish bo‘yicha ishlab chiqilgan dasturlar ijrosini nazorat qiladi;</li>
+
+                <li className='funksiya_item'>Agentlik tomonidan muvofiqlashtiriladigan va   monitoring qilinadigan faoliyat yo‘nalishlari bo‘yicha ijtimoiy himoyaga   muhtoj aholiga ijtimoiy xizmatlar va yordam ko‘rsatish faoliyatini o‘rganadi   va takliflar ishlab chiqadi;</li>
+
+                <li className='funksiya_item'>
+                ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
+              </ul>
+            </div>
+            <div>
+              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <ul className='funksiya_collaction'>
+
+                <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
+
+                <li className='funksiya_item'>POM va RTV bilan ta’minlash jarayonlarida   qonunchilikda belgilangan talablarga rioya etilishi nazorat qilish</li>
+                
+                <li className='funksiya_item'>shaxslarni “Muruvvat” internat uylari,   Agentlik tizimidagi sanatoriylar hamda Ijtimoiy qo‘llab-quvvatlash markazlariga   joylashtirish va ularda ijtimoiy xizmatlar  va yordam ko‘rsatishda qonunchilikda belgilangan talablarga rioya etilishini nazorat   qilish</li>
+
+                <li className='funksiya_item'>
+
+                kafolatlangan ijtimoiy xizmatlar va yordam   standartlariga rioya etilishini nazorat qilish</li>
+
+                <li className='funksiya_item'>bolalarga nisbatan zo‘ravonlik holatlarining   oldini olish bo‘yicha ishlab chiqilgan dasturlar ijrosini nazorat qiladi;</li>
+
+                <li className='funksiya_item'>Agentlik tomonidan muvofiqlashtiriladigan va   monitoring qilinadigan faoliyat yo‘nalishlari bo‘yicha ijtimoiy himoyaga   muhtoj aholiga ijtimoiy xizmatlar va yordam ko‘rsatish faoliyatini o‘rganadi   va takliflar ishlab chiqadi;</li>
+
+                <li className='funksiya_item'>
+                ijtimoiy himoya sohasida huquqbuzarlik sodir   etilishi xavfi yuqori bo‘lgan davlat organlari va tashkilotlarida ijtimoiy   sohaga oid tushuntirish ishlarini olib boradi.</li>
+              </ul>
+            </div>
           </div>
           <div className='banner_text'></div>
         </div>
-
-
       </div>
     </div>
   )

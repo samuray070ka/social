@@ -1,18 +1,18 @@
 import React from 'react'
-import './Aloqa.css'
+import '../../faoliyat/Faoliyat.css'
 import {Link} from 'react-router-dom'
-import ArrowBottom from '../../icons/arrowBottom'
-import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
-import Search from '../../icons/search'
+import ArrowBottom from '../../../icons/arrowBottom'
+import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
+import Search from '../../../icons/search'
 
-function Aloqa() {
+function Voyaga() {
   return (
     <div>
       <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
-            <h2 className='ijtimoiy_h2'>Aloqa</h2>
+            <h2 className='ijtimoiy_h2'>Faoliyat</h2>
           </Link>
           <input type="text" /> <Search/>
         </div>
@@ -44,40 +44,30 @@ function Aloqa() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6>Aloqa</h6>
+            <h6>Voyaga yetmaganlar</h6>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>
-              <li className='banner_item one'>Ijtimoiy inspeksiya</li>
+              <li className='banner_item one'>Faoliyat</li>
               <hr />
-              <li className='banner_item '>Inspeksiya haqida</li>
-              <hr />
-              <Link to={'/ijtimoiy/nizom'} className='link'>
-                <li className='banner_item '>Nizom</li>
+              <Link to={'/faoliyat'} className='link'>
+                <li className='banner_item '>Qulat muhit</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/tuzilma'} className='link'>
-                <li className='banner_item '>Tuzilma</li>
+              <Link to={'/faoliyat/katta-yoshdagilar'} className='link'>
+                <li className='banner_item '>Katta yoshdagilar</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/rahbaryat'} className='link'>
-                <li className='banner_item '>Rahbariyat</li>
+              <Link to={'/faoliyat/voyaga'} className='link'>
+                <li className='banner_item '>Voyaga yetmaganlar</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/markaziy'} className='link'>
-                <li className='banner_item '>Markaziy apparat</li>
+              <Link to={'/faoliyat/nogironlik'} className='link'>
+                <li className='banner_item '>Nogironlikni belgilash</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/hududiy'} className='link'>
-                <li className='banner_item '>Hududiy boshqarmalar</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/hamkorlik'} className='link'>
-                <li className='banner_item '>Hamkorlik</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/ish-orni'} className='link'>
-                <li className='banner_item '>Bo'sh ish o'rnlari</li>
+              <Link to={'/faoliyat/korupsiya'} className='link'>
+                <li className='banner_item '>Korrupsiyaga qarshi kurash</li>
               </Link>
             </ul>
           </div>
@@ -87,4 +77,4 @@ function Aloqa() {
   )
 }
 
-export default Aloqa
+export default Voyaga

@@ -1,0 +1,38 @@
+.nizom_h3{
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.p_oriq{
+    width: 75%;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.p_qalin{
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.h3_qalin{
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 20px;
+}
+.p_qalin{
+    font-size: 12px;
+    font-weight: 700;
+}
+.h2_oriq{
+    font-size: 12px;
+    font-weight: 400;
+    margin: auto;
+    display: block;
+}

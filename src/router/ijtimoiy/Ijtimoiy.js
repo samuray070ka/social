@@ -18,33 +18,32 @@ function Ijtimoiy() {
         </div>
         <hr  className='ijtimoiy_hr'/>
         <ul className='ijtimoiy_collaction'>
-        {/* <Link to={'/ijtimoiy'} className='link'> */}
+        <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
-                {/* </Link> */}
-                {/* <Link to={'/faoliyat'} className='link'> */}
+                </Link>
+                <Link to={'/faoliyat'} className='link'>
                   <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/> Faoliyat</li>
-                {/* </Link> */}
-                {/* <Link to={'/normativ'} className='link'> */}
+                </Link>
+                <Link to={'/normativ'} className='link'>
                   <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Normativ hujjatlar</li>
-                {/* </Link> */}
-                {/* <Link to={'/jamoatchilik'} className='link'> */}
+                </Link>
+                <Link to={'/jamoatchilik'} className='link'>
                   <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Jamoatchilik</li>
-                {/* </Link> */}
-                {/* <Link to={'/statistica'} className='link'> */}
+                </Link>
+                <Link to={'/statistica'} className='link'>
                   <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Statistika</li>
-                {/* </Link> */}
-                {/* <Link to={'/ochiq'} className='link'> */}
+                </Link>
+                <Link to={'/ochiq'} className='link'>
                   <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Ochiq ma'lumotlar</li>
-                {/* </Link> */}
-                {/* <Link to={'/aloqa'} className='link'> */}
+                </Link>
+                <Link to={'/aloqa'} className='link'>
                   <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Aloqa</li>
-                {/* </Link> */}
+                </Link>
         </ul>
-        
-      </div>
+        </div>
       <div className="ijtimoiy_banner ">
-        <div className='ijti_ban'>
-          <div className='banner_big container'>
+        <div className='ijti_ban  container'>
+          <div className='banner_big '>
             <h3>O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiya</h3>
 
             <p>O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiya (keyingi o‘rinlarda Inspeksiya deb yuritiladi) O‘zbekiston Respublikasi Prezidentining 2023-yil 1-iyundagi “Aholiga sifatli ijtimoiy xizmat va yordam ko‘rsatish hamda uning samarali nazorat tizimini yo‘lga qo‘yish bo‘yicha kompleks chora-tadbirlar to‘g‘risida”gi Farmoni bilan tashkil etilgan.
@@ -258,19 +257,33 @@ function Ijtimoiy() {
               <hr />
               <li className='banner_item '>Inspeksiya haqida</li>
               <hr />
-              <li className='banner_item '>Nizom</li>
+              <Link to={'/ijtimoiy/nizom'} className='link'>
+                <li className='banner_item '>Nizom</li>
+              </Link>
               <hr />
-              <li className='banner_item '>Tuzilma</li>
+              <Link to={'/ijtimoiy/tuzilma'} className='link'>
+                <li className='banner_item '>Tuzilma</li>
+              </Link>
               <hr />
-              <li className='banner_item '>Rahbariyat</li>
+              <Link to={'/ijtimoiy/rahbaryat'} className='link'>
+                <li className='banner_item '>Rahbariyat</li>
+              </Link>
               <hr />
-              <li className='banner_item '>Markaziy apparat</li>
+              <Link to={'/ijtimoiy/markaziy'} className='link'>
+                <li className='banner_item '>Markaziy apparat</li>
+              </Link>
               <hr />
-              <li className='banner_item '>Hududiy boshqarmalar</li>
+              <Link to={'/ijtimoiy/hududiy'} className='link'>
+                <li className='banner_item '>Hududiy boshqarmalar</li>
+              </Link>
               <hr />
-              <li className='banner_item '>Hamkorlik</li>
+              <Link to={'/ijtimoiy/hamkorlik'} className='link'>
+                <li className='banner_item '>Hamkorlik</li>
+              </Link>
               <hr />
-              <li className='banner_item '>Hamkorlik</li>
+              <Link to={'/ijtimoiy/ish-orni'} className='link'>
+                <li className='banner_item '>Bo'sh ish o'rnlari</li>
+              </Link>
             </ul>
           </div>
         </div>

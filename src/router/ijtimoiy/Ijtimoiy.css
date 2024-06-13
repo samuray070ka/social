@@ -49,7 +49,8 @@
     margin-bottom: 30px;
 }
 .ijtimoiy_item_ml{
-    margin-left: 40px;
+    padding-left: 40px;
+    /* margin-left: 40px; */
 }
 .ijtimoiy_item svg{
     transform: translateY(3px);
@@ -62,7 +63,7 @@
     background-color: #F9FAFC;
 }
 .banner_big{
-    width: 65%;
+    width: 81%;
     background-color: #fff;
     margin-top: 50px;
     padding: 20px 40px;
@@ -72,16 +73,17 @@
     width: 221px;
     margin-top: 50px;
     height: 335px;
-    margin-left: -250px;
+    /* margin-left: -250px; */
     background-color: #fff;
 }
 .ijti_ban{
-    width: 100%;
+    /* width: 100%; */
     /* position: absolute; */
     display: flex;
     min-height: 100vh;
     background-color: #F9FAFC;
-    margin-left: -140px;
+    justify-content: space-between;
+    /* margin-left: -140px; */
 }
 .banner_big h3{
     text-align: center;
@@ -153,4 +155,161 @@
 }
 .banner_item:active{
     color: #689B63;
+}
+
+
+.tuzilma_h1{
+    color: #689B63;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.rahbar_flex{
+    display: flex;
+    margin-bottom: 30px;
+}
+.rahbar_text{
+    width: 75%;
+    padding-left: 15px;
+}
+.rahbar_icons{
+    display: flex;
+}
+.icon_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.ml{
+    margin-left: 15px;
+}
+.rahbar_text h6{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.rahbar_h6{
+    color: #689B63;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.rahbar_hr{
+    width: 100%;
+    height: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+.icon_one svg{
+    fill: #689B63 !important;
+}
+.icon_one{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* justify-content: space-between; */
+}
+.icon_one p{
+    font-size: 16px;
+    font-weight: 400;
+    transform: translateY(2px);
+}
+.rahbar_btn{
+    width: 150px;
+    height: 30px;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #689B63;
+    background-color: #fff;
+    color: #689B63;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: .1s;
+}
+.rahbar_btn:hover{
+    background-color: #689B63;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 0 0 4px 4px;
+}
+.location h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.location svg{
+    fill: #689B63 !important;
+    transform: translateY(1px);
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.hamkor_box{
+    width: 286px;
+    height: 280px;
+}
+.hamkor_h6{
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.hamkor_h2{
+    font-size: 14px;
+    font-weight: 400;
+    color: #D9D9D9;
+}
+.ish_flex{
+    display: flex;
+}
+.ish_text{
+    width: 75%;
+    padding-left:15px;
+}
+.ish_text_h6{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+.ish_text_h6_oriq{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #689B63;
+}
+.ish_icons{
+    display: flex;
+    padding-top: 20px;
+}
+.ish_icon svg{
+    fill: #689B63 !important;
+    transform: translateY(2px);
+}
+.ish_icon{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.ish_icon_h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+.end{
+    justify-content: center;
 }

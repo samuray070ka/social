@@ -1,24 +1,27 @@
 import React from 'react'
-import './Aloqa.css'
+import '../../ijtimoiy/Ijtimoiy.css'
 import {Link} from 'react-router-dom'
-import ArrowBottom from '../../icons/arrowBottom'
-import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
-import Search from '../../icons/search'
+import ArrowBottom from '../../../icons/arrowBottom'
+import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
+import Search from '../../../icons/search'
+import IshImg from '../../../assets/208A3050 13.png'
+import Location from '../../../icons/location'
+import Phone from '../../../icons/phone'
 
-function Aloqa() {
+function IshOrni() {
   return (
     <div>
       <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
-            <h2 className='ijtimoiy_h2'>Aloqa</h2>
+            <h2 className='ijtimoiy_h2'>Ijtimoiy inspeksiya</h2>
           </Link>
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
         <ul className='ijtimoiy_collaction'>
-                <Link to={'/ijtimoiy'} className='link'>
+        <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
                 </Link>
                 <Link to={'/faoliyat'} className='link'>
@@ -43,14 +46,36 @@ function Aloqa() {
         </div>
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
-          <div className='banner_big'>
-            <h6>Aloqa</h6>
+          <div className='banner_big '>
+            <h1 className='tuzilma_h1'>Bo'sh ish o'rnlari</h1>
+            <div className='ish_flex'>
+              <div className='ish_img'>
+                <img src={IshImg} alt="" />
+              </div>
+              <div className="ish_text">
+                <h6 className='ish_text_h6'>Jizzax viloyati boshqarmasi</h6>
+                <h6 className='ish_text_h6_oriq'>Katta yoshdagilarga ijtimoiy xizmatlar ko’rsatilinishi ustidan nazorat qilish bo‘limi bosh mutaxassisi</h6>
+                <div className='rahbar_hr'></div>
+                <div className='ish_icons'>
+                  <div className='ish_icon'>
+                    <Location/>
+                    <h6 className='ish_icon_h6'>Jizzax shahar, A.Navoiy shox ko‘chasi, 4 uy</h6>
+                  </div>
+                  <div className='ish_icon end'>
+                    <Phone/>
+                    <h6 className='ish_icon_h6'>+998 71 207 97 98</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>
               <li className='banner_item one'>Ijtimoiy inspeksiya</li>
               <hr />
-              <li className='banner_item '>Inspeksiya haqida</li>
+              <Link to={'/ijtimoiy'} className='link'>
+                <li className='banner_item '>Inspeksiya haqida</li>
+              </Link>
               <hr />
               <Link to={'/ijtimoiy/nizom'} className='link'>
                 <li className='banner_item '>Nizom</li>
@@ -87,4 +112,4 @@ function Aloqa() {
   )
 }
 
-export default Aloqa
+export default IshOrni

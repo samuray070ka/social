@@ -1,24 +1,27 @@
 import React from 'react'
-import './Aloqa.css'
+import '../../ijtimoiy/Ijtimoiy.css'
 import {Link} from 'react-router-dom'
-import ArrowBottom from '../../icons/arrowBottom'
-import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
-import Search from '../../icons/search'
+import ArrowBottom from '../../../icons/arrowBottom'
+import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
+import Search from '../../../icons/search'
+import HamkorImg from '../../../assets/Rectangle 82.png'
+import HamkorImg2 from '../../../assets/Rectangle 83.png'
+import HamkorImg3 from '../../../assets/Rectangle 84.png'
 
-function Aloqa() {
+function Hamkorlik() {
   return (
     <div>
-      <div className='container'>
+        <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
-            <h2 className='ijtimoiy_h2'>Aloqa</h2>
+            <h2 className='ijtimoiy_h2'>Ijtimoiy inspeksiya</h2>
           </Link>
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
         <ul className='ijtimoiy_collaction'>
-                <Link to={'/ijtimoiy'} className='link'>
+        <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
                 </Link>
                 <Link to={'/faoliyat'} className='link'>
@@ -43,14 +46,48 @@ function Aloqa() {
         </div>
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
-          <div className='banner_big'>
-            <h6>Aloqa</h6>
+          <div className='banner_big '>
+            <h6 className='tuzilma_h1'>Xalqaro xamkorlik</h6>
+            <div className='wrapper'>
+              <div className='hamkor_box'>
+                <img className='hamkor_img' src={HamkorImg} alt="" />
+                <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
+                <h5 className='hamkor_h2'>1-Aprel, 2024</h5>
+              </div>
+              <div className='hamkor_box'>
+                <img className='hamkor_img' src={HamkorImg2} alt="" />
+                <h6 className='hamkor_h6'>Ijtimoiy himoya milliy agentligi rahbariyati Shveysariya Konfederatsiyasining Favqulodda va Muxtor elchisi Konstantin Obolenskiyni bilan uchrashdi</h6>
+                <h5 className='hamkor_h2'>8-Aprel, 2024</h5>
+              </div>
+              <div className='hamkor_box'>
+                <img className='hamkor_img' src={HamkorImg3} alt="" />
+                <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
+                <h5 className='hamkor_h2'>20-Aprel, 2024</h5>
+              </div>
+              <div className='hamkor_box'>
+                <img className='hamkor_img' src={HamkorImg} alt="" />
+                <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
+                <h5 className='hamkor_h2'>1-Aprel, 2024</h5>
+              </div>
+              <div className='hamkor_box'>
+                <img className='hamkor_img' src={HamkorImg2} alt="" />
+                <h6 className='hamkor_h6'>Ijtimoiy himoya milliy agentligi rahbariyati Shveysariya Konfederatsiyasining Favqulodda va Muxtor elchisi Konstantin Obolenskiyni bilan uchrashdi</h6>
+                <h5 className='hamkor_h2'>8-Aprel, 2024</h5>
+              </div>
+              <div className='hamkor_box'>
+                <img className='hamkor_img' src={HamkorImg3} alt="" />
+                <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
+                <h5 className='hamkor_h2'>20-Aprel, 2024</h5>
+              </div>
+            </div>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>
               <li className='banner_item one'>Ijtimoiy inspeksiya</li>
               <hr />
-              <li className='banner_item '>Inspeksiya haqida</li>
+              <Link to={'/ijtimoiy'} className='link'>
+                <li className='banner_item '>Inspeksiya haqida</li>
+              </Link>
               <hr />
               <Link to={'/ijtimoiy/nizom'} className='link'>
                 <li className='banner_item '>Nizom</li>
@@ -87,4 +124,4 @@ function Aloqa() {
   )
 }
 
-export default Aloqa
+export default Hamkorlik

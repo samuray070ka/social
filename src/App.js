@@ -23,6 +23,18 @@ import Korupsiya from './router/faoliyat-router/korupsiya/Korupsiya';
 import Nogironlik from './router/faoliyat-router/nogironlik/Nogironlik';
 import Qulay from './router/faoliyat-router/qulay-muhit/Qulay';
 import Voyaga from './router/faoliyat-router/voyaga/Voyaga';
+import Idoraviy from './router/normativ-router/idoraviy/Idoraviy';
+import Ozbekiston from './router/normativ-router/ozbekiston/Ozbekiston'
+import Prezident from './router/normativ-router/president/Prezident'
+import Vazirlar from './router/normativ-router/vazirlar/Vazirlar'
+import Xalqaro from './router/normativ-router/xalqaro/Xalqaro'
+import Yangiliklar from './router/jamoatchilik-router/yangiliklar/Yangiliklar';
+import Pressreliz from './router/jamoatchilik-router/Pressreliz/Pressreliz';
+import Elonlar from './router/jamoatchilik-router/E’lonlar/Elonlar';
+import VideoDars from './router/jamoatchilik-router/Videodarsliklar/VideoDars';
+import VideoRolik from './router/jamoatchilik-router/Videoroliklar/VideoRolik';
+import UniquePage from './router/unique-page/Index'
+
 
 function App() {
   return (
@@ -50,6 +62,17 @@ function App() {
         <Route path='/faoliyat/nogironlik' element={<Nogironlik/>}/>
         <Route path='/faoliyat/qulay' element={<Qulay/>}/>
         <Route path='/faoliyat/voyaga' element={<Voyaga/>}/>
+        <Route path='/normativ/ozbekiston' element={<Ozbekiston/>}/>
+        <Route path='/normativ/prezident' element={<Prezident/>}/>
+        <Route path='/normativ/vazirlar' element={<Vazirlar/>}/>
+        <Route path='/normativ/idoraviy' element={<Idoraviy/>}/>
+        <Route path='/normativ/xalqaro' element={<Xalqaro/>}/>
+        <Route path='/jamoatchilik/yangiliklar' element={<Yangiliklar/>}/>
+        <Route path='/jamoatchilik/pressreliz' element={<Pressreliz/>}/>
+        <Route path='/jamoatchilik/videodarsliklar' element={<VideoDars/>}/>
+        <Route path='/jamoatchilik/videoroliklar' element={<VideoRolik/>}/>
+        <Route path='/jamoatchilik/elonlar' element={<Elonlar/>}/>
+        <Route path='/hamkorlik/:proID' element={<UniquePage/>}/>
       </Routes>
       <Footer/>
     </div>

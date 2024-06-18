@@ -1,18 +1,20 @@
 import React from 'react'
-import '../../faoliyat/Faoliyat.css'
+import YangilikImg from '../../../assets/Rectangle 59.png'
+import YangilikImg2 from '../../../assets/Rectangle 60.png'
+import YangilikImg3 from '../../../assets/Rectangle 61.png'
 import {Link} from 'react-router-dom'
 import ArrowBottom from '../../../icons/arrowBottom'
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
 
-function Qulay() {
+function Yangiliklar() {
   return (
     <div>
-      <div className='container'>
+              <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
-            <h2 className='ijtimoiy_h2'>Faoliyat</h2>
+            <h6 className='ijtimoiy_h2'>Jamoatchilik</h6>
           </Link>
           <input type="text" /> <Search/>
         </div>
@@ -44,30 +46,30 @@ function Qulay() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6 className='tuzilma_h1'>Qulay muhit</h6>
+            <h6>Jamoatchilik</h6>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>
-              <li className='banner_item one'>Faoliyat</li>
+              <li className='banner_item one'>Jamoatchilik</li>
               <hr />
-              <Link to={'/faoliyat'} className='link'>
-                <li className='banner_item '>Qulat muhit</li>
+              <Link to={'/jamoatchilik'} className='link'>
+                <li className='banner_item '>Yangiliklar</li>
               </Link>
               <hr />
-              <Link to={'/faoliyat/katta-yoshdagilar'} className='link'>
-                <li className='banner_item '>Katta yoshdagilar</li>
+              <Link to={'/jamoatchilik/pressreliz'} className='link'>
+                <li className='banner_item '>Pressreliz</li>
               </Link>
               <hr />
-              <Link to={'/faoliyat/voyaga'} className='link'>
-                <li className='banner_item '>Voyaga yetmaganlar</li>
+              <Link to={'/jamoatchilik/videodarsliklar'} className='link'>
+                <li className='banner_item '>Videodarsliklar</li>
               </Link>
               <hr />
-              <Link to={'/faoliyat/nogironlik'} className='link'>
-                <li className='banner_item '>Nogironlikni belgilash</li>
+              <Link to={'/jamoatchilik/videoroliklar'} className='link'>
+                <li className='banner_item '>Videoroliklar</li>
               </Link>
               <hr />
-              <Link to={'/faoliyat/korupsiya'} className='link'>
-                <li className='banner_item '>Korrupsiyaga qarshi kurash</li>
+              <Link to={'/amoatchilik/elonlar'} className='link'>
+                <li className='banner_item '>E’lonlar</li>
               </Link>
             </ul>
           </div>
@@ -77,4 +79,4 @@ function Qulay() {
   )
 }
 
-export default Qulay
+export default Yangiliklar

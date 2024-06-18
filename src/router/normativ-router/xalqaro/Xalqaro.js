@@ -1,18 +1,18 @@
 import React from 'react'
-import '../../faoliyat/Faoliyat.css'
+import '../../normativ/Normativ.css'
 import {Link} from 'react-router-dom'
 import ArrowBottom from '../../../icons/arrowBottom'
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
 
-function Qulay() {
+function Xalqaro() {
   return (
     <div>
       <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
-            <h2 className='ijtimoiy_h2'>Faoliyat</h2>
+            <h2 className='ijtimoiy_h2'>Normativ hujjatlar</h2>
           </Link>
           <input type="text" /> <Search/>
         </div>
@@ -44,30 +44,30 @@ function Qulay() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6 className='tuzilma_h1'>Qulay muhit</h6>
+            <h6>Xalqaro</h6>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>
-              <li className='banner_item one'>Faoliyat</li>
+              <li className='banner_item one'>Ijtimoiy inspeksiya</li>
               <hr />
-              <Link to={'/faoliyat'} className='link'>
-                <li className='banner_item '>Qulat muhit</li>
+              <Link to={'/normativ'} className='link'>
+                <li className='banner_item '>Xalqaro normativ hujjatlar</li>
               </Link>
               <hr />
-              <Link to={'/faoliyat/katta-yoshdagilar'} className='link'>
-                <li className='banner_item '>Katta yoshdagilar</li>
+              <Link to={'/normativ/ozbekiston'} className='link'>
+                <li className='banner_item '>O‘zbekiston Respublikasi qonunlari</li>
               </Link>
               <hr />
-              <Link to={'/faoliyat/voyaga'} className='link'>
-                <li className='banner_item '>Voyaga yetmaganlar</li>
+              <Link to={'/normativ/prezident'} className='link'>
+                <li className='banner_item '>Prezident farmon va qarorlari</li>
               </Link>
               <hr />
-              <Link to={'/faoliyat/nogironlik'} className='link'>
-                <li className='banner_item '>Nogironlikni belgilash</li>
+              <Link to={'/normativ/vazirlar'} className='link'>
+                <li className='banner_item '>Vazirlar mahkamasi qarorlari</li>
               </Link>
               <hr />
-              <Link to={'/faoliyat/korupsiya'} className='link'>
-                <li className='banner_item '>Korrupsiyaga qarshi kurash</li>
+              <Link to={'/normativ/idoraviy'} className='link'>
+                <li className='banner_item '>Idoraviy normativ-huquqiy hujjatlar</li>
               </Link>
             </ul>
           </div>
@@ -77,4 +77,4 @@ function Qulay() {
   )
 }
 
-export default Qulay
+export default Xalqaro

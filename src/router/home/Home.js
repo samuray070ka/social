@@ -82,7 +82,7 @@ function Home() {
             <img className='banner_photo_two' src={img} alt="" />
             <div className='ul_flex '>
             </div>
-            <h1 className='banner_h1 width'>Katta yoshdagilarga ijtiomoiy xizmatlar
+            <h1 className='banner_h1 '>Katta yoshdagilarga ijtiomoiy xizmatlar
               ko‘rsatilishi ustidan nazorat qilish</h1>
             <button className='home_btn'>Batafsil</button>
           </div>
@@ -94,7 +94,7 @@ function Home() {
             <img className='banner_photo_two' src={img} alt="" />
             <div className='ul_flex '>
             </div>
-            <h1 className='banner_h1 width'>Voyaga yetmaganlar uchun ijtimoiy
+            <h1 className='banner_h1 '>Voyaga yetmaganlar uchun ijtimoiy
               xizmatlar koʻrsatilishini nazorat qilish</h1>
             <button className='home_btn'>Batafsil</button>
           </div>
@@ -106,7 +106,7 @@ function Home() {
             <img className='banner_photo_two' src={img} alt="" />
             <div className='ul_flex '>
             </div>
-            <h1 className='banner_h1 width'>Nogironligi boʻlgan shaxslarga ijtimoiy
+            <h1 className='banner_h1 '>Nogironligi boʻlgan shaxslarga ijtimoiy
               xizmatlar koʻrsatilishini nazorat qilish</h1>
             <button className='home_btn'>Batafsil</button>
           </div>

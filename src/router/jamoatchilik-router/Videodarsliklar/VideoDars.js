@@ -1,18 +1,19 @@
 import React from 'react'
-import './Jamoatchilik.css'
 import {Link} from 'react-router-dom'
-import ArrowBottom from '../../icons/arrowBottom'
-import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
-import Search from '../../icons/search'
-import YangilikImg from '../../assets/Rectangle 59.png'
-import YangilikImg2 from '../../assets/Rectangle 60.png'
-import YangilikImg3 from '../../assets/Rectangle 61.png'
-import JamoArrow from '../../assets/arrow_right_alt.png'
-
-function Jamoatchilik() {
+import ArrowBottom from '../../../icons/arrowBottom'
+import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
+import Search from '../../../icons/search'
+import YangilikImg from '../../../assets/Rectangle 59 (2).png'
+import YangilikImg2 from '../../../assets/Rectangle 60 (2).png'
+import YangilikImg3 from '../../../assets/Rectangle 61 (2).png'
+import YangilikImg4 from '../../../assets/Rectangle 68.png'
+import YangilikImg5 from '../../../assets/Rectangle 69.png'
+import YangilikImg6 from '../../../assets/Rectangle 70.png'
+import JamoArrow from '../../../assets/arrow_right_alt.png'
+function VideoDars() {
   return (
     <div>
-      <div className='container'>
+         <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
@@ -48,7 +49,7 @@ function Jamoatchilik() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6 className='tuzilma_h1'>Yangiliklar</h6>
+            <h6 className='tuzilma_h1'>Videodarsliklar</h6>
             <div className="jamo_wrapper">
               <div className="jamo_box">
                 <img src={YangilikImg} alt="" />
@@ -75,7 +76,7 @@ function Jamoatchilik() {
                 </div>
               </div>
               <div className="jamo_box">
-                <img src={YangilikImg} alt="" />
+                <img src={YangilikImg4} alt="" />
                 <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
                 <div className='jamo_flex'>
                   <h6 className='jamo_h6'>09-04.2023</h6>
@@ -83,7 +84,7 @@ function Jamoatchilik() {
                 </div>
               </div>
               <div className="jamo_box">
-                <img src={YangilikImg2} alt="" />
+                <img src={YangilikImg5} alt="" />
                 <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
                 <div className='jamo_flex'>
                   <h6 className='jamo_h6'>09-04.2023</h6>
@@ -91,7 +92,7 @@ function Jamoatchilik() {
                 </div>
               </div>
               <div className="jamo_box">
-                <img src={YangilikImg3} alt="" />
+                <img src={YangilikImg6} alt="" />
                 <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
                 <div className='jamo_flex'>
                   <h6 className='jamo_h6'>09-04.2023</h6>
@@ -131,4 +132,4 @@ function Jamoatchilik() {
   )
 }
 
-export default Jamoatchilik
+export default VideoDars

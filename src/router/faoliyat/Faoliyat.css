@@ -1,0 +1,28 @@
+.right{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    width: 18%;
+}
+.right_flex{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+}
+.faoliyat_h6{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.faoliyat_oriq{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.width{
+    width: 35%;
+}

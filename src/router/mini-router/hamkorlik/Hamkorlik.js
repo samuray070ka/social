@@ -49,11 +49,13 @@ function Hamkorlik() {
           <div className='banner_big '>
             <h6 className='tuzilma_h1'>Xalqaro xamkorlik</h6>
             <div className='wrapper'>
+              <Link to={`/`}>
               <div className='hamkor_box'>
                 <img className='hamkor_img' src={HamkorImg} alt="" />
                 <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
                 <h5 className='hamkor_h2'>1-Aprel, 2024</h5>
               </div>
+              </Link>
               <div className='hamkor_box'>
                 <img className='hamkor_img' src={HamkorImg2} alt="" />
                 <h6 className='hamkor_h6'>Ijtimoiy himoya milliy agentligi rahbariyati Shveysariya Konfederatsiyasining Favqulodda va Muxtor elchisi Konstantin Obolenskiyni bilan uchrashdi</h6>

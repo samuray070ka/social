@@ -1,18 +1,16 @@
 import React from 'react'
-import './Jamoatchilik.css'
 import {Link} from 'react-router-dom'
-import ArrowBottom from '../../icons/arrowBottom'
-import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
-import Search from '../../icons/search'
-import YangilikImg from '../../assets/Rectangle 59.png'
-import YangilikImg2 from '../../assets/Rectangle 60.png'
-import YangilikImg3 from '../../assets/Rectangle 61.png'
-import JamoArrow from '../../assets/arrow_right_alt.png'
-
-function Jamoatchilik() {
+import ArrowBottom from '../../../icons/arrowBottom'
+import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
+import Search from '../../../icons/search'
+import YangilikImg from '../../../assets/Rectangle 59 (1).png'
+import YangilikImg2 from '../../../assets/Rectangle 60.png'
+import YangilikImg3 from '../../../assets/Rectangle 61.png'
+import JamoArrow from '../../../assets/arrow_right_alt.png'
+function Pressreliz() {
   return (
     <div>
-      <div className='container'>
+         <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
@@ -48,7 +46,7 @@ function Jamoatchilik() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6 className='tuzilma_h1'>Yangiliklar</h6>
+            <h6 className='tuzilma_h1'>Pressreliz</h6>
             <div className="jamo_wrapper">
               <div className="jamo_box">
                 <img src={YangilikImg} alt="" />
@@ -131,4 +129,4 @@ function Jamoatchilik() {
   )
 }
 
-export default Jamoatchilik
+export default Pressreliz

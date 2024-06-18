@@ -45,7 +45,72 @@ function Faoliyat() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6>Faoliyat</h6>
+            <h6 className='tuzilma_h1'>Qulay muhit</h6>
+            <div className='right_flex'>
+            <h6 className='right'>Ijtimoiy inspeksiya boshligʻining 2024-yil __-fevraldagi _____-son buyrugʻiga 2-ilova</h6>
+            </div>
+            <h6 className='faoliyat_h6'>Nogironligi boʻlgan shaxslarga qulay va toʻsiqsiz sharoitlar yaratilishi, paralimpiya sport turlariga jalb qilinishi hamda ularga ajratilgan ish va oʻqish oʻrinlarini nazorat qilish boʻlimi toʻgʻrisida
+            NIZOM</h6>
+
+            <h6 className='faoliyat_oriq'>1. Ushbu Nizom Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiyaning (keyingi oʻrinlarda – Inspeksiya) Nogironligi boʻlgan shaxslarga qulay va toʻsiqsiz sharoitlar yaratilishi, paralimpiya sport turlariga jalb qilinishi hamda ularga ajratilgan ish va oʻqish oʻrinlarini nazorat qilish boʻlimi (keyingi oʻrinlarda – Boʻlim) vazifalari, funksiyalari, huquq va majburiyatlari hamda javobgarliklarini belgilaydi.</h6>
+            
+            <h6 className='faoliyat_oriq'>2. Boʻlim Inspeksiyaning markaziy apparati tarkibiy boʻlinmasi hisoblanadi.</h6>
+
+            <h6 className='faoliyat_oriq'>3. Boʻlim oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasi va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasining Vazirlar Mahkamasining qarorlariga, boshqa qonunchilik hujjatlariga, shuningdek Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi direktori buyruqlari va koʻrsatmalariga, Inspeksiya boshligʻi buyruqlariga va mazkur Nizomga amal qiladi.</h6>
+            
+            <h6 className='faoliyat_oriq'>4. Boʻlim oʻz faoliyatini Inspeksiyaning boshqa tarkibiy boʻlinmalari, Ijtimoiy himoya milliy agentligi (keyingi o‘rinlarda – Agentlik) markaziy apparati, uning hududiy boshqarmalari hamda tuman (shahar) “Inson” ijtimoiy xizmatlar markazlari bilan hamkorlikda amalga oshiradi.</h6>
+
+            <h6 className='faoliyat_h6'>II. Boʻlimning vazifa va funksiyalari</h6>
+
+            <h6 className='faoliyat_oriq'>1. Ushbu Nizom Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiyaning (keyingi oʻrinlarda – Inspeksiya) Nogironligi boʻlgan shaxslarga qulay va toʻsiqsiz sharoitlar yaratilishi, paralimpiya sport turlariga jalb qilinishi hamda ularga ajratilgan ish va oʻqish oʻrinlarini nazorat qilish boʻlimi (keyingi oʻrinlarda – Boʻlim) vazifalari, funksiyalari, huquq va majburiyatlari hamda javobgarliklarini belgilaydi.</h6>
+            
+            <h6 className='faoliyat_oriq'>2. Boʻlim Inspeksiyaning markaziy apparati tarkibiy boʻlinmasi hisoblanadi.</h6>
+
+            <h6 className='faoliyat_oriq'>3. Boʻlim oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasi va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasining Vazirlar Mahkamasining qarorlariga, boshqa qonunchilik hujjatlariga, shuningdek Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi direktori buyruqlari va koʻrsatmalariga, Inspeksiya boshligʻi buyruqlariga va mazkur Nizomga amal qiladi.</h6>
+            
+            <h6 className='faoliyat_oriq'>4. Boʻlim oʻz faoliyatini Inspeksiyaning boshqa tarkibiy boʻlinmalari, Ijtimoiy himoya milliy agentligi (keyingi o‘rinlarda – Agentlik) markaziy apparati, uning hududiy boshqarmalari hamda tuman (shahar) “Inson” ijtimoiy xizmatlar markazlari bilan hamkorlikda amalga oshiradi.</h6>
+
+            <h6 className='faoliyat_h6'>III. Boʻlimning huquq va majburiyatlari</h6>
+            <h6 className='faoliyat_oriq'>1. Ushbu Nizom Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiyaning (keyingi oʻrinlarda – Inspeksiya) Nogironligi boʻlgan shaxslarga qulay va toʻsiqsiz sharoitlar yaratilishi, paralimpiya sport turlariga jalb qilinishi hamda ularga ajratilgan ish va oʻqish oʻrinlarini nazorat qilish boʻlimi (keyingi oʻrinlarda – Boʻlim) vazifalari, funksiyalari, huquq va majburiyatlari hamda javobgarliklarini belgilaydi.</h6>
+            
+            <h6 className='faoliyat_oriq'>2. Boʻlim Inspeksiyaning markaziy apparati tarkibiy boʻlinmasi hisoblanadi.</h6>
+
+            <h6 className='faoliyat_oriq'>3. Boʻlim oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasi va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasining Vazirlar Mahkamasining qarorlariga, boshqa qonunchilik hujjatlariga, shuningdek Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi direktori buyruqlari va koʻrsatmalariga, Inspeksiya boshligʻi buyruqlariga va mazkur Nizomga amal qiladi.</h6>
+            
+            <h6 className='faoliyat_oriq'>4. Boʻlim oʻz faoliyatini Inspeksiyaning boshqa tarkibiy boʻlinmalari, Ijtimoiy himoya milliy agentligi (keyingi o‘rinlarda – Agentlik) markaziy apparati, uning hududiy boshqarmalari hamda tuman (shahar) “Inson” ijtimoiy xizmatlar markazlari bilan hamkorlikda amalga oshiradi.</h6>
+
+
+            <h6 className='faoliyat_oriq'>1. Ushbu Nizom Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiyaning (keyingi oʻrinlarda – Inspeksiya) Nogironligi boʻlgan shaxslarga qulay va toʻsiqsiz sharoitlar yaratilishi, paralimpiya sport turlariga jalb qilinishi hamda ularga ajratilgan ish va oʻqish oʻrinlarini nazorat qilish boʻlimi (keyingi oʻrinlarda – Boʻlim) vazifalari, funksiyalari, huquq va majburiyatlari hamda javobgarliklarini belgilaydi.</h6>
+            
+            <h6 className='faoliyat_oriq'>2. Boʻlim Inspeksiyaning markaziy apparati tarkibiy boʻlinmasi hisoblanadi.</h6>
+
+            <h6 className='faoliyat_oriq'>3. Boʻlim oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasi va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasining Vazirlar Mahkamasining qarorlariga, boshqa qonunchilik hujjatlariga, shuningdek Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi direktori buyruqlari va koʻrsatmalariga, Inspeksiya boshligʻi buyruqlariga va mazkur Nizomga amal qiladi.</h6>
+            
+            <h6 className='faoliyat_oriq'>4. Boʻlim oʻz faoliyatini Inspeksiyaning boshqa tarkibiy boʻlinmalari, Ijtimoiy himoya milliy agentligi (keyingi o‘rinlarda – Agentlik) markaziy apparati, uning hududiy boshqarmalari hamda tuman (shahar) “Inson” ijtimoiy xizmatlar markazlari bilan hamkorlikda amalga oshiradi.</h6>
+            <h6 className='faoliyat_oriq'>2. Boʻlim Inspeksiyaning markaziy apparati tarkibiy boʻlinmasi hisoblanadi.</h6>
+
+            <h6 className='faoliyat_oriq'>3. Boʻlim oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasi va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasining Vazirlar Mahkamasining qarorlariga, boshqa qonunchilik hujjatlariga, shuningdek Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi direktori buyruqlari va koʻrsatmalariga, Inspeksiya boshligʻi buyruqlariga va mazkur Nizomga amal qiladi.</h6>
+            
+            <h6 className='faoliyat_oriq'>4. Boʻlim oʻz faoliyatini Inspeksiyaning boshqa tarkibiy boʻlinmalari, Ijtimoiy himoya milliy agentligi (keyingi o‘rinlarda – Agentlik) markaziy apparati, uning hududiy boshqarmalari hamda tuman (shahar) “Inson” ijtimoiy xizmatlar markazlari bilan hamkorlikda amalga oshiradi.</h6>
+
+            <h6 className='faoliyat_h6'>IV. Boʻlim faoliyatini tashkil etish</h6>
+
+            <h6 className='faoliyat_oriq'>1. Ushbu Nizom Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiyaning (keyingi oʻrinlarda – Inspeksiya) Nogironligi boʻlgan shaxslarga qulay va toʻsiqsiz sharoitlar yaratilishi, paralimpiya sport turlariga jalb qilinishi hamda ularga ajratilgan ish va oʻqish oʻrinlarini nazorat qilish boʻlimi (keyingi oʻrinlarda – Boʻlim) vazifalari, funksiyalari, huquq va majburiyatlari hamda javobgarliklarini belgilaydi.</h6>
+            
+            <h6 className='faoliyat_oriq'>2. Boʻlim Inspeksiyaning markaziy apparati tarkibiy boʻlinmasi hisoblanadi.</h6>
+
+            <h6 className='faoliyat_oriq'>3. Boʻlim oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasi va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasining Vazirlar Mahkamasining qarorlariga, boshqa qonunchilik hujjatlariga, shuningdek Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi direktori buyruqlari va koʻrsatmalariga, Inspeksiya boshligʻi buyruqlariga va mazkur Nizomga amal qiladi.</h6>
+            
+            <h6 className='faoliyat_oriq'>4. Boʻlim oʻz faoliyatini Inspeksiyaning boshqa tarkibiy boʻlinmalari, Ijtimoiy himoya milliy agentligi (keyingi o‘rinlarda – Agentlik) markaziy apparati, uning hududiy boshqarmalari hamda tuman (shahar) “Inson” ijtimoiy xizmatlar markazlari bilan hamkorlikda amalga oshiradi.</h6>
+            <h6 className='faoliyat_oriq'>2. Boʻlim Inspeksiyaning markaziy apparati tarkibiy boʻlinmasi hisoblanadi.</h6>
+
+            <h6 className='faoliyat_oriq'>3. Boʻlim oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasi va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasining Vazirlar Mahkamasining qarorlariga, boshqa qonunchilik hujjatlariga, shuningdek Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi direktori buyruqlari va koʻrsatmalariga, Inspeksiya boshligʻi buyruqlariga va mazkur Nizomga amal qiladi.</h6>
+            
+            <h6 className='faoliyat_oriq'>4. Boʻlim oʻz faoliyatini Inspeksiyaning boshqa tarkibiy boʻlinmalari, Ijtimoiy himoya milliy agentligi (keyingi o‘rinlarda – Agentlik) markaziy apparati, uning hududiy boshqarmalari hamda tuman (shahar) “Inson” ijtimoiy xizmatlar markazlari bilan hamkorlikda amalga oshiradi.</h6>
+            <h6 className='faoliyat_h6'>V. Yakuniy qoidalar</h6>
+            <h6 className='faoliyat_oriq'>3. Boʻlim oʻz faoliyatida Oʻzbekiston Respublikasi Konstitutsiyasi va qonunlariga, Oʻzbekiston Respublikasi Oliy Majlisi palatalarining qarorlariga, Oʻzbekiston Respublikasi Prezidentining farmonlari, qarorlari va farmoyishlariga, Oʻzbekiston Respublikasining Vazirlar Mahkamasining qarorlariga, boshqa qonunchilik hujjatlariga, shuningdek Oʻzbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi direktori buyruqlari va koʻrsatmalariga, Inspeksiya boshligʻi buyruqlariga va mazkur Nizomga amal qiladi.</h6>
+            
+            <h6 className='faoliyat_oriq'>4. Boʻlim oʻz faoliyatini Inspeksiyaning boshqa tarkibiy boʻlinmalari, Ijtimoiy himoya milliy agentligi (keyingi o‘rinlarda – Agentlik) markaziy apparati, uning hududiy boshqarmalari hamda tuman (shahar) “Inson” ijtimoiy xizmatlar markazlari bilan hamkorlikda amalga oshiradi.</h6>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>

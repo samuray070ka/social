@@ -14,8 +14,12 @@
     top: 0;
     left: 0;
 }
+.nima{
+    width: 100%;
+    background-color: #689B63;
+}
 .width{
-    width: 80%;
+    width: 100%;
     font-size: 60px;
 }
 .banner_photo_two{

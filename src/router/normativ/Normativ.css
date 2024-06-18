@@ -1,0 +1,21 @@
+.flex_wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex_child{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    width: 440px;
+    height: 96px;
+    background-color: #F9FAFC;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+.text_h6{
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 20px;
+}

@@ -1,12 +1,11 @@
 import React from 'react'
-import "./Normativ.css"
+import '../../normativ/Normativ.css'
 import {Link} from 'react-router-dom'
-import ArrowBottom from '../../icons/arrowBottom'
-import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
-import Search from '../../icons/search'
-import ChildImg from '../../assets/text 24.png'
-
-function Normativ() {
+import ArrowBottom from '../../../icons/arrowBottom'
+import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
+import Search from '../../../icons/search'
+import ChildImg from '../../../assets/text 24.png'
+function Prezident() {
   return (
     <div>
       <div className='container'>
@@ -45,7 +44,7 @@ function Normativ() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6 className='tuzilma_h1'>Xalqaro normativ hujjatlar</h6>
+            <h6 className='tuzilma_h1'>Prezident farmon va qarorlari</h6>
             <div className='flex_wrapper'>
               <div className='flex_child'>
                 <div className='child_imgs'>
@@ -192,4 +191,4 @@ function Normativ() {
   )
 }
 
-export default Normativ
+export default Prezident

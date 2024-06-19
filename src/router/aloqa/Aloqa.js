@@ -44,40 +44,22 @@ function Aloqa() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6>Aloqa</h6>
+            <h6 className='tuzilma_h1'>Aloqa</h6>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>
-              <li className='banner_item one'>Ijtimoiy inspeksiya</li>
+              <li className='banner_item one'>Aloqa</li>
               <hr />
-              <li className='banner_item '>Inspeksiya haqida</li>
-              <hr />
-              <Link to={'/ijtimoiy/nizom'} className='link'>
-                <li className='banner_item '>Nizom</li>
+              <Link to={'/aloqa'} className='link'>
+                <li className='banner_item '>Online murojaat</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/tuzilma'} className='link'>
-                <li className='banner_item '>Tuzilma</li>
+              <Link to={'/aloqa/offline'} className='link'>
+                <li className='banner_item '>Offline murojaat</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/rahbaryat'} className='link'>
-                <li className='banner_item '>Rahbariyat</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/markaziy'} className='link'>
-                <li className='banner_item '>Markaziy apparat</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/hududiy'} className='link'>
-                <li className='banner_item '>Hududiy boshqarmalar</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/hamkorlik'} className='link'>
-                <li className='banner_item '>Hamkorlik</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/ish-orni'} className='link'>
-                <li className='banner_item '>Bo'sh ish o'rnlari</li>
+              <Link to={'/aloqa/boglanish'} className='link'>
+                <li className='banner_item '>Biz bilan bog‘lanish</li>
               </Link>
             </ul>
           </div>

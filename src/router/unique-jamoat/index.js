@@ -1,5 +1,5 @@
 import React from 'react'
-import './Index.css'
+import './index.css'
 import {Link, useParams} from 'react-router-dom'
 import ArrowBottom from '../../icons/arrowBottom'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
@@ -12,17 +12,14 @@ import Facebook from '../../assets/facebook.png'
 import Calendar from '../../icons/calendar'
 import Img from '../../assets/Rectangle 69.png'
 
-const param = useParams
-let oneItem = PRODUCTS.find((item)=> item.id === param.proID)
-
-function Index() {
+function index() {
   return (
     <div>
          <div className='container'>
         <div className="ijtimoiy_logo">
-          <Link to={`/ijtimoiy/hamkorlik`} className='ijtimoiy_logo link to'>
+          <Link to={`/jamoatchilik`} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
-            <h2 className='ijtimoiy_h2'>Ijtimoiy inspeksiya</h2>
+            <h2 className='ijtimoiy_h2'>Jamoatchilik</h2>
           </Link>
           <input type="text" /> <Search/>
         </div>
@@ -79,38 +76,26 @@ function Index() {
                 </div>
                 <div className='banner_text '>
             <ul className='banner_collaction'>
-              <li className='banner_item one'>Ijtimoiy inspeksiya</li>
+              <li className='banner_item one'>Jamoatchilik</li>
               <hr />
-              <Link to={'/ijtimoiy'} className='link'>
-                <li className='banner_item '>Inspeksiya haqida</li>
+              <Link to={'/jamoatchilik'} className='link'>
+                <li className='banner_item '>Yangiliklar</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/nizom'} className='link'>
-                <li className='banner_item '>Nizom</li>
+              <Link to={'/jamoatchilik/pressreliz'} className='link'>
+                <li className='banner_item '>Pressreliz</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/tuzilma'} className='link'>
-                <li className='banner_item '>Tuzilma</li>
+              <Link to={'/jamoatchilik/videodarsliklar'} className='link'>
+                <li className='banner_item '>Videodarsliklar</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/rahbaryat'} className='link'>
-                <li className='banner_item '>Rahbariyat</li>
+              <Link to={'/jamoatchilik/videoroliklar'} className='link'>
+                <li className='banner_item '>Videoroliklar</li>
               </Link>
               <hr />
-              <Link to={'/ijtimoiy/markaziy'} className='link'>
-                <li className='banner_item '>Markaziy apparat</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/hududiy'} className='link'>
-                <li className='banner_item '>Hududiy boshqarmalar</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/hamkorlik'} className='link'>
-                <li className='banner_item '>Hamkorlik</li>
-              </Link>
-              <hr />
-              <Link to={'/ijtimoiy/ish-orni'} className='link'>
-                <li className='banner_item '>Bo'sh ish o'rnlari</li>
+              <Link to={'/jamoatchilik/elonlar'} className='link'>
+                <li className='banner_item '>E’lonlar</li>
               </Link>
             </ul>
           </div>
@@ -120,4 +105,4 @@ function Index() {
   )
 }
 
-export default Index
+export default index

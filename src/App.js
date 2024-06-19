@@ -34,6 +34,10 @@ import Elonlar from './router/jamoatchilik-router/E’lonlar/Elonlar';
 import VideoDars from './router/jamoatchilik-router/Videodarsliklar/VideoDars';
 import VideoRolik from './router/jamoatchilik-router/Videoroliklar/VideoRolik';
 import UniquePage from './router/unique-page/Index'
+import UniqueJamoat from './router/unique-jamoat/index'
+import Online from './router/aloqa-router/online/Online';
+import Offline from './router/aloqa-router/offline/Offline';
+import Boglanish from './router/aloqa-router/boglanish/Boglanish';
 
 
 function App() {
@@ -72,7 +76,11 @@ function App() {
         <Route path='/jamoatchilik/videodarsliklar' element={<VideoDars/>}/>
         <Route path='/jamoatchilik/videoroliklar' element={<VideoRolik/>}/>
         <Route path='/jamoatchilik/elonlar' element={<Elonlar/>}/>
-        <Route path='/hamkorlik/:proID' element={<UniquePage/>}/>
+        <Route path='/ijtimoiy/products/:proID' element={<UniquePage/>}/>
+        <Route path='/jamoatchilik/products/:proID' element={<UniqueJamoat/>}/>
+        <Route path='/aloqa/online' element={<Online/>}/>
+        <Route path='/aloqa/offline' element={<Offline/>}/>
+        <Route path='/aloqa/boglanish' element={<Boglanish/>}/>
       </Routes>
       <Footer/>
     </div>

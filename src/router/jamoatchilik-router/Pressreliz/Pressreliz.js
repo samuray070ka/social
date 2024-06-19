@@ -7,6 +7,7 @@ import YangilikImg from '../../../assets/Rectangle 59 (1).png'
 import YangilikImg2 from '../../../assets/Rectangle 60.png'
 import YangilikImg3 from '../../../assets/Rectangle 61.png'
 import JamoArrow from '../../../assets/arrow_right_alt.png'
+import { PRODUCTS } from '../../../static/Index'
 function Pressreliz() {
   return (
     <div>
@@ -48,54 +49,18 @@ function Pressreliz() {
           <div className='banner_big'>
             <h6 className='tuzilma_h1'>Pressreliz</h6>
             <div className="jamo_wrapper">
-              <div className="jamo_box">
-                <img src={YangilikImg} alt="" />
-                <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
-                <div className='jamo_flex'>
-                  <h6 className='jamo_h6'>09-04.2023</h6>
-                  <img src={JamoArrow} alt="" />
-                </div>
-              </div>
-              <div className="jamo_box">
-                <img src={YangilikImg2} alt="" />
-                <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
-                <div className='jamo_flex'>
-                  <h6 className='jamo_h6'>09-04.2023</h6>
-                  <img src={JamoArrow} alt="" />
-                </div>
-              </div>
-              <div className="jamo_box">
-                <img src={YangilikImg3} alt="" />
-                <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
-                <div className='jamo_flex'>
-                  <h6 className='jamo_h6'>09-04.2023</h6>
-                  <img src={JamoArrow} alt="" />
-                </div>
-              </div>
-              <div className="jamo_box">
-                <img src={YangilikImg} alt="" />
-                <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
-                <div className='jamo_flex'>
-                  <h6 className='jamo_h6'>09-04.2023</h6>
-                  <img src={JamoArrow} alt="" />
-                </div>
-              </div>
-              <div className="jamo_box">
-                <img src={YangilikImg2} alt="" />
-                <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
-                <div className='jamo_flex'>
-                  <h6 className='jamo_h6'>09-04.2023</h6>
-                  <img src={JamoArrow} alt="" />
-                </div>
-              </div>
-              <div className="jamo_box">
-                <img src={YangilikImg3} alt="" />
-                <h6 className='box_h6'> Ijtimoiy inspeksiya faoliyati bilan bog‘liq yangiliklar jamlanadigan page hisoblanadi. Qatorlardan 3 tadan boshlanadi...</h6>
-                <div className='jamo_flex'>
-                  <h6 className='jamo_h6'>09-04.2023</h6>
-                  <img src={JamoArrow} alt="" />
-                </div>
-              </div>
+            {
+                PRODUCTS?.map((item, inx) => <div key={inx} className='jamo_box'>
+                  <Link to={`/jamoatchilik/products/${item.id}`}>
+                    <img className='hamkor_img' src={item.url} alt="" />
+                  </Link>
+                  <h6 className='box_h6'>{item.title}</h6>
+                  <div className='jamo_flex'>
+                    <h6 className='jamo_h6'>{item.time}</h6>
+                    <img src={JamoArrow} alt="" />
+                  </div>
+                </div>)
+              }
             </div>
           </div>
           <div className='banner_text '>

@@ -1,14 +1,17 @@
 import React from 'react'
 import '../../ijtimoiy/Ijtimoiy.css'
-import {Link} from 'react-router-dom'
+import {Link,useParams} from 'react-router-dom'
 import ArrowBottom from '../../../icons/arrowBottom'
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
 import HamkorImg from '../../../assets/Rectangle 82.png'
 import HamkorImg2 from '../../../assets/Rectangle 83.png'
 import HamkorImg3 from '../../../assets/Rectangle 84.png'
+import { PRODUCTS } from '../../../static/Index'
 
 function Hamkorlik() {
+  const param = useParams
+  let oneItem = PRODUCTS.find((item)=> item.id === param.proID)
   return (
     <div>
         <div className='container'>
@@ -49,38 +52,15 @@ function Hamkorlik() {
           <div className='banner_big '>
             <h6 className='tuzilma_h1'>Xalqaro xamkorlik</h6>
             <div className='wrapper'>
-              <Link to={`/`}>
-              <div className='hamkor_box'>
-                <img className='hamkor_img' src={HamkorImg} alt="" />
-                <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
-                <h5 className='hamkor_h2'>1-Aprel, 2024</h5>
-              </div>
-              </Link>
-              <div className='hamkor_box'>
-                <img className='hamkor_img' src={HamkorImg2} alt="" />
-                <h6 className='hamkor_h6'>Ijtimoiy himoya milliy agentligi rahbariyati Shveysariya Konfederatsiyasining Favqulodda va Muxtor elchisi Konstantin Obolenskiyni bilan uchrashdi</h6>
-                <h5 className='hamkor_h2'>8-Aprel, 2024</h5>
-              </div>
-              <div className='hamkor_box'>
-                <img className='hamkor_img' src={HamkorImg3} alt="" />
-                <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
-                <h5 className='hamkor_h2'>20-Aprel, 2024</h5>
-              </div>
-              <div className='hamkor_box'>
-                <img className='hamkor_img' src={HamkorImg} alt="" />
-                <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
-                <h5 className='hamkor_h2'>1-Aprel, 2024</h5>
-              </div>
-              <div className='hamkor_box'>
-                <img className='hamkor_img' src={HamkorImg2} alt="" />
-                <h6 className='hamkor_h6'>Ijtimoiy himoya milliy agentligi rahbariyati Shveysariya Konfederatsiyasining Favqulodda va Muxtor elchisi Konstantin Obolenskiyni bilan uchrashdi</h6>
-                <h5 className='hamkor_h2'>8-Aprel, 2024</h5>
-              </div>
-              <div className='hamkor_box'>
-                <img className='hamkor_img' src={HamkorImg3} alt="" />
-                <h6 className='hamkor_h6'>O‘zbekistonda maktabgacha ta’lim tizimida inklyuziv ta’lim amaliyotini mustahkamlash</h6>
-                <h5 className='hamkor_h2'>20-Aprel, 2024</h5>
-              </div>
+              {
+                PRODUCTS?.map((item, inx) => <div key={inx} className='hamkor_box'>
+                  <Link to={`/ijtimoiy/products/${item.id}`}>
+                    <img className='hamkor_img' src={item.url} alt="" />
+                  </Link>
+                  <h6 className='hamkor_h6'>{item.title}</h6>
+                  <h5 className='hamkor_h2'>{item.time}</h5>
+                </div>)
+              }
             </div>
           </div>
           <div className='banner_text '>

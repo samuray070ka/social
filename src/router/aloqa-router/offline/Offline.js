@@ -1,25 +1,17 @@
 import React from 'react'
+import '../../aloqa/Aloqa.css'
 import {Link} from 'react-router-dom'
 import ArrowBottom from '../../../icons/arrowBottom'
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
-import YangilikImg from '../../../assets/Rectangle 59 (2).png'
-import YangilikImg2 from '../../../assets/Rectangle 60 (2).png'
-import YangilikImg3 from '../../../assets/Rectangle 61 (2).png'
-import YangilikImg4 from '../../../assets/Rectangle 68.png'
-import YangilikImg5 from '../../../assets/Rectangle 69.png'
-import YangilikImg6 from '../../../assets/Rectangle 70.png'
-import JamoArrow from '../../../assets/arrow_right_alt.png'
-import { PRODUCTS } from '../../../static/Index'
-
-function VideoDars() {
+function Offline() {
   return (
     <div>
-         <div className='container'>
+        <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
-            <h6 className='ijtimoiy_h2'>Jamoatchilik</h6>
+            <h2 className='ijtimoiy_h2'>Aloqa</h2>
           </Link>
           <input type="text" /> <Search/>
         </div>
@@ -51,44 +43,22 @@ function VideoDars() {
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>
-            <h6 className='tuzilma_h1'>Videodarsliklar</h6>
-            <div className="jamo_wrapper">
-            {
-                PRODUCTS?.map((item, inx) => <div key={inx} className='jamo_box'>
-                  <Link to={`/jamoatchilik/products/${item.id}`}>
-                    <img className='hamkor_img' src={item.url} alt="" />
-                  </Link>
-                  <h6 className='box_h6'>{item.title}</h6>
-                  <div className='jamo_flex'>
-                    <h6 className='jamo_h6'>{item.time}</h6>
-                    <img src={JamoArrow} alt="" />
-                  </div>
-                </div>)
-              }
-            </div>
+            <h6 className='tuzilma_h1'>Offline</h6>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>
-              <li className='banner_item one'>Jamoatchilik</li>
+              <li className='banner_item one'>Aloqa</li>
               <hr />
-              <Link to={'/jamoatchilik'} className='link'>
-                <li className='banner_item '>Yangiliklar</li>
+              <Link to={'/aloqa'} className='link to'>
+                <li className='banner_item '>Online murojaat</li>
               </Link>
               <hr />
-              <Link to={'/jamoatchilik/pressreliz'} className='link'>
-                <li className='banner_item '>Pressreliz</li>
+              <Link to={'/aloqa/offline'} className='link'>
+                <li className='banner_item '>Offline murojaat</li>
               </Link>
               <hr />
-              <Link to={'/jamoatchilik/videodarsliklar'} className='link'>
-                <li className='banner_item '>Videodarsliklar</li>
-              </Link>
-              <hr />
-              <Link to={'/jamoatchilik/videoroliklar'} className='link'>
-                <li className='banner_item '>Videoroliklar</li>
-              </Link>
-              <hr />
-              <Link to={'/jamoatchilik/elonlar'} className='link'>
-                <li className='banner_item '>E’lonlar</li>
+              <Link to={'/aloqa/boglanish'} className='link'>
+                <li className='banner_item '>Biz bilan bog‘lanish</li>
               </Link>
             </ul>
           </div>
@@ -98,4 +68,4 @@ function VideoDars() {
   )
 }
 
-export default VideoDars
+export default Offline

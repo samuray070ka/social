@@ -1,0 +1,138 @@
+.sidebar_big{
+    width: 650px;
+    height: 385px;
+}
+.sidee{
+    display: flex;
+    margin-bottom: 20px;
+}
+.sidebar{
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+.sidebar_big{
+    width: 650px;
+    height: 380px;
+    background-color: #fff;
+
+}
+.yashil{
+    width: 100%;
+    height: 100px;
+    background-color: #689B63;
+    color: #fff;
+    transform: translateY(-10px);
+}
+.side_img{
+    width: 100%;
+    height: 290px;
+}
+.yashil_h6{
+    font-size: 30px;
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    padding: 10px 0;
+}
+.sidebar h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.mt{
+    margin-top: 50px;
+}
+.big_img{
+    width: 180px;
+    height: 190px;
+
+}
+.pt{
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+}
+.child_side{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.child_side span{
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.child_side h6{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.child_side svg{
+    fill: #689B63 !important; 
+    width: 24px;
+    height: 24px;
+}
+.child_side img{
+    width: 24px;
+    height: 24px;
+}
+.side_collaction{
+    list-style: none;
+}
+.side_item{
+    font-size: 16px;
+    font-weight: 400;
+    transition: .15s;
+    margin-bottom: 15px;
+}
+.side_item:active{
+    transform: translateX(20px);
+    color: #689B63;
+}
+.big_h6{
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.big_span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #689B63;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+.side_hr{
+    width: 93.5%;
+    margin: auto;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.flex_sid{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.flex_sid h6{
+    font-size: 16px;
+    font-weight: 700;
+}
+.flex_sid h6 span{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.flex_sid svg{
+    transform: translateY(2px);
+    width: 20px;
+    height: 20px;
+    fill: #689B63 !important;
+}
+.link{
+    color: #000000;
+}

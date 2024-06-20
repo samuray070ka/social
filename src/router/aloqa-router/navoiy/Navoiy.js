@@ -10,8 +10,7 @@ import Phone from '../../../icons/phone'
 import Mail from '../../../icons/mail'
 import Clock from '../../../assets/access_time.png'
 import Location from '../../../icons/location'
-
-function Boglanish() {
+function Navoiy() {
   return (
     <div>
         <div className='container'>
@@ -52,46 +51,46 @@ function Boglanish() {
           <div className='sidebar'>
             <h1>Hududiy manzillarimiz:</h1>
             <ul className='side_collaction'>
-              <Link to={'/aloqa/andijon'}className='link'>
+              <Link to={'/aloqa/andijon'} className='link'>
                 <li className='side_item'>Andijon viloyati</li>
               </Link>
-              <Link to={'/aloqa/namangan'}className='link'>
+              <Link to={'/aloqa/namangan'} className='link'>
                 <li className='side_item'>Namangan viloyati</li>
               </Link>
-              <Link to={'/aloqa/fargona'}className='link'>
+              <Link to={'/aloqa/fargona'} className='link'>
                 <li className='side_item'>Farg‘ona viloyati</li>
               </Link>
-              <Link to={'/aloqa/sirdaryo'}className='link'>
+              <Link to={'/aloqa/sirdaryo'} className='link'>
                 <li className='side_item'>Sirdaryo viloyati</li>
               </Link>
-              <Link to={'/aloqa/jizzax'}className='link'>
+              <Link to={'/aloqa/jizzax'} className='link'>
                 <li className='side_item'>Jizzax viloyati</li>
               </Link>
-              <Link to={'/aloqa/samarqand'}className='link'>
+              <Link to={'/aloqa/samarqand'} className='link'>
                 <li className='side_item'>Samarqand viloyati</li>
               </Link>
-              <Link to={'/aloqa/surxondaryo'}className='link'>
+              <Link to={'/aloqa/surxondaryo'} className='link'>
                 <li className='side_item'>Surxondaryo viloyati</li>
               </Link>
-              <Link to={'/aloqa/qashqadaryo'}className='link'>
+              <Link to={'/aloqa/qashqadaryo'} className='link'>
                 <li className='side_item'>Qashqadaryo viloyati</li>
               </Link>
-              <Link to={'/aloqa/navoiy'}className='link'>
+              <Link to={'/aloqa/navoiy'} className='link'>
                 <li className='side_item'>Navoiy viloyati</li>
               </Link>
-              <Link to={'/aloqa/buxoro'}className='link'>
+              <Link to={'/aloqa/buxoro'} className='link'>
                 <li className='side_item'>Buxoro viloyati</li>
               </Link>
-              <Link to={'/aloqa/toshkent-viloyat'}className='link'>
+              <Link to={'/aloqa/toshkent-viloyat'} className='link'>
                 <li className='side_item'>Toshkent viloyati</li>
               </Link>
-              <Link to={'/aloqa/toshkent-shahri'}className='link'>
+              <Link to={'/aloqa/toshkent-shahri'} className='link'>
                 <li className='side_item'>Toshkent shahri</li>
               </Link>
-              <Link to={'/aloqa/xorazm'}className='link'>
+              <Link to={'/aloqa/xorazm'} className='link'>
                 <li className='side_item'>Xorazm viloyati</li>
               </Link>
-              <Link to={'/aloqa/qoraqalpoq'}className='link'>
+              <Link to={'/aloqa/qoraqalpoq'} className='link'>
                 <li className='side_item'>Qoraqalpog‘iston Respublikasi</li>
               </Link>
 
@@ -157,4 +156,4 @@ function Boglanish() {
   )
 }
 
-export default Boglanish
+export default Navoiy

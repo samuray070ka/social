@@ -38,6 +38,20 @@ import UniqueJamoat from './router/unique-jamoat/index'
 import Online from './router/aloqa-router/online/Online';
 import Offline from './router/aloqa-router/offline/Offline';
 import Boglanish from './router/aloqa-router/boglanish/Boglanish';
+import Andijon from './router/aloqa-router/andijon/Andijon';
+import Namangan from './router/aloqa-router/namangan/Namangan';
+import Fargona from './router/aloqa-router/fagona/Fargona';
+import Sirdaryo from './router/aloqa-router/sirdaryo/Sirdaryo';
+import Jizzax from './router/aloqa-router/jizzax/Jizzax';
+import Samarqand from './router/aloqa-router/samarqand/Samarqand';
+import Surxondaryo from './router/aloqa-router/surxondaryo/Surxondaryo';
+import Qashqadaryo from './router/aloqa-router/qashqadaryo/Qashqadaryo';
+import Navoiy from './router/aloqa-router/navoiy/Navoiy';
+import Buxoro from './router/aloqa-router/buxoro/Buxoro';
+import ToshkentViloyat from './router/aloqa-router/toshkent-viloyat/ToshkentViloyat';
+import ToshkentShahri from './router/aloqa-router/toshkent-shahri/ToshkentShahri';
+import Xorazm from './router/aloqa-router/xorazm/Xorazm';
+import Qoraqalpoq from './router/aloqa-router/qoraqalpoq/Qoraqalpoq';
 
 
 function App() {
@@ -81,6 +95,27 @@ function App() {
         <Route path='/aloqa/online' element={<Online/>}/>
         <Route path='/aloqa/offline' element={<Offline/>}/>
         <Route path='/aloqa/boglanish' element={<Boglanish/>}/>
+        <Route path='/aloqa/andijon' element={<Andijon/>}/>
+        <Route path='/aloqa/namangan' element={<Namangan/>}/>
+        <Route path='/aloqa/fargona' element={<Fargona/>}/>
+        <Route path='/aloqa/sirdaryo' element={<Sirdaryo/>}/>
+        <Route path='/aloqa/jizzax' element={<Jizzax/>}/>
+        <Route path='/aloqa/samarqand' element={<Samarqand/>}/>
+        <Route path='/aloqa/surxondaryo' element={<Surxondaryo/>}/>
+        <Route path='/aloqa/qashqadaryo' element={<Qashqadaryo/>}/>
+        <Route path='/aloqa/navoiy' element={<Navoiy/>}/>
+        <Route path='/aloqa/buxoro' element={<Buxoro/>}/>
+        <Route path='/aloqa/toshkent-viloyat' element={<ToshkentViloyat/>}/>
+        <Route path='/aloqa/toshkent-shahri' element={<ToshkentShahri/>}/>
+        <Route path='/aloqa/xorazm' element={<Xorazm/>}/>
+        <Route path='/aloqa/qoraqalpoq' element={<Qoraqalpoq/>}/>
+
+
+
+
+
+
+        
       </Routes>
       <Footer/>
     </div>

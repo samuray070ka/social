@@ -125,7 +125,7 @@ function Boglanish() {
               </div>
             </div>
             </div>
-            <h6 className='big_h6'>Ism familiya otasining ismi</h6>
+            <h6 className='big_h6 nim'>Ism familiya otasining ismi</h6>
             <h6 className='big_span'>Ijtimoiy inspeksiya Andijon viloyati boshqarmasi mas’ul xodimi</h6>
             <hr className='side_hr'></hr>
             <div className='flex_sid'>

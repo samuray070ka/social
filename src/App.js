@@ -52,6 +52,7 @@ import ToshkentViloyat from './router/aloqa-router/toshkent-viloyat/ToshkentVilo
 import ToshkentShahri from './router/aloqa-router/toshkent-shahri/ToshkentShahri';
 import Xorazm from './router/aloqa-router/xorazm/Xorazm';
 import Qoraqalpoq from './router/aloqa-router/qoraqalpoq/Qoraqalpoq';
+import Api from './components/navbar/Api';
 
 
 function App() {
@@ -115,9 +116,11 @@ function App() {
 
 
 
+
         
       </Routes>
       <Footer/>
+      <Api/>
     </div>
   );
 }

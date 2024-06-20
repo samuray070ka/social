@@ -89,11 +89,11 @@
     transition: .15s;
     margin-bottom: 15px;
 }
-.side_item:active{
+/* .side_item:active{
     transform: translateX(20px);
     color: #689B63;
-}
-.big_h6{
+} */
+.nim{
     padding-left: 20px;
     font-size: 24px;
     font-weight: 700;

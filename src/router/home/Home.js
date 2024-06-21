@@ -25,6 +25,12 @@ import ArrowBottom from '../../icons/arrowBottom'
 import Calendar from '../../icons/calendar'
 
 function Home() {
+  const pagination = {
+    clickable: true,
+    // renderBullet: function (index, className) {
+    //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+    // },
+  };
   return (
     <div className='home'>
       <div className='container'>
@@ -58,10 +64,7 @@ function Home() {
       </div>
 
       <Swiper
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={pagination}
         modules={[Pagination]}
         className="mySwiper"
       >

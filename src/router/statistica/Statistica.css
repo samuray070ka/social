@@ -1,0 +1,13 @@
+.containers{
+    background: #d4bdde;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.chartBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}

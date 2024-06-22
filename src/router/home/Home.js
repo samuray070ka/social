@@ -187,12 +187,14 @@ function Home() {
         <div className="banner_three">
           <h3 className='three_h3'>O‘rganilgan obyektlar</h3>
           <div className='three_flex container'>
-            <div className='flex_box'>
-              <div className='circle'>
-                <h2 className='circle_h2'>80</h2>
-              </div>
-              <p className='flex_p'>Qulay muhit</p>
-            </div>
+            <Link to={'/qulay-muhit'} className='link'>
+                <div className='flex_box'>
+                  <div className='circle'>
+                    <h2 className='circle_h2'>80</h2>
+                  </div>
+                  <p className='flex_p'>Qulay muhit</p>
+                </div>
+            </Link>
             <div className='flex_box'>
               <div className='circle'>
                 <h2 className='circle_h2'>185</h2>

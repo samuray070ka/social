@@ -356,7 +356,7 @@ function Nizom() {
               <li className='banner_item one'>Ijtimoiy inspeksiya</li>
               <hr />
               <Link to={'/ijtimoiy'} className='link'>
-                <li className='banner_item'>Ijtimoiy inspeksiya</li>
+                <li className='banner_item'>Inspeksiya haqida</li>
               </Link>
               <hr />
               <Link to={'/ijtimoiy/nizom'} className='link'>

@@ -53,7 +53,41 @@ import ToshkentShahri from './router/aloqa-router/toshkent-shahri/ToshkentShahri
 import Xorazm from './router/aloqa-router/xorazm/Xorazm';
 import Qoraqalpoq from './router/aloqa-router/qoraqalpoq/Qoraqalpoq';
 import Api from './components/navbar/Api';
-
+import IjtimoiySoha from './router/qulay-muhit/Ijtimoiy soha obyektlari/IjtimoiySoha';
+import Inson from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/Inson';
+import Hududlar from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/Hududlar';
+import Viloyat from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/Viloyat';
+import Nnamangan from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/Nnamangan';
+import Fargonaa from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/fargona';
+import Sirdaryoo from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/sirdaryo';
+import Jizzaxx from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/jizzax';
+import Samarqandd from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/samarqand';
+import Surxondaryoo from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/surxondaryo';
+import Qashqadaryoo from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/qashqadaryo';
+import Navoiyy from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/navoiy';
+import Buxoroo from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/buxoro';
+import ToshkentShahrii from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/toshkentShahri';
+import ToshkentViloyatii from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/toshkentViloyati';
+import Xorazmm from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/xorazm';
+import Qoraqalpoqq from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/qoraqalpoq';
+import Davlat from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat/Davlat';
+import Hududlarr from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat/hududlarr/Hududlarr';
+import Ayollar from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/ayollar';
+import Hud from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/Hud';
+import Anjan from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/anjan';
+import Far from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/far';
+import Bux from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/bux';
+import Jiz from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/jiz';
+import Nam from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/nam';
+import Navo from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/navo';
+import Qash from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/qash';
+import Qor from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/qor';
+import Sam from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/sam';
+import Xor from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/xor';
+import ToshVilo from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/toshVilo';
+import Tosh from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/tosh';
+import Sur from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/sur';
+import Sir from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/sir';
 
 function App() {
   return (
@@ -110,7 +144,41 @@ function App() {
         <Route path='/aloqa/toshkent-shahri' element={<ToshkentShahri/>}/>
         <Route path='/aloqa/xorazm' element={<Xorazm/>}/>
         <Route path='/aloqa/qoraqalpoq' element={<Qoraqalpoq/>}/>
-
+        <Route path='/qulay-muhit' element={<IjtimoiySoha/>}/>
+        <Route path='/qulay-muhit/inson' element={<Inson/>}/>
+        <Route path='/qulay-muhit/inson/hududlar' element={<Hududlar/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/viloyat' element={<Viloyat/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/namangan' element={<Nnamangan/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/fargona' element={<Fargonaa/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/sirdaryo' element={<Sirdaryoo/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/jizzax' element={<Jizzaxx/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/samarqand' element={<Samarqandd/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/surxondaryo' element={<Surxondaryoo/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/qashqadaryo' element={<Qashqadaryoo/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/navoiy' element={<Navoiyy/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/buxoro' element={<Buxoroo/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/toshkent-viloyati' element={<ToshkentViloyatii/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/toshkent-shahri' element={<ToshkentShahrii/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/xorazm' element={<Xorazmm/>}/>
+        <Route path='/qulay-muhit/inson/hududlar/qoraqalpoq' element={<Qoraqalpoqq/>}/>
+        <Route path='/qulay-muhit/davlat/davlat' element={<Davlat/>}/>
+        <Route path='/qulay-muhit/davlat/hududlarr' element={<Hududlarr/>}/>
+        <Route path='/qulay-muhit/ayollar' element={<Ayollar/>}/>
+        <Route path='/qulay-muhit/ayollar/hud' element={<Hud/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/anjan' element={<Anjan/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/bux' element={<Bux/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/far' element={<Far/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/jiz' element={<Jiz/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/nam' element={<Nam/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/navo' element={<Navo/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/qash' element={<Qash/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/qor' element={<Qor/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/sam' element={<Sam/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/sir' element={<Sir/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/sur' element={<Sur/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/tosh' element={<Tosh/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/toshVilo' element={<ToshVilo/>}/>
+        <Route path='/qulay-muhit/ayollar/hud/xor' element={<Xor/>}/>
 
 
 

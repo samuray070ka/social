@@ -1,0 +1,131 @@
+.soha{
+    width: 100%;
+    background-color: #f9fafc;
+    /* margin-top: 490px; */
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.soha-h6{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0;
+    color: #000000;
+}
+.soha_flex{
+    display: flex;
+    align-items: center;
+    width:70%;
+}
+.soha_small{
+    width: 130px;
+    height: 50px;
+    border: 1px solid #000000;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .1s;
+}
+.soha_small:active{
+    border: 2px solid #689B63;
+    color: #689B63;
+}
+.on{
+    margin-left: 10px;
+}
+.o{
+    margin-right: 30px;
+}
+.biig_flex{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: .1s;
+}
+.saha_biig{
+    width: 50%;
+}
+.biig_flex:active{
+    outline: 3px solid #689B63;
+    color: #689B63;
+}
+.biig_h6{
+    margin-left: 10px;
+}
+.biiig_flex{
+    width: 100%;
+}
+.box_fle{
+    display: flex;
+}
+.table{
+    width: 100%;
+    margin-left: 20px;
+}
+.table tr{
+    width: 100%;
+    height: 50px;
+    background-color: #E8EBEE;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+.one_th{
+    color: #689B63;
+    font-size: 12px;
+    font-weight: 700;
+    width: 100px;
+    display: flex;
+    justify-content: right;
+}
+.one_td{
+    margin-left: 10px;
+}
+.two_th{
+    font-size: 12px;
+    font-weight: 700;
+    width: 220px;
+    padding-left: 20px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+}
+.two_td{
+    margin-left: 10px;
+    margin: auto;
+    text-align: center;
+    width: 100px;
+}
+.table_hr{
+    width: 2px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+.three_th{
+    font-size: 12px;
+    font-weight: 400;
+    width: 220px;
+    padding-left: 20px;
+    /* display: flex; */
+    font-size: 16px;
+    font-weight: 400;
+}
+.three_td{
+    margin-left: 10px;
+    margin: auto;
+    font-weight: 400;
+    text-align: center;
+    width: 100px;
+}
+.ddsa{
+    font-size: 13px;
+}

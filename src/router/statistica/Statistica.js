@@ -4,8 +4,47 @@ import {Link} from 'react-router-dom'
 import ArrowBottom from '../../icons/arrowBottom'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../icons/search'
-
 function Statistica() {
+  const ctx2 = document.getElementById('#doughnut');
+
+new doughnut(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+const ctx = document.getElementById('#barchart');
+
+  new barchart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
   return (
     <div>
       <div className='container'>
@@ -45,6 +84,12 @@ function Statistica() {
         <div className='ijti_ban  container'>
           <div className='banner_big'>
             <h6>Statistika</h6>
+            <div className="containers">
+        <div className="chartBox">
+        <div className="chart"><canvas id="barchart"></canvas></div>
+        <div className="chart"><canvas id="doughnut"></canvas></div>
+        </div>
+        </div>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>

@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useState } from 'react'
 import './Nizom.css'
 import {Link} from 'react-router-dom'
 import ArrowBottom from '../../../icons/arrowBottom'
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
 function Nizom() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const handleClick = (index) => {
+    setActiveIndex(index);
+  };
   return (
     <div className='nizom'>
         <div className='container'>
@@ -351,11 +356,11 @@ function Nizom() {
               <li className='banner_item one'>Ijtimoiy inspeksiya</li>
               <hr />
               <Link to={'/ijtimoiy'} className='link'>
-              <li className='banner_item '>Inspeksiya haqida</li>
+                <li className='banner_item'>Ijtimoiy inspeksiya</li>
               </Link>
               <hr />
               <Link to={'/ijtimoiy/nizom'} className='link'>
-                <li className='banner_item '>Nizom</li>
+                <li className='banner_item'>Nizom</li>
               </Link>
               <hr />
               <Link to={'/ijtimoiy/tuzilma'} className='link'>

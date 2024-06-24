@@ -67,15 +67,20 @@ function Hududlarr() {
             </div>
             <div className='big_box'>
                 <table className='table'>
-                    <Link className='link' to={'/qulay-muhit/inson'}>
                     <tr>
+                    <Link className='link tooo ' to={'/qulay-muhit/inson/hududlar'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Inson” ijtimoiy xizmatlar markazlari</td>
-                    </tr>
                     </Link>
-
-
+                    </tr>
+                        <tr>
+                    <Link to={'/qulay-muhit/inson'} className='link tooo '>
+                            <th className='one_th'>208 ta</th>
+                            <div className='table_hr'></div>
+                            <td className='one_td'>Davlat xizmatlari markazlari</td>
+                    </Link>
+                        </tr>
 
                     <tr>
                         <th className='two_th'>Hududlar</th>
@@ -86,15 +91,15 @@ function Hududlarr() {
                     </tr>
 
 
-                    <Link className='link' to={'/qulay-muhit/davlat/davlat'}>
                         <tr>
+                    <Link className='link too e' to={'/qulay-muhit/davlat/davlat'}>
                         <th className='two_th'>Toshkent viloyati</th>
                             <div className='table_hr'></div>
                             <td className='two_td'>16 ta</td>
                             <div className='table_hr'></div>
                             <td className='two_td'>70 ta</td>
-                        </tr>
                     </Link>
+                        </tr>
                     <tr>
                     <li className='three_th'>Yangiyo‘l shahri</li>
                         <div className='table_hr'></div>
@@ -102,136 +107,7 @@ function Hududlarr() {
                         <div className='table_hr'></div>
                         <td className='three_td'>70 ta</td>
                     </tr>
-{/* 
-                  
 
-
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/namangan'}>
-                    <tr>
-                        <th className='two_th'>Namangan viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>14 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>120 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/fargona'}>
-                    <tr>
-                        <th className='two_th'>Farg‘ona viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>19 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>147 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/sirdaryo'}>
-                        <tr>
-                            <th className='two_th'>Sirdaryo viloyati</th>
-                            <div className='table_hr'></div>
-                            <td className='two_td'>11 ta</td>
-                            <div className='table_hr'></div>
-                            <td className='two_td'>30 ta</td>
-                        </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/jizzax'}>
-                    <tr>
-                        <th className='two_th'>Jizzax viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>13 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>111 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/samarqand'}>
-
-                    <tr>
-                        <th className='two_th'>Samarqand viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>16 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>72 ta</td>
-                    </tr>
-                    </Link>
-
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/surxondaryo'}>
-
-                    <tr>
-                        <th className='two_th'>Surxondaryo viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>15 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>106 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/qashqadaryo'}>
-                    
-                    <tr>
-                        <th className='two_th'>Qashqadaryo viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>16 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>32 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/navoiy'}>
-
-                    <tr>
-                        <th className='two_th'>Navoiy viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>16 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>32 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/buxoro'}>
-                    
-                    <tr>
-                        <th className='two_th'>Buxoro viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>16 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>32 ta</td>
-                    </tr>
-                    </Link>
-                    
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/toshkent-viloyati'}>
-                    <tr>
-                        <th className='two_th'>Toshkent viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>16 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>32 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/toshkent-shahri'}>
-
-                    <tr>
-                        <th className='two_th'>Toshkent shahri</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>16 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>32 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/xorazm'}>
-
-                    <tr>
-                        <th className='two_th'>Xorazm viloyati</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>16 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>32 ta</td>
-                    </tr>
-                    </Link>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar/qoraqalpoq'}>
-                    <tr>
-                        <th className='two_th ddsa'>Qoraqalpog‘iston Respublikasi</th>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>16 ta</td>
-                        <div className='table_hr'></div>
-                        <td className='two_td'>32 ta</td>
-                    </tr>
-                    </Link> */}
                     <tr>
                         <th className='two_th'>Jami</th>
                         <div className='table_hr'></div>
@@ -242,15 +118,13 @@ function Hududlarr() {
 
 
 
+                    
                     <tr>
-                        <th className='one_th'>208 ta</th>
-                        <div className='table_hr'></div>
-                        <td className='one_td'>Davlat xizmatlari markazlari</td>
-                    </tr>
-                    <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/ayollar/hud'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
+                    </Link>
                     </tr>
                     <tr>
                         <th className='one_th'>208 ta</th>

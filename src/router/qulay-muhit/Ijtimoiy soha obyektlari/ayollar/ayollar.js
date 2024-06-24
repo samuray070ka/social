@@ -67,27 +67,27 @@ function ayollar() {
             </div>
             <div className='big_box'>
                 <table className='table'>
-                    <Link className='link' to={'/qulay-muhit/ayollar'}>
                     <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/inson/hududlar'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Inson” ijtimoiy xizmatlar markazlari</td>
-                    </tr>
                     </Link>
-                   <Link className='link' to={'/qulay-muhit/davlat/davlat'}>
+                    </tr>
                         <tr>
+                   <Link className='link tooo' to={'/qulay-muhit/davlat/davlat'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Davlat xizmatlari markazlari</td>
-                        </tr>
                    </Link>
-                   <Link to={'/qulay-muhit/ayollar/hud'} className='link'>
+                        </tr>
                     <tr>
+                   <Link to={'/qulay-muhit/ayollar/hud'} className='link tooo'>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
-                    </tr>
                    </Link>
+                    </tr>
                     <tr>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>

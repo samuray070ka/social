@@ -67,57 +67,79 @@ function Inson() {
             </div>
             <div className='big_box'>
                 <table className='table'>
-                    <Link className='link' to={'/qulay-muhit/inson/hududlar'}>
                     <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/inson/hududlar'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Inson” ijtimoiy xizmatlar markazlari</td>
-                    </tr>
                     </Link>
-                   <Link className='link' to={'/qulay-muhit/davlat/davlat'}>
-                        <tr>
+                    </tr>
+                    <tr>
+                    <Link className='link  tooo' to={'/qulay-muhit/davlat/davlat'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Davlat xizmatlari markazlari</td>
-                        </tr>
-                   </Link>
-                    <Link className='link' to={'/qulay-muhit/ayollar/hud'}>
-                    <tr>
-                        <th className='one_th'>208 ta</th>
-                        <div className='table_hr'></div>
-                        <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
-                    </tr>
                     </Link>
+                    </tr>
+
+                        <tr>
+                        <Link className='link tooo' to={'/qulay-muhit/ayollar/hud'}>
+                            <th className='one_th'>208 ta</th>
+                            <div className='table_hr'></div>
+                            <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
+                        </Link>
+                        </tr>
+
                     <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/bolalar/hududd'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Bolalar va Mehribonlik uylari</td>
+                    </Link>
                     </tr>
+                    
                     <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/saxovat/hudd'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Saxovat, Muruvvat, Sanatoriy va protezlash markazlari binolari</td>
+                    </Link>
                     </tr>
+
+
                     <tr>
+                   <Link className='link tooo' to={'/qulay-muhit/talim/hududlar'}> 
                         <th className='one_th'>0 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ta’lim obyektlari </td>
+                   </Link>
                     </tr>
+
+
                     <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/sogliq/hud'}>
                         <th className='one_th'>0 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Sog‘liqni saqlash obyektlari</td>
+                    </Link>
                     </tr>
+
+                    
                     <tr>
+                        <Link className='link tooo' to={'/qulay-muhit/ishga-marhamat/hud'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ishga marxamat monomarkazlari obyektlari</td>
+                        </Link>
                     </tr>
+
+
                     <tr>
                         <th className='one_th'>14 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Davlat xizmatini rivojlantirish agentligi obyektlari</td>
                     </tr>
+
                 </table>
             </div>
             </div>

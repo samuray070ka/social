@@ -67,7 +67,7 @@ function nam() {
                 </div>
             </div>
             <div className='big_box'>
-                <table className='table'>
+            <table className='table'>
                     <Link className='link' to={'/qulay-muhit/ayollar'}>
                     <tr>
                         <th className='one_th'>208 ta</th>
@@ -76,23 +76,29 @@ function nam() {
                     </tr>
                     </Link>
 
-
                     <tr>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Davlat xizmatlari markazlari</td>
                     </tr>
-                    <Link to={'/qulay-muhit/ayollar'} className='link'>
+                    <tr>
+                        <th className='one_th'>208 ta</th>
+                        <div className='table_hr'></div>
+                        <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
+                    </tr>
+
+                    <tr>
+                        <th className='two_th'>Hududlar</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>O‘ganishlar</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>Kamchiliklar</td>
+                    </tr>
+
+
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/anjan'}>
                         <tr>
-                            <th className='one_th'>208 ta</th>
-                            <div className='table_hr'></div>
-                            <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
-                        </tr>
-                    </Link>
-                    
-                    <Link className='link' to={'/qulay-muhit/ayollar/hud'}>
-                        <tr>
-                        <li className='three_th'>Andijon viloyati</li>
+                        <th className='two_th'>Andijon viloyati</th>
                             <div className='table_hr'></div>
                             <td className='two_td'>16 ta</td>
                             <div className='table_hr'></div>
@@ -100,22 +106,164 @@ function nam() {
                         </tr>
                     </Link>
 
-                  
-
-
                     <Link className='link' to={'/qulay-muhit/ayollar/hud'}>
                     <tr>
-                        <li className='three_th'>Namangan viloyati</li>
+                        <th className='two_th'>Namangan viloyati</th>
                         <div className='table_hr'></div>
                         <td className='two_td'>14 ta</td>
                         <div className='table_hr'></div>
                         <td className='two_td'>120 ta</td>
                     </tr>
                     </Link>
+                    <tr>
+                        <li className='three_th'>Namangan shahri</li>
+                        <div className='table_hr'></div>
+                        <td className='three_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='three_td'>70 ta</td>
+                    </tr>
+                    <tr>
+                        <li className='three_th'>Namangan viloyati</li>
+                        <div className='table_hr'></div>
+                        <td className='three_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='three_td'>70 ta</td>
+                    </tr>
                     
 
 
 
+
+
+
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/far'}>
+                    <tr>
+                        <th className='two_th'>Farg‘ona viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>19 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>147 ta</td>
+                    </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/sir'}>
+                        <tr>
+                            <th className='two_th'>Sirdaryo viloyati</th>
+                            <div className='table_hr'></div>
+                            <td className='two_td'>11 ta</td>
+                            <div className='table_hr'></div>
+                            <td className='two_td'>30 ta</td>
+                        </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/jiz'}>
+                    <tr>
+                        <th className='two_th'>Jizzax viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>13 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>111 ta</td>
+                    </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/sam'}>
+
+                    <tr>
+                        <th className='two_th'>Samarqand viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>72 ta</td>
+                    </tr>
+                    </Link>
+
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/sur'}>
+
+                    <tr>
+                        <th className='two_th'>Surxondaryo viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>15 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>106 ta</td>
+                    </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/qash'}>
+                    
+                    <tr>
+                        <th className='two_th'>Qashqadaryo viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>32 ta</td>
+                    </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/navo'}>
+
+                    <tr>
+                        <th className='two_th'>Navoiy viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>32 ta</td>
+                    </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/bux'}>
+                    
+                    <tr>
+                        <th className='two_th'>Buxoro viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>32 ta</td>
+                    </tr>
+                    </Link>
+                    
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/toshVilo'}>
+                    <tr>
+                        <th className='two_th'>Toshkent viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>32 ta</td>
+                    </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/tosh'}>
+
+                    <tr>
+                        <th className='two_th'>Toshkent shahri</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>32 ta</td>
+                    </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/xor'}>
+
+                    <tr>
+                        <th className='two_th'>Xorazm viloyati</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>32 ta</td>
+                    </tr>
+                    </Link>
+                    <Link className='link' to={'/qulay-muhit/ayollar/hud/qor'}>
+                    <tr>
+                        <th className='two_th'>Qoraqalpog‘iston Respublikasi</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>32 ta</td>
+                    </tr>
+                    </Link>
+                    <tr>
+                        <th className='two_th'>Jami</th>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>16 ta</td>
+                        <div className='table_hr'></div>
+                        <td className='two_td'>32 ta</td>
+                    </tr>
+
+
+
+                   
                     <tr>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>

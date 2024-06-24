@@ -72,11 +72,15 @@
 .table tr{
     width: 100%;
     height: 50px;
-    background-color: #E8EBEE;
+    background-color: #fff;
     display: flex;
     align-items: center;
     padding-left: 10px;
     margin-bottom: 5px;
+}
+.too{
+    display: flex;
+    align-items: center;
 }
 .one_th{
     color: #689B63;
@@ -128,4 +132,39 @@
 }
 .ddsa{
     font-size: 13px;
+}
+.table tr:nth-child(even){
+    background-color: #E8EBEE;
+}
+.two_the{
+    font-size: 12px;
+    font-weight: 700;
+    width: 220px;
+    padding-left: 20px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid red;
+}
+.two_tde{
+    font-size: 12px;
+    font-weight: 400;
+    width: 140px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    font-size: 16px;
+}
+.too{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tooo{
+    display: flex;
+    align-items: center;
+}
+.r{
+    margin-left: 10px;
 }

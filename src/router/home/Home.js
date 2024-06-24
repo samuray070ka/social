@@ -64,9 +64,12 @@ function Home() {
       </div>
 
       <Swiper
-        pagination={pagination}
-        modules={[Pagination]}
-        className="mySwiper"
+      slidesPerView={1}
+      pagination={{
+        pagination
+      }}
+      modules={[Pagination]}
+      className="mySwiper"
       >
         <SwiperSlide>
           <div className='container'>
@@ -184,9 +187,13 @@ function Home() {
         </div>
         <button className='home_btn_two'>Batafsil</button>
 
-        <div className="banner_three">
+        
+      </div>
+      <div>
+      <div className="banner_three ">
+          <div className='container'>
           <h3 className='three_h3'>O‘rganilgan obyektlar</h3>
-          <div className='three_flex container'>
+          <div className='three_flex'>
             <Link to={'/qulay-muhit'} className='link'>
                 <div className='flex_box'>
                   <div className='circle'>
@@ -214,9 +221,10 @@ function Home() {
               <p className='flex_p'>Nogironlikni belgilash</p>
             </div>
           </div>
+          </div>
         </div>
-        <h4 className='home_h4'>Hukumat portallari</h4>
-        <div className="banner_small">
+        <h4 className='home_h4 container'>Hukumat portallari</h4>
+        <div className="banner_small container">
           <div className='flex_img'>
             <img className='img' src={group27} alt="" />
             <button className='flex_btn'></button>

@@ -2,7 +2,7 @@ import './App.css';
 import Home from './router/home/Home';
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route } from "react-router-dom"
 import NavbarBottom from './components/navbarBottom/NavbarBottom';
 import Aloqa from './router/aloqa/Aloqa'
 import Faoliyat from './router/faoliyat/Faoliyat'
@@ -88,6 +88,54 @@ import ToshVilo from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/
 import Tosh from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/tosh';
 import Sur from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/sur';
 import Sir from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/sir';
+import Bolalar from './router/qulay-muhit/Ijtimoiy soha obyektlari/bolalar/Bolalar';
+import Hududd from './router/qulay-muhit/Ijtimoiy soha obyektlari/bolalar/hududd/Hududd';
+import Farg from './router/qulay-muhit/Ijtimoiy soha obyektlari/bolalar/hududd/viloyat/farg';
+import Qashq from './router/qulay-muhit/Ijtimoiy soha obyektlari/bolalar/hududd/viloyat/qashq';
+import Qora from './router/qulay-muhit/Ijtimoiy soha obyektlari/bolalar/hududd/viloyat/qora';
+import Sama from './router/qulay-muhit/Ijtimoiy soha obyektlari/bolalar/hududd/viloyat/sama';
+import ToshSh from './router/qulay-muhit/Ijtimoiy soha obyektlari/bolalar/hududd/viloyat/toshSh';
+import ToshVil from './router/qulay-muhit/Ijtimoiy soha obyektlari/bolalar/hududd/viloyat/toshVil';
+import Saxovat from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/Saxovat'
+import Hudd from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/Hudd'
+import Andi from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/andi'
+import Buxo from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/buxo'
+import Fargo from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/fargo'
+import Jizz from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/jizz'
+import Nama from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/nama'
+import Navoi from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/navoi'
+import Qashqa from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/qashqa'
+import Qoraq from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/qoraq'
+import Samar from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/samar'
+import Sird from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/sird'
+import Surx from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/surx'
+import ToSh from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/toSh'
+import ToshViloy from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/toshViloy'
+import Xoraz from './router/qulay-muhit/Ijtimoiy soha obyektlari/saxovat/hudd/viloyat/xoraz'
+import Talim from './router/qulay-muhit/Ijtimoiy soha obyektlari/talim/Talim';
+import HududLar from './router/qulay-muhit/Ijtimoiy soha obyektlari/talim/hududlar/Hududlar'
+import MMT from './router/qulay-muhit/Ijtimoiy soha obyektlari/talim/hududlar/viloyat/MMT';
+import OTM from './router/qulay-muhit/Ijtimoiy soha obyektlari/talim/hududlar/viloyat/OTM';
+import Maktab from './router/qulay-muhit/Ijtimoiy soha obyektlari/talim/hududlar/viloyat/Maktab';
+import Sogliq from "./router/qulay-muhit/Ijtimoiy soha obyektlari/sog'liq/Sogliq"
+import Huud from "./router/qulay-muhit/Ijtimoiy soha obyektlari/sog'liq/hud/Hud"
+import TOSH from "./router/qulay-muhit/Ijtimoiy soha obyektlari/sog'liq/hud/viloyat/TOSH"
+import Anjann from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/anjann';
+import Buxx from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/buxx';
+import Farr from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/farr';
+import Jizzz from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/jizzz';
+import Namm from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/namm';
+import Sirr from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/sirr';
+import Navoo from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/navoo';
+import Surr from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/surr';
+import Toshsh from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/toshsh';
+import Toshvilo from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/toshvilo';
+import Xorr from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/xorr';
+import Qorr from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/qorr';
+import Qashsh from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/qashsh';
+import Samm from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/samm';
+import Ishga from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/Ishga'
+import Huuud from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/Hud'
 
 function App() {
   return (
@@ -179,7 +227,54 @@ function App() {
         <Route path='/qulay-muhit/ayollar/hud/tosh' element={<Tosh/>}/>
         <Route path='/qulay-muhit/ayollar/hud/toshVilo' element={<ToshVilo/>}/>
         <Route path='/qulay-muhit/ayollar/hud/xor' element={<Xor/>}/>
-
+        <Route path='/qulay-muhit/bolalar' element={<Bolalar/>}/>
+        <Route path='/qulay-muhit/bolalar/hududd' element={<Hududd/>}/>
+        <Route path='/qulay-muhit/bolalar/hududd/farg' element={<Farg/>}/>
+        <Route path='/qulay-muhit/bolalar/hududd/qashq' element={<Qashq/>}/>
+        <Route path='/qulay-muhit/bolalar/hududd/qora' element={<Qora/>}/>
+        <Route path='/qulay-muhit/bolalar/hududd/sama' element={<Sama/>}/>
+        <Route path='/qulay-muhit/bolalar/hududd/toshVil' element={<ToshVil/>}/>
+        <Route path='/qulay-muhit/bolalar/hududd/toshSh' element={<ToshSh/>}/>
+        <Route path='/qulay-muhit/saxovat' element={<Saxovat/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd' element={<Hudd/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/andi' element={<Andi/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/fargo' element={<Fargo/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/buxo' element={<Buxo/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/jizz' element={<Jizz/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/nama' element={<Nama/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/navoi' element={<Navoi/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/qashqa' element={<Qashqa/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/qoraq' element={<Qoraq/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/sama' element={<Samar/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/sird' element={<Sird/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/surx' element={<Surx/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/toSh' element={<ToSh/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/toshViloy' element={<ToshViloy/>}/>
+        <Route path='/qulay-muhit/saxovat/hudd/xoraz' element={<Xoraz/>}/>
+        <Route path='/qulay-muhit/talim' element={<Talim/>}/>
+        <Route path='/qulay-muhit/talim/hududlar' element={<HududLar/>}/>
+        <Route path='/qulay-muhit/talim/hududlar/mmt' element={<MMT/>}/>
+        <Route path='/qulay-muhit/talim/hududlar/otm' element={<OTM/>}/>
+        <Route path='/qulay-muhit/talim/hududlar/maktab' element={<Maktab/>}/>
+        <Route path='/qulay-muhit/sogliq' element={<Sogliq/>}/>
+        <Route path='/qulay-muhit/sogliq/hud' element={<Huud/>}/>
+        <Route path='/qulay-muhit/sogliq/TOSH' element={<TOSH/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat' element={<Ishga/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud' element={<Huuud/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/anjann' element={<Anjann/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/buxx' element={<Buxx/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/farr' element={<Farr/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/jizzz' element={<Jizzz/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/namm' element={<Namm/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/navoo' element={<Navoo/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/qashsh' element={<Qashsh/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/qorr' element={<Qorr/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/samm' element={<Samm/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/sirr' element={<Sirr/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/surr' element={<Surr/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/toshsh' element={<Toshsh/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/toshvilo' element={<Toshvilo/>}/>
+        <Route path='/qulay-muhit/ishga-marhamat/hud/xorr' element={<Xorr/>}/>
 
 
 

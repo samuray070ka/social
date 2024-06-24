@@ -210,10 +210,8 @@
 }
 .banner_three{
     width: 100%;
-    position: absolute;
-    left: 0;
-    height: 60vh;
     background-color: #689B63;
+    padding-bottom: 50px;
 }
 .three_flex{
     display: flex;
@@ -235,6 +233,16 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: .2s;
+}
+.flex_box:hover{
+    transform: scale(1.03);
+    background:linear-gradient( 45deg, #77A572, #a0c09c65, #689B63, #a0c09c65, #77A572 );
+    border-radius: 6px;
+}
+.flex_box:active{
+    transform: scale(1.05);
+
 }
 .circle{
     width: 180px;
@@ -247,6 +255,19 @@
     justify-content: center;
     display: flex;
     padding: 20px 0;
+    transition: .15s;
+}
+
+.circle:hover{
+    background-color: #badcbe75;
+    color: #ffffffe1;
+    outline: 20px solid #badcbe;
+}
+.circle:active{
+    outline: 20px solid #fff;
+    background-color: #77A572;
+    transform: translateY(3px);
+    color: #fff;
 }
 .circle_h2{
     font-size: 40px;
@@ -263,7 +284,7 @@
     justify-content: space-between;
 }
 .home_h4{
-    margin-top: 520px;
+    margin-top: 50px;
     margin-bottom: 50px;
     font-size: 20px;
     font-weight: 700;

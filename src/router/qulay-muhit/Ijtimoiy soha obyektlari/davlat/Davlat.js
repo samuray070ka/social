@@ -67,14 +67,20 @@ function Davlat() {
             </div>
             <div className='big_box'>
                 <table className='table'>
-                    <Link className='link' to={'/qulay-muhit/inson'}>
                     <tr>
-                        <th className='one_th'>208 ta</th>
+                        <Link className='link tooo' to={'/qulay-muhit/inson/hududlar'}>
+                        <th className='one_th' >208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Inson” ijtimoiy xizmatlar markazlari</td>
+                        </Link>
                     </tr>
+                        <tr>
+                    <Link to={'/qulay-muhit/inson'} className='link tooo'>
+                            <th className='one_th'>208 ta</th>
+                            <div className='table_hr'></div>
+                            <td className='one_td'>Davlat xizmatlari markazlari</td>
                     </Link>
-
+                        </tr>
 
 
                     <tr>
@@ -86,15 +92,15 @@ function Davlat() {
                     </tr>
 
 
-                    <Link className='link' to={'/qulay-muhit/davlat/hududlarr'}>
                         <tr>
-                        <th className='two_th'>Toshkent viloyati</th>
+                    <Link className='link too e' to={'/qulay-muhit/davlat/hududlarr'}>
+                            <th className='two_th'>Toshkent viloyati</th>
                             <div className='table_hr'></div>
                             <td className='two_td'>16 ta</td>
                             <div className='table_hr'></div>
                             <td className='two_td'>70 ta</td>
-                        </tr>
                     </Link>
+                        </tr>
 {/* 
                   
 
@@ -235,15 +241,13 @@ function Davlat() {
 
 
 
+                   
                     <tr>
-                        <th className='one_th'>208 ta</th>
-                        <div className='table_hr'></div>
-                        <td className='one_td'>Davlat xizmatlari markazlari</td>
-                    </tr>
-                    <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/ayollar/hud'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
+                    </Link>
                     </tr>
                     <tr>
                         <th className='one_th'>208 ta</th>

@@ -151,6 +151,7 @@ import Si from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hudu
 import Su from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/su'
 import Ts from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/ts'
 import Tv from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/tv'
+import Xo from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/xo'
 
 function App() {
   return (
@@ -296,6 +297,8 @@ function App() {
         <Route path='/qulay-muhit/davlat-xizmat/hududlar/fa' element={<Fa/>}/>
         <Route path='/qulay-muhit/davlat-xizmat/hududlar/ji' element={<Ji/>}/>
         <Route path='/qulay-muhit/davlat-xizmat/hududlar/na' element={<Na/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/bu' element={<Bu/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/xo' element={<Xo/>}/>
         <Route path='/qulay-muhit/davlat-xizmat/hududlar/nav' element={<Nav/>}/>
         <Route path='/qulay-muhit/davlat-xizmat/hududlar/qa' element={<Qa/>}/>
         <Route path='/qulay-muhit/davlat-xizmat/hududlar/qo' element={<Qo/>}/>

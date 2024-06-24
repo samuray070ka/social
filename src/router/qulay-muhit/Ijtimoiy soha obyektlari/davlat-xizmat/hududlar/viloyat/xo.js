@@ -8,10 +8,12 @@ import Suitcase from '../../../../../../assets/suitcase 1.png'
 import Paralimpic from '../../../../../../assets/paralympic 1.png'
 import Home from '../../../../../home/Home'
 import {Link} from 'react-router-dom'
-function na() {
+
+
+function xo() {
   return (
-    <div> 
-        <Home/>
+    <div>
+           <Home/>
     <div className='soha'>
         <div className='container sohaa'>
         <Link className='link' to={'/qulay-muhit'}>
@@ -149,7 +151,7 @@ function na() {
               
 
                 <tr>
-                <Link className='link tooo too' to={'/qulay-muhit/davlat-xizmat/hududlar'}>
+                <Link className='link tooo too' to={'/qulay-muhit/davlat-xizmat/hududlar/na'}>
                     <th className='two_th'>Namangan viloyati</th>
                     <div className='table_hr'></div>
                     <td className='two_td'>14 ta</td>
@@ -157,13 +159,7 @@ function na() {
                     <td className='two_td'>120 ta</td>
                 </Link>
                 </tr>
-                <tr>
-                    <li className='three_th'>Andijon shahri</li>
-                    <div className='table_hr'></div>
-                    <td className='three_td'>16 ta</td>
-                    <div className='table_hr'></div>
-                    <td className='three_td'>70 ta</td>
-                </tr>
+               
                 
 
 
@@ -271,13 +267,20 @@ function na() {
                 </tr>
 
                 <tr>
-                <Link className='link tooo too' to={'/qulay-muhit/davlat-xizmat/hududlar/xo'}>
+                <Link className='link tooo too' to={'/qulay-muhit/davlat-xizmat/hududlar'}>
                     <th className='two_th'>Xorazm viloyati</th>
                     <div className='table_hr'></div>
                     <td className='two_td'>16 ta</td>
                     <div className='table_hr'></div>
                     <td className='two_td'>32 ta</td>
                 </Link>
+                </tr>
+                <tr>
+                    <li className='three_th'>Andijon shahri</li>
+                    <div className='table_hr'></div>
+                    <td className='three_td'>16 ta</td>
+                    <div className='table_hr'></div>
+                    <td className='three_td'>70 ta</td>
                 </tr>
                 <tr>
                 <Link className='link tooo too' to={'/qulay-muhit/davlat-xizmat/hududlar/qo'}>
@@ -308,4 +311,4 @@ function na() {
   )
 }
 
-export default na
+export default xo

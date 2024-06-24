@@ -136,6 +136,21 @@ import Qashsh from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat
 import Samm from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/viloyat/samm';
 import Ishga from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/Ishga'
 import Huuud from './router/qulay-muhit/Ijtimoiy soha obyektlari/ishga-marhamat/hud/Hud'
+import DAvlat from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/Davlat'
+import HUdudlar from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/Hududlar'
+import An from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/an'
+import Fa from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/fa'
+import Bu from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/bu'
+import Ji from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/ji'
+import Na from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/na'
+import Nav from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/nav'
+import Qa from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/qa'
+import Qo from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/qo'
+import Sa from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/sa'
+import Si from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/si'
+import Su from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/su'
+import Ts from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/ts'
+import Tv from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/tv'
 
 function App() {
   return (
@@ -275,6 +290,20 @@ function App() {
         <Route path='/qulay-muhit/ishga-marhamat/hud/toshsh' element={<Toshsh/>}/>
         <Route path='/qulay-muhit/ishga-marhamat/hud/toshvilo' element={<Toshvilo/>}/>
         <Route path='/qulay-muhit/ishga-marhamat/hud/xorr' element={<Xorr/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat' element={<DAvlat/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar' element={<HUdudlar/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/an' element={<An/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/fa' element={<Fa/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/ji' element={<Ji/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/na' element={<Na/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/nav' element={<Nav/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/qa' element={<Qa/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/qo' element={<Qo/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/sa' element={<Sa/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/si' element={<Si/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/su' element={<Su/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/ts' element={<Ts/>}/>
+        <Route path='/qulay-muhit/davlat-xizmat/hududlar/tv' element={<Tv/>}/>
 
 
 

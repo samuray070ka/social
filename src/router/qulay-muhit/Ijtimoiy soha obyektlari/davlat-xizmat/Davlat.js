@@ -9,10 +9,10 @@ import Paralimpic from '../../../../assets/paralympic 1.png'
 import Home from '../../../home/Home'
 import {Link} from 'react-router-dom'
 
-function Inson() {
+function Davlat() {
   return (
     <div>
-        <Home/>
+         <Home/>
         <div className='soha'>
             <div className='container sohaa'>
             <Link className='link' to={'/qulay-muhit'}>
@@ -67,29 +67,27 @@ function Inson() {
             </div>
             <div className='big_box'>
                 <table className='table'>
-                    <tr>
+                <tr>
                     <Link className='link tooo' to={'/qulay-muhit/inson/hududlar'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Inson” ijtimoiy xizmatlar markazlari</td>
                     </Link>
                     </tr>
-                    <tr>
-                    <Link className='link  tooo' to={'/qulay-muhit/davlat/davlat'}>
+                        <tr>
+                   <Link className='link tooo' to={'/qulay-muhit/davlat/davlat'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td className='one_td'>Davlat xizmatlari markazlari</td>
-                    </Link>
-                    </tr>
-
-                        <tr>
-                        <Link className='link tooo' to={'/qulay-muhit/ayollar/hud'}>
-                            <th className='one_th'>208 ta</th>
-                            <div className='table_hr'></div>
-                            <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
-                        </Link>
+                   </Link>
                         </tr>
-
+                    <tr>
+                   <Link to={'/qulay-muhit/ayollar/hud'} className='link tooo'>
+                        <th className='one_th'>208 ta</th>
+                        <div className='table_hr'></div>
+                        <td  className='one_td'>Ayollarni reabilitatsiya qilish va moslashtirish markazlari</td>
+                   </Link>
+                    </tr>
                     <tr>
                     <Link className='link tooo' to={'/qulay-muhit/bolalar/hududd'}>
                         <th className='one_th'>208 ta</th>
@@ -97,34 +95,27 @@ function Inson() {
                         <td  className='one_td'>Bolalar va Mehribonlik uylari</td>
                     </Link>
                     </tr>
-                    
                     <tr>
-                    <Link className='link tooo' to={'/qulay-muhit/saxovat/hudd'}>
+                        <Link className='link tooo' to={'/qulay-muhit/saxovat/hudd'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Saxovat, Muruvvat, Sanatoriy va protezlash markazlari binolari</td>
-                    </Link>
+                        </Link>
                     </tr>
-
-
                     <tr>
-                   <Link className='link tooo' to={'/qulay-muhit/talim/hududlar'}> 
+                        <Link className='link tooo' to={'/qulay-muhit/talim/hududlar'}>
                         <th className='one_th'>0 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ta’lim obyektlari </td>
-                   </Link>
+                        </Link>
                     </tr>
-
-
                     <tr>
-                    <Link className='link tooo' to={'/qulay-muhit/sogliq/hud'}>
+                        <Link className='link tooo' to={'/qulay-muhit/sogliq/hud'}>
                         <th className='one_th'>0 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Sog‘liqni saqlash obyektlari</td>
-                    </Link>
+                        </Link>
                     </tr>
-
-                    
                     <tr>
                         <Link className='link tooo' to={'/qulay-muhit/ishga-marhamat/hud'}>
                         <th className='one_th'>208 ta</th>
@@ -132,8 +123,6 @@ function Inson() {
                         <td  className='one_td'>Ishga marxamat monomarkazlari obyektlari</td>
                         </Link>
                     </tr>
-
-
                     <tr>
                         <Link className='link tooo' to={'/qulay-muhit/davlat-xizmat/hududlar'}>
                         <th className='one_th'>14 ta</th>
@@ -141,7 +130,6 @@ function Inson() {
                         <td  className='one_td'>Davlat xizmatini rivojlantirish agentligi obyektlari</td>
                         </Link>
                     </tr>
-
                 </table>
             </div>
             </div>
@@ -151,4 +139,4 @@ function Inson() {
   )
 }
 
-export default Inson
+export default Davlat

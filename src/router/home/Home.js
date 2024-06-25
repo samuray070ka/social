@@ -25,12 +25,6 @@ import ArrowBottom from '../../icons/arrowBottom'
 import Calendar from '../../icons/calendar'
 
 function Home() {
-  const pagination = {
-    clickable: true,
-    // renderBullet: function (index, className) {
-    //   return '<span class="' + className + '">' + (index + 1) + '</span>';
-    // },
-  };
   return (
     <div className='home'>
       <div className='container'>
@@ -64,12 +58,12 @@ function Home() {
       </div>
 
       <Swiper
-      slidesPerView={1}
-      pagination={{
-        pagination
-      }}
-      modules={[Pagination]}
-      className="mySwiper"
+     spaceBetween={0}
+     pagination={{
+       clickable: true,
+     }}
+     modules={[Pagination]}
+     className="mySwiper"
       >
         <SwiperSlide>
           <div className='container'>
@@ -124,7 +118,8 @@ function Home() {
             <div className='ul_flex '>
             </div>
             <h1 className='banner_h1'>Nogironlarga qulay muhit va to'siqsiz sharoitlar yaratilishi, paralimpiya sport turlari jalb qilinishi hamda ularga ajratilgan ish va o'qish o'rinlari</h1>
-            <button className='home_btn'>Batafsil</button>
+              <button className='home_btn'>Batafsil</button>
+            
           </div>
 
         </SwiperSlide>
@@ -185,8 +180,9 @@ function Home() {
             </div>
           </div>
         </div>
+        <Link className='link' to={'/batafsil'}>
         <button className='home_btn_two'>Batafsil</button>
-
+        </Link>
         
       </div>
       <div>
@@ -210,18 +206,22 @@ function Home() {
                     <p className='flex_p'>Katta yoshdagilar</p>
                 </div>
            </Link>
-            <div className='flex_box'>
+           <Link className='link' to={'/voyaga'}>
+           <div className='flex_box'>
               <div className='circle'>
                 <h2 className='circle_h2'>365</h2>
               </div>
               <p className='flex_p'>Voyaga yetmaganlar</p>
             </div>
-            <div className='flex_box'>
+           </Link>
+           <Link className='link' to={'/nogiron'}>
+           <div className='flex_box'>
               <div className='circle'>
                 <h2 className='circle_h2'>985</h2>
               </div>
               <p className='flex_p'>Nogironlikni belgilash</p>
             </div>
+           </Link>
           </div>
           </div>
         </div>

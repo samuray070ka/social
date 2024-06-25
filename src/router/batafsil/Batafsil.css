@@ -1,0 +1,25 @@
+.batafsil{
+    background-color: #eee;
+    width: 100%;
+    margin-top: -30px;
+}
+.tw{
+    padding-top: 30px;
+}
+.CLASS{
+    left:  200px;
+}
+.Claas svg{
+    left: 180px;
+}
+.treeee{
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+.treeee:hover{
+    transform: scale(1.0109);
+    color: azure ;
+    background: linear-gradient(45deg, #8fac8d, #A0C09C, #81a77d);
+    border-radius: 6px;
+}

@@ -209,6 +209,10 @@ import Odam from './router/katta-yoshdagilar/odam/Odam';
 import ODAM from './router/katta-yoshdagilar/odam/ODAM/ODAM';
 import Muayyan from './router/katta-yoshdagilar/muayyan/Muayyan';
 import MUAYYAN from './router/katta-yoshdagilar/muayyan/MUAYYAN/MUAYYAN';
+import Yetim from './router/voyaga/yetim/Yetim';
+import hUdudlar from './router/voyaga/yetim/mehribon/hududlar/Hududlar';
+import Mehribon from './router/voyaga/yetim/mehribon/Mehribon';
+import Batafsil from './router/batafsil/Batafsil';
 
 
 
@@ -479,6 +483,15 @@ function App() {
 
         <Route path='/katta-yoshdagilar' element={<Muayyan/>}/>
         <Route path='/katta-yoshdagilar/MUAYYAN' element={<MUAYYAN/>}/>
+        <Route path='/batafsil' element={<Batafsil/>}/>
+{/* 
+        <Route path='/qulay-muhit' element={<IjtimoiySoha/>}/>
+        <Route path='/qulay-muhit/inson' element={<Inson/>}/>
+        <Route path='/qulay-muhit/inson/hududlar' element={<Hududlar/>}/>
+
+        <Route path='/voyaga' element={<Yetim/>}/>
+        <Route path='/voyaga/mehribon' element={<Mehribon/>}/>
+        <Route path='/voyaga/mehribon/hududalar' element={<hUdudlar/>}/> */}
 
 
 

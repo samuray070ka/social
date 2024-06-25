@@ -17,6 +17,10 @@
 .navbar_h4{
     font-weight: 600;
     font-size: 14px;
+    color: #fff;
+}
+.navbar_h4{
+    cursor: pointer;
 }
 .navbar_loc{
     display: flex;

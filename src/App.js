@@ -152,6 +152,113 @@ import Su from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hudu
 import Ts from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/ts'
 import Tv from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/tv'
 import Xo from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat-xizmat/hududlar/viloyat/xo'
+import Chorraha from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/Chorraha';
+import HududlaR from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/Hududlar'
+import AN from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/an'
+import FA from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/fa'
+import BU from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/bu'
+import JI from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/ji'
+import NA from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/na'
+import NAV from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/nav'
+import QA from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/qa'
+import QO from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/qo'
+import SA from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/sa'
+import SI from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/si'
+import SU from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/su'
+import TS from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/ts'
+import TV from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/tv'
+import XO from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/xo'
+
+import ANA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/an'
+import FAA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/fa'
+import BUA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/bu'
+import JIA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/ji'
+import NAA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/na'
+import NAVA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/nav'
+import QAA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/qa'
+import QOA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/qo'
+import SAA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/sa'
+import SIA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/si'
+import SUA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/su'
+import TSA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/ts'
+import TVA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/tv'
+import XOA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/xo'
+import Avtobus from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/Avtobus';
+import HUDUDLAR from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/Hududlar'
+import HUDUDLAr from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/Hududlar'
+
+import ViloyaT from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Viloyat'
+import Metro from './router/qulay-muhit/Infratuzilma obyektlari/metro/Metro';
+import Chilonzor from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Chilonzor';
+import Yunusobod from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Yunusobod';
+import Yer from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Yer';
+import OzbekistoN from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Ozbekiston';
+import Transport from './router/qulay-muhit/Infratuzilma obyektlari/transport/Transport'
+import HUDuDlar from './router/qulay-muhit/Infratuzilma obyektlari/transport/hududlar/Hududlar'
+import TOsh from './router/qulay-muhit/Infratuzilma obyektlari/transport/hududlar/viloyat/TOsh';
+import Sayt from './router/xarita/Sayt'
+import IjtimoIy from './router/katta-yoshdagilar/ijtimoiy/Ijtimoiy'
+import IJTIMOIY from './router/katta-yoshdagilar/ijtimoiy/IJTIMOIY/IJTIMOIY';
+import KEKSA from './router/katta-yoshdagilar/keksa/KEKSA/KEKSA';
+import Keksa from './router/katta-yoshdagilar/keksa/Keksa';
+import AyollaR from './router/katta-yoshdagilar/ayollar/Ayollar'
+import AYOLLAR from './router/katta-yoshdagilar/ayollar/AYOLLAR/AYOLLAR';
+import INSON from './router/katta-yoshdagilar/inson/INSON/INSON';
+import InsoN from './router/katta-yoshdagilar/inson/Inson'
+import Odam from './router/katta-yoshdagilar/odam/Odam';
+import ODAM from './router/katta-yoshdagilar/odam/ODAM/ODAM';
+import Muayyan from './router/katta-yoshdagilar/muayyan/Muayyan';
+import MUAYYAN from './router/katta-yoshdagilar/muayyan/MUAYYAN/MUAYYAN';
+
+
+
+
+// import Chorraha from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/Chorraha';
+// import HududlaR from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/Hududlar'
+// import AN from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/an'
+// import FA from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/fa'
+// import BU from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/bu'
+// import JI from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/ji'
+// import NA from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/na'
+// import NAV from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/nav'
+// import QA from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/qa'
+// import QO from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/qo'
+// import SA from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/sa'
+// import SI from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/si'
+// import SU from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/su'
+// import TS from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/ts'
+// import TV from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/tv'
+// import XO from './router/qulay-muhit/Infratuzilma obyektlari/chorraha/hududlar/viloyat/xo'
+
+// import ANA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/an'
+// import FAA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/fa'
+// import BUA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/bu'
+// import JIA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/ji'
+// import NAA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/na'
+// import NAVA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/nav'
+// import QAA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/qa'
+// import QOA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/qo'
+// import SAA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/sa'
+// import SIA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/si'
+// import SUA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/su'
+// import TSA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/ts'
+// import TVA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/tv'
+// import XOA from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/viloyat/xo'
+// import Avtobus from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/Avtobus';
+// import HUDUDLAR from './router/qulay-muhit/Infratuzilma obyektlari/avtobus/hududlar/Hududlar'
+// import HUDUDLAr from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/Hududlar'
+
+// import ViloyaT from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Viloyat'
+// import Metro from './router/qulay-muhit/Infratuzilma obyektlari/metro/Metro';
+// import Chilonzor from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Chilonzor';
+// import Yunusobod from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Yunusobod';
+// import Yer from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Yer';
+// import OzbekistoN from './router/qulay-muhit/Infratuzilma obyektlari/metro/hududlar/viloyat/Ozbekiston';
+// import Transport from './router/qulay-muhit/Infratuzilma obyektlari/transport/Transport'
+// import HUDuDlar from './router/qulay-muhit/Infratuzilma obyektlari/transport/hududlar/Hududlar'
+// import TOsh from './router/qulay-muhit/Infratuzilma obyektlari/transport/hududlar/viloyat/TOsh';
+
+
 
 function App() {
   return (
@@ -208,6 +315,7 @@ function App() {
         <Route path='/aloqa/toshkent-shahri' element={<ToshkentShahri/>}/>
         <Route path='/aloqa/xorazm' element={<Xorazm/>}/>
         <Route path='/aloqa/qoraqalpoq' element={<Qoraqalpoq/>}/>
+        <Route path='/xarita' element={<Sayt/>}/>
         <Route path='/qulay-muhit' element={<IjtimoiySoha/>}/>
         <Route path='/qulay-muhit/inson' element={<Inson/>}/>
         <Route path='/qulay-muhit/inson/hududlar' element={<Hududlar/>}/>
@@ -308,8 +416,119 @@ function App() {
         <Route path='/qulay-muhit/davlat-xizmat/hududlar/ts' element={<Ts/>}/>
         <Route path='/qulay-muhit/davlat-xizmat/hududlar/tv' element={<Tv/>}/>
 
+        <Route path='/qulay-muhit/chorraha' element={<Chorraha/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar' element={<HududlaR/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/an' element={<AN/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/fa' element={<FA/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/bu' element={<BU/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/ji' element={<JI/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/na' element={<NA/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/nav' element={<NAV/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/qa' element={<QA/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/qo' element={<QO/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/sa' element={<SA/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/si' element={<SI/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/su' element={<SU/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/ts' element={<TS/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/tv' element={<TV/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/xo' element={<XO/>}/>
+
+        <Route path='/qulay-muhit/avtobus' element={<Avtobus/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar' element={<HUDUDLAR/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/an' element={<ANA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/fa' element={<FAA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/bu' element={<BUA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/ji' element={<JIA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/na' element={<NAA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/nav' element={<NAVA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/qa' element={<QAA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/qo' element={<QOA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/sa' element={<SAA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/si' element={<SIA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/su' element={<SUA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/ts' element={<TSA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/tv' element={<TVA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/xo' element={<XOA/>}/>
+
+        <Route path='/qulay-muhit/metro' element={<Metro/>}/>
+        <Route path='/qulay-muhit/metro/hududlar' element={<HUDUDLAr/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat' element={<ViloyaT/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat/chilonzor' element={<Chilonzor/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat/ozbekiston' element={<OzbekistoN/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat/yunusobod' element={<Yunusobod/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat/yer' element={<Yer/>}/>
+
+        <Route path='/qulay-muhit/transport' element={<Transport/>}/>
+        <Route path='/qulay-muhit/transport/hududlar' element={<HUDuDlar/>}/>
+        <Route path='/qulay-muhit/transport/hududlar/TOsh' element={<TOsh/>}/>
+
+        <Route path='/katta-yoshdagilar' element={<IjtimoIy/>}/>
+        <Route path='/katta-yoshdagilar/IJTIMOIY' element={<IJTIMOIY/>}/>
+
+        <Route path='/katta-yoshdagilar/KEKSA' element={<KEKSA/>}/>
+        <Route path='/katta-yoshdagilar' element={<Keksa/>}/>
+
+        <Route path='/katta-yoshdagilar' element={<AyollaR/>}/>
+        <Route path='/katta-yoshdagilar/AYOLLAR' element={<AYOLLAR/>}/>
+
+        <Route path='/katta-yoshdagilar' element={<InsoN/>}/>
+        <Route path='/katta-yoshdagilar/INSON' element={<INSON/>}/>
+
+        <Route path='/katta-yoshdagilar' element={<Odam/>}/>
+        <Route path='/katta-yoshdagilar/ODAM' element={<ODAM/>}/>
+
+        <Route path='/katta-yoshdagilar' element={<Muayyan/>}/>
+        <Route path='/katta-yoshdagilar/MUAYYAN' element={<MUAYYAN/>}/>
 
 
+
+
+{/* 
+        <Route path='/qulay-muhit/chorraha' element={<Chorraha/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar' element={<HududlaR/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/an' element={<AN/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/fa' element={<FA/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/bu' element={<BU/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/ji' element={<JI/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/na' element={<NA/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/nav' element={<NAV/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/qa' element={<QA/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/qo' element={<QO/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/sa' element={<SA/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/si' element={<SI/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/su' element={<SU/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/ts' element={<TS/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/tv' element={<TV/>}/>
+        <Route path='/qulay-muhit/chorraha/hududlar/xo' element={<XO/>}/>
+
+        <Route path='/qulay-muhit/avtobus' element={<Avtobus/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar' element={<HUDUDLAR/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/an' element={<ANA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/fa' element={<FAA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/bu' element={<BUA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/ji' element={<JIA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/na' element={<NAA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/nav' element={<NAVA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/qa' element={<QAA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/qo' element={<QOA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/sa' element={<SAA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/si' element={<SIA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/su' element={<SUA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/ts' element={<TSA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/tv' element={<TVA/>}/>
+        <Route path='/qulay-muhit/avtobus/hududlar/xo' element={<XOA/>}/>
+
+        <Route path='/qulay-muhit/metro' element={<Metro/>}/>
+        <Route path='/qulay-muhit/metro/hududlar' element={<HUDUDLAr/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat' element={<ViloyaT/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat/chilonzor' element={<Chilonzor/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat/ozbekiston' element={<OzbekistoN/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat/yunusobod' element={<Yunusobod/>}/>
+        <Route path='/qulay-muhit/metro/hududlar/viloyat/yer' element={<Yer/>}/>
+
+        <Route path='/qulay-muhit/transport' element={<Transport/>}/>
+        <Route path='/qulay-muhit/transport/hududlar' element={<HUDuDlar/>}/>
+        <Route path='/qulay-muhit/transport/hududlar/TOsh' element={<TOsh/>}/> */}
 
 
         

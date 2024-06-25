@@ -71,26 +71,44 @@ function IjtimoiySoha() {
                         <h6 className='biig_h6'>Ijtimoiy soha obyektlari</h6>
                     </div>
                 </Link>
+                <Link className='link' to={'/qulay-muhit/chorraha'}>
                 <div className='biig_flex'>
                     <img className='biig_img' src={Factory} alt="" />
                     <h6 className='biig_h6'>Infratuzilma obyektlari</h6>
                 </div>
+                </Link>
+                <Link className='link' to={'/qulay-muhit/chorraha'}>
+
                 <div className='biig_flex'>
                     <img className='biig_img' src={Public} alt="" />
                     <h6 className='biig_h6'>Transport va transport kommunikatsiya obyektlari</h6>
                 </div>
+                </Link>
+
+                <Link className='link' to={'/qulay-muhit/chorraha'}>
+
                 <div className='biig_flex'>
                     <img className='biig_img' src={Graduation} alt="" />
                     <h6 className='biig_h6'>O‘qish kvotalari</h6>
                 </div>
+                </Link>
+
+                <Link className='link' to={'/qulay-muhit/chorraha'}>
+
                 <div className='biig_flex'>
                     <img className='biig_img' src={Suitcase} alt="" />
                     <h6 className='biig_h6'>ish o‘rinlari</h6>
                 </div>
+                </Link>
+
+                <Link className='link' to={'/qulay-muhit/chorraha'}>
+
                 <div className='biig_flex'>
                     <img className='biig_img' src={Paralimpic} alt="" />
                     <h6 className='biig_h6'>paralimpiyaga jalb qilish</h6>
                 </div>
+                </Link>
+
             </div>
             </div>
         </div>

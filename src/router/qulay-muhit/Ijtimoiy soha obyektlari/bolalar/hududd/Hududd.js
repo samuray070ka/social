@@ -188,30 +188,49 @@ function Hududd() {
 
 
                     
+                    
                     <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/saxovat/hudd'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Saxovat, Muruvvat, Sanatoriy va protezlash markazlari binolari</td>
+                    </Link>
                     </tr>
+
+
                     <tr>
+                   <Link className='link tooo' to={'/qulay-muhit/talim/hududlar'}> 
                         <th className='one_th'>0 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ta’lim obyektlari </td>
+                   </Link>
                     </tr>
+
+
                     <tr>
+                    <Link className='link tooo' to={'/qulay-muhit/sogliq/hud'}>
                         <th className='one_th'>0 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Sog‘liqni saqlash obyektlari</td>
+                    </Link>
                     </tr>
+
+                    
                     <tr>
+                        <Link className='link tooo' to={'/qulay-muhit/ishga-marhamat/hud'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ishga marxamat monomarkazlari obyektlari</td>
+                        </Link>
                     </tr>
+
+
                     <tr>
+                        <Link className='link tooo' to={'/qulay-muhit/davlat-xizmat/hududlar'}>
                         <th className='one_th'>14 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Davlat xizmatini rivojlantirish agentligi obyektlari</td>
+                        </Link>
                     </tr>
                 </table>
             </div>

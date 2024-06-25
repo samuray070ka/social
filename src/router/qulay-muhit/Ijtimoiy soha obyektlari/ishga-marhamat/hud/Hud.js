@@ -282,9 +282,11 @@ function Hud() {
                     </tr>
 
                     <tr>
+                        <Link className='link tooo' to={'/qulay-muhit/davlat-xizmat/hududlar'}>
                         <th className='one_th'>14 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Davlat xizmatini rivojlantirish agentligi obyektlari</td>
+                        </Link>
                     </tr>
                 </table>
             </div>

@@ -4,6 +4,7 @@ import Phone from '../../icons/phone'
 import Visible from '../../icons/visible'
 import Map from '../../icons/map'
 import Location from '../../icons/location'
+import {Link} from 'react-router-dom'
 
 function Navbar() {
 
@@ -25,7 +26,9 @@ function Navbar() {
           </div>
           <div className='navbar_loc'>
           <Map/>
+          <Link className='link ' to={'/xarita'}>
             <h4 className='navbar_h4'>Sayt xaritasi</h4>
+          </Link>
           </div>
           <button className='navbar_btn'>Uz</button>
 

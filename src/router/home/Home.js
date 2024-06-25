@@ -202,12 +202,14 @@ function Home() {
                   <p className='flex_p'>Qulay muhit</p>
                 </div>
             </Link>
-            <div className='flex_box'>
-              <div className='circle'>
-                <h2 className='circle_h2'>185</h2>
-              </div>
-              <p className='flex_p'>Katta yoshdagilar</p>
-            </div>
+           <Link className='link' to={'/katta-yoshdagilar'}>
+                <div className='flex_box'>
+                    <div className='circle'>
+                      <h2 className='circle_h2'>185</h2>
+                    </div>
+                    <p className='flex_p'>Katta yoshdagilar</p>
+                </div>
+           </Link>
             <div className='flex_box'>
               <div className='circle'>
                 <h2 className='circle_h2'>365</h2>

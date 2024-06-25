@@ -1,0 +1,6 @@
+.table_color tr:nth-child(even){
+    background-color: #f8f8f8;
+}
+.table_color{
+    width: 100%;
+}

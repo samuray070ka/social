@@ -44,10 +44,12 @@ function sogliq() {
                             <h6 className='biig_h6'>Ijtimoiy soha obyektlari</h6>
                         </div>
                 </Link>
-                <div className='biig_flex  biiig_flex'>
+                <Link className='link' to={'/qulay-muhit/chorraha'}>
+               <div className='biig_flex  biiig_flex'>
                     <img className='biig_img' src={Factory} alt="" />
                     <h6 className='biig_h6'>Infratuzilma obyektlari</h6>
                 </div>
+               </Link>
                 <div className='biig_flex  biiig_flex'>
                     <img className='biig_img' src={Public} alt="" />
                     <h6 className='biig_h6'>Transport va transport kommunikatsiya obyektlari</h6>
@@ -117,14 +119,18 @@ function sogliq() {
                         </Link>
                     </tr>
                     <tr>
+                        <Link className='link tooo' to={'/qulay-muhit/ishga-marhamat/hud'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Ishga marxamat monomarkazlari obyektlari</td>
+                        </Link>
                     </tr>
                     <tr>
+                        <Link className='link tooo' to={'/qulay-muhit/davlat-xizmat/hududlar'}>
                         <th className='one_th'>14 ta</th>
                         <div className='table_hr'></div>
                         <td  className='one_td'>Davlat xizmatini rivojlantirish agentligi obyektlari</td>
+                        </Link>
                     </tr>
                 </table>
             </div>

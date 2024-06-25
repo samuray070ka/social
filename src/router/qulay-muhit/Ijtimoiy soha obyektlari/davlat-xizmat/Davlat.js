@@ -44,10 +44,12 @@ function Davlat() {
                             <h6 className='biig_h6'>Ijtimoiy soha obyektlari</h6>
                         </div>
                 </Link>
-                <div className='biig_flex  biiig_flex'>
+                <Link className='link' to={'/qulay-muhit/chorraha'}>
+               <div className='biig_flex  biiig_flex'>
                     <img className='biig_img' src={Factory} alt="" />
                     <h6 className='biig_h6'>Infratuzilma obyektlari</h6>
                 </div>
+               </Link>
                 <div className='biig_flex  biiig_flex'>
                     <img className='biig_img' src={Public} alt="" />
                     <h6 className='biig_h6'>Transport va transport kommunikatsiya obyektlari</h6>

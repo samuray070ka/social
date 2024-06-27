@@ -1,0 +1,32 @@
+.dark-mode{
+    background-color: black !important;
+    color: #fff;
+}
+.dark-mode-old{
+    background-color: rgb(40, 40, 40);
+}
+.dark-circle{
+    outline: 20px solid #fff;
+}
+.dark-circle:hover{
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+    outline: 20px solid #fff;
+}
+.dark-mode-old:hover{
+    background: rgb(40, 40, 40);
+}
+.transform{
+    height: 60px;
+    transform: translateY(-55px);
+    position: absolute;
+    background-color: black;
+}
+.trans{
+    position: absolute;
+    background-color: black;
+    color: #fff;
+}
+.tra{
+    color: #fff;
+}

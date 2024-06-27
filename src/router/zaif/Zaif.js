@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+import './Zaif.css'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import banner from '../../assets/Rectangle 3.png'
 import img from '../../assets/Rectangle 12.png'
@@ -16,18 +16,59 @@ import child from '../../assets/yosh bolalar.jpg'
 import invalid from '../../assets/nogironlar.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom'
+import Rasm from '../../assets/image_not_supported.png'
+import Volume from '../../assets/volume_up.png'
+import Remove from '../../assets/remove_red_eye.png'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import ArrowBottom from '../../icons/arrowBottom'
 import Calendar from '../../icons/calendar'
-
-function Home() {
+function Zaif() {
   return (
-    <div className='home'>
+    <div>
+         <div className='home'>
+        <div className="zaif">
+            <div className="container fle">
+                <div className='siza_box'>
+                    <h6 className='shrift'>Shrift</h6>
+                        <h6 className='siza_small'>A</h6>
+                        <h6 className='siza_middle'>A</h6>
+                        <h6 className='siza_big'>A</h6>
+                </div>
+                <div className='color_flex'>
+                    <h6 className='rang'>Rang</h6>
+                    <Link className='link' to={'/'}>
+                      <h6 className='rang_green'>r</h6>
+                    </Link>
+                    <Link className='link' to={'/dark-mode'}> 
+                        <h6 className='rang_dark'>r</h6>
+                    </Link>
+                    <h6 className='rang_pink'>r</h6>
+                </div>
+                <div className='rasm'>
+                    <h6 className='rasm_h6'>Rasm yo'q</h6>
+                    <div className='rasm_img'>
+                        <img className='rasmm' src={Rasm} alt="" />
+                    </div>
+                </div>
+                <div className='rasm_ovoz'>
+                    <h6 className='rasm_h6'>Oddiy holat</h6>
+                    <div className='rasm_img'>
+                        <img className='rasmm' src={Volume} alt="" />
+                    </div>
+                </div>
+                <div className='rasm_koz'>
+                    <h6 className='rasm_h6'>Ovozli</h6>
+                    <div className='rasm_img'>
+                        <img className='rasmm' src={Remove} alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
       <div className='container'>
-
+       
       <ul className=' collaction'>
                 <Link to={'/'} className='link'>
       <img className=' banner_img' src={homeImgOne} alt="" />
@@ -245,7 +286,8 @@ function Home() {
         </div>
       </div>
     </div>
+    </div>
   )
 }
 
-export default Home
+export default Zaif

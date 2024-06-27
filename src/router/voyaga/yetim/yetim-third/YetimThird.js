@@ -5,11 +5,10 @@ import Home from '../../../home/Home'
 import Build from '../../../../assets/building 2.png'
 import Factory from '../../../../assets/factory 1.png'
 import Public from '../../../../assets/public-transport 1.png'
-
-function Mehribon() {
+function YetimThird() {
   return (
     <div>
-        <Home/>
+          <Home/>
         <div className='soha'>
             <div className='container sohaa'>
                 <Link className='link' to={'/'}>
@@ -47,7 +46,7 @@ function Mehribon() {
                     <h6 className='biig_h6'>Alohida taʼlim ehtiyojlari boʻlgan bolalar uchun koʻrsatiladigan ijtimoiy yordam va xizmatlar</h6>
                 </div>
                 </Link>
-                <Link className='link' to={'/voyaga/inson'}>
+                <Link className='link' to={'/voyaga/inson/hududlar'}>
 
                 <div className='biig_flex'>
                     <img className='biig_img' src={Public} alt="" />
@@ -123,4 +122,4 @@ function Mehribon() {
   )
 }
 
-export default Mehribon
+export default YetimThird

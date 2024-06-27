@@ -1,12 +1,10 @@
 import React from 'react'
-import '../Yetim.css'
 import { Link } from 'react-router-dom'
 import Home from '../../../home/Home'
 import Build from '../../../../assets/building 2.png'
 import Factory from '../../../../assets/factory 1.png'
 import Public from '../../../../assets/public-transport 1.png'
-
-function Mehribon() {
+function Psixologik() {
   return (
     <div>
         <Home/>
@@ -41,7 +39,7 @@ function Mehribon() {
                         <h6 className='biig_h6'>Yetim va ota-ona qaramogʻidan mahrum boʻlgan bolalar uchun koʻrsatiladigan ijtimoiy yordam va xizmatlar</h6>
                     </div>
                 </Link>
-                <Link className='link' to={'/voyaga/psixologik'}>
+                <Link className='link' to={'/voyaga'}>
                 <div className='biig_flex'>
                     <img className='biig_img' src={Factory} alt="" />
                     <h6 className='biig_h6'>Alohida taʼlim ehtiyojlari boʻlgan bolalar uchun koʻrsatiladigan ijtimoiy yordam va xizmatlar</h6>
@@ -58,60 +56,69 @@ function Mehribon() {
             <div className='big_box'>
                 <table className='table'>
                     <tr>
-                    <Link className='link tooo' to={'/voyaga/mehribon/hududlar'}>
+                    {/* <Link className='link tooo' to={'/voyaga/mehribon/hududlar'}> */}
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
-                        <td className='one_td'>Mehribonlik uylari</td>
-                    </Link>
+                        <td className='one_td'>Psixologik–tibbiy-pedagogik komissiyalar</td>
+                    {/* </Link> */}
                     </tr>
                     <tr>
-                    <Link className='link  tooo' to={'/voyaga/bolalar/hududlar'}>
+                    {/* <Link className='link  tooo' to={'/voyaga/bolalar/hududlar'}> */}
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
-                        <td className='one_td'>Bolalar uylari</td>
-                    </Link>
+                        <td className='one_td'>Ixtisoslashtirilgan sanatoriy turidagi maktab-internatlar</td>
+                    {/* </Link> */}
                     </tr>
 
                         <tr>
-                        <Link className='link tooo' to={'/voyaga/yetim-first/hududlar'}>
+                        {/* <Link className='link tooo' to={'/voyaga/yetim-first/hududlar'}> */}
                             <th className='one_th'>208 ta</th>
                             <div className='table_hr'></div>
-                            <td  className='one_td'>Yetim va ota-ona qarmogʻidan mahrum boʻlgan bolalarni uy-joy bilan taʼminlash</td>
-                        </Link>
+                            <td  className='one_td'>Alohida taʼlim ehtiyojlari boʻlgan bolalar uchun ixtisoslashtirilgan maktab va maktab-internatlari </td>
+                        {/* </Link> */}
                         </tr>
 
                     <tr>
-                    <Link className='link tooo' to={'/voyaga/oilaviy/hududlar'}>
+                    {/* <Link className='link tooo' to={'/voyaga/oilaviy/hududlar'}> */}
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
-                        <td  className='one_td'>Oilaviy bolalar uylarida koʻrsatiladigan ijtimoiy yordamlar va xizmatlar</td>
-                    </Link>
+                        <td  className='one_td'>Sogʻliqni saqlash vazirligi tarkibidagi bolalar uylari</td>
+                    {/* </Link> */}
                     </tr>
                     
                     <tr>
-                    <Link className='link tooo' to={'/voyaga/yetim-second/hududlar'}>
+                    {/* <Link className='link tooo' to={'/voyaga/yetim-second/hududlar'}> */}
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
-                        <td  className='one_td'>Yetim va ota-ona qarmogʻidan mahrum boʻlgan bolalarga vasiy yoki homiy tayinlash</td>
-                    </Link>
+                        <td  className='one_td'>Imkoniyati cheklangan shaxslar uchun ixtisoslashtirilgan kasb-hunar maktablari</td>
+                    {/* </Link> */}
                     </tr>
 
 
                     <tr>
-                   <Link className='link tooo' to={'/voyaga/yetim-third/hududlar'}> 
+                   {/* <Link className='link tooo' to={'/voyaga/yetim-third/hududlar'}>  */}
                         <th className='one_th'>0 ta</th>
                         <div className='table_hr'></div>
-                        <td  className='one_td'>Yetim va ota-ona qarmogʻidan mahrum boʻlgan bolalarni patronatga (oilaga tarbiyaga) olish </td>
-                   </Link>
+                        <td  className='one_td'>Inklyuziv taʼlimga jalb qilish</td>
+                   {/* </Link> */}
                     </tr>
 
 
                     <tr>
-                    <Link className='link tooo' to={'/voyaga/mehr/hududlar'}>
+                    {/* <Link className='link tooo' to={'/voyaga/mehr/hududlar'}> */}
                         <th className='one_th'>0 ta</th>
                         <div className='table_hr'></div>
-                        <td  className='one_td'>“Mehr daftari” boʻyicha  koʻrsatiladigan jtimoiy yordam va xizmatlar</td>
-                    </Link>
+                        <td  className='one_td'>Uyda yakka tartibda taʼlim olayotgan bolalar uchun koʻrsatiladigan ijtimoiy yordam va xizmatlar</td>
+                    {/* </Link> */}
+                    </tr>
+
+
+                    <tr>
+                    {/* <Link className='link tooo' to={'/voyaga/mehr/hududlar'}> */}
+                        <th className='one_th'>0 ta</th>
+                        <div className='table_hr'></div>
+                        <td  className='one_td'>Mehrli maktab</td>
+                    {/* </Link> */}
                     </tr>
 
                 </table>
@@ -123,4 +130,4 @@ function Mehribon() {
   )
 }
 
-export default Mehribon
+export default Psixologik

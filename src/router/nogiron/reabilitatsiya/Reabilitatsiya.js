@@ -1,14 +1,11 @@
 import React from 'react'
-import './Yetim.css'
+import '../tibbiy/Tibbiy.css'
 import { Link } from 'react-router-dom'
 import Home from '../../home/Home'
-import Build from '../../../assets/building 2.png'
-import Factory from '../../../assets/factory 1.png'
-import Public from '../../../assets/public-transport 1.png'
-function Yetim() {
+function Reabilitatsiya() {
   return (
     <div>
-        <Home/>
+         <Home/>
         <div className='soha'>
             <div className='container sohaa'>
                 <Link className='link' to={'/'}>
@@ -33,23 +30,31 @@ function Yetim() {
                 </div>
             </div>
             <div className='saha_biig'>
-            <Link to={'/voyaga/mehribon'} className='link'>
+                <Link to={'/nogiron/online'} className='link'>
                     <div className='biig_flex'>
-                        <img className='biig_img' src={Build} alt="" />
-                        <h6 className='biig_h6'>Yetim va ota-ona qaramogʻidan mahrum boʻlgan bolalar uchun koʻrsatiladigan ijtimoiy yordam va xizmatlar</h6>
+                        <h6  className='katta_li'>7 ta</h6>
+                        <li className='biig_h6 katta_h6'>Tibbiy-ijtimoiy ekspert komissiyalari</li>
                     </div>
                 </Link>
-                <Link className='link' to={'/voyaga/psixologik'}>
+                <Link className='link' to={'/nogiron/ishlatilmagan'}>
                 <div className='biig_flex'>
-                    <img className='biig_img' src={Factory} alt="" />
-                    <h6 className='biig_h6'>Alohida taʼlim ehtiyojlari boʻlgan bolalar uchun koʻrsatiladigan ijtimoiy yordam va xizmatlar</h6>
+                    <h6 className='katta_li'>11 ta</h6>
+                    <li className='biig_h6 katta_h6'>Reabilitatsiya markazlari</li>
                 </div>
                 </Link>
-                <Link className='link' to={'/voyaga/inson'}>
+                <Link className='link' to={'/nogiron/erkak'}>
 
                 <div className='biig_flex'>
-                    <img className='biig_img' src={Public} alt="" />
-                    <h6 className='biig_h6'>Nazoratsiz va qarovsiz qolgan bolalar uchun koʻrsatiladigan ijtimoiy xizmatlar</h6>
+                    <h6 className='katta_li'>29 ta</h6>
+                    <li className='biig_h6 katta_h6'>Muruvvat uylari</li>
+                </div>
+                </Link>
+
+                <Link className='link' to={'/nogiron/rtv'}>
+
+                <div className='biig_flex'>
+                    <h6 className='katta_li'>208 ta</h6>
+                    <li className='biig_h6 katta_h6'>Inson ijtimoiy xizmatlar markazlari</li>
                 </div>
                 </Link>
             </div>
@@ -59,4 +64,4 @@ function Yetim() {
   )
 }
 
-export default Yetim
+export default Reabilitatsiya

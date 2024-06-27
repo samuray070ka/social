@@ -1,12 +1,10 @@
 import React from 'react'
-import '../Yetim.css'
 import { Link } from 'react-router-dom'
 import Home from '../../../home/Home'
 import Build from '../../../../assets/building 2.png'
 import Factory from '../../../../assets/factory 1.png'
 import Public from '../../../../assets/public-transport 1.png'
-
-function Mehribon() {
+function Oquv() {
   return (
     <div>
         <Home/>
@@ -33,9 +31,9 @@ function Mehribon() {
                     <h6 className='soha_h6'>2023-yilda</h6>
                 </div>
             </div>
-           <div className="box_fle">
-           <div className='saha_biig'>
-            <Link to={'/voyaga'} className='link'>
+            <div className='box_fle'>
+            <div className='saha_biig'>
+            <Link to={'/voyaga/mehribon'} className='link'>
                     <div className='biig_flex'>
                         <img className='biig_img' src={Build} alt="" />
                         <h6 className='biig_h6'>Yetim va ota-ona qaramogʻidan mahrum boʻlgan bolalar uchun koʻrsatiladigan ijtimoiy yordam va xizmatlar</h6>
@@ -58,69 +56,36 @@ function Mehribon() {
             <div className='big_box'>
                 <table className='table'>
                     <tr>
-                    <Link className='link tooo' to={'/voyaga/mehribon/hududlar'}>
+                    <Link className='link tooo' to={'/voyaga/inson/hududlar'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
-                        <td className='one_td'>Mehribonlik uylari</td>
+                        <td className='one_td'>“Inson” ijtimoiy xizmatlar koʻrsatish markazlari (bolalarni himoya qilish shuʼbalari)</td>
                     </Link>
                     </tr>
                     <tr>
-                    <Link className='link  tooo' to={'/voyaga/bolalar/hududlar'}>
+                    <Link className='link  tooo' to={'/voyaga/voyaga/hududlar'}>
                         <th className='one_th'>208 ta</th>
                         <div className='table_hr'></div>
-                        <td className='one_td'>Bolalar uylari</td>
+                        <td className='one_td'>Voyaga yetmaganlarga ijtimoiy-huquqiy yordam koʻrsatish markazlari</td>
                     </Link>
                     </tr>
 
-                        <tr>
-                        <Link className='link tooo' to={'/voyaga/yetim-first/hududlar'}>
+                        <tr> 
+                        <Link className='link tooo' to={'/voyaga/oquv/hududlar'}>
                             <th className='one_th'>208 ta</th>
                             <div className='table_hr'></div>
-                            <td  className='one_td'>Yetim va ota-ona qarmogʻidan mahrum boʻlgan bolalarni uy-joy bilan taʼminlash</td>
+                            <td  className='one_td'>Oʻquv tarbiya muassasalari</td>
                         </Link>
                         </tr>
 
-                    <tr>
-                    <Link className='link tooo' to={'/voyaga/oilaviy/hududlar'}>
-                        <th className='one_th'>208 ta</th>
-                        <div className='table_hr'></div>
-                        <td  className='one_td'>Oilaviy bolalar uylarida koʻrsatiladigan ijtimoiy yordamlar va xizmatlar</td>
-                    </Link>
-                    </tr>
-                    
-                    <tr>
-                    <Link className='link tooo' to={'/voyaga/yetim-second/hududlar'}>
-                        <th className='one_th'>208 ta</th>
-                        <div className='table_hr'></div>
-                        <td  className='one_td'>Yetim va ota-ona qarmogʻidan mahrum boʻlgan bolalarga vasiy yoki homiy tayinlash</td>
-                    </Link>
-                    </tr>
-
-
-                    <tr>
-                   <Link className='link tooo' to={'/voyaga/yetim-third/hududlar'}> 
-                        <th className='one_th'>0 ta</th>
-                        <div className='table_hr'></div>
-                        <td  className='one_td'>Yetim va ota-ona qarmogʻidan mahrum boʻlgan bolalarni patronatga (oilaga tarbiyaga) olish </td>
-                   </Link>
-                    </tr>
-
-
-                    <tr>
-                    <Link className='link tooo' to={'/voyaga/mehr/hududlar'}>
-                        <th className='one_th'>0 ta</th>
-                        <div className='table_hr'></div>
-                        <td  className='one_td'>“Mehr daftari” boʻyicha  koʻrsatiladigan jtimoiy yordam va xizmatlar</td>
-                    </Link>
-                    </tr>
 
                 </table>
             </div>
-           </div>
+            </div>
             </div>
         </div>
     </div>
   )
 }
 
-export default Mehribon
+export default Oquv

@@ -1,0 +1,148 @@
+.zaif{
+    width: 100%;
+    height: 60px;
+    background-color: #406C3B;
+    transform: translateY(-40px);
+    z-index: 2;
+    position: absolute;
+}
+.fle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.siza_box{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.shrift{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.siza_small{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.siza_middle{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.rang{
+    font-size: 20px;
+    color: #fff;
+}
+.siza_big{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 400;
+}
+.color_flex{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rang_green{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    color: #000000;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+.rang_dark{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.rang_pink{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    color: #000000;
+    background-color: #CECECE;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+.rasm_h6{
+    font-size: 20px;
+    color: #fff;
+}
+.rasm{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rasm_ovoz{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rasm_koz{
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rasm_img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

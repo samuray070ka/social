@@ -1,11 +1,11 @@
 import React from 'react'
-import './Yetim.css'
+import './Alohida.css'
 import { Link } from 'react-router-dom'
 import Home from '../../home/Home'
 import Build from '../../../assets/building 2.png'
 import Factory from '../../../assets/factory 1.png'
 import Public from '../../../assets/public-transport 1.png'
-function Yetim() {
+function Alohida() {
   return (
     <div>
         <Home/>
@@ -59,4 +59,4 @@ function Yetim() {
   )
 }
 
-export default Yetim
+export default Alohida

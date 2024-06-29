@@ -52,7 +52,6 @@ import ToshkentViloyat from './router/aloqa-router/toshkent-viloyat/ToshkentVilo
 import ToshkentShahri from './router/aloqa-router/toshkent-shahri/ToshkentShahri';
 import Xorazm from './router/aloqa-router/xorazm/Xorazm';
 import Qoraqalpoq from './router/aloqa-router/qoraqalpoq/Qoraqalpoq';
-import Api from './components/navbar/Api';
 import IjtimoiySoha from './router/qulay-muhit/Ijtimoiy soha obyektlari/IjtimoiySoha';
 import Inson from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/Inson';
 import Hududlar from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/Hududlar';
@@ -258,6 +257,10 @@ import OquV from './router/voyaga/nazoratsiz/oquv/Oquv'
 import OquVHududlar from './router/voyaga/nazoratsiz/oquv/hududlar/Hududlar'
 import DarkMode from './router/DarkMode';
 import Zaif from './router/zaif/Zaif';
+import DarkZaif from './router/dark-zaif/DarkZaif';
+import PinkMode from './router/PinkMode';
+import PinkZaif from './router/pink-zaif/PinkZaif';
+import Togri from './router/aloqa/Togri';
 
 
 
@@ -537,6 +540,10 @@ function App() {
         <Route path='/voyaga/oquv/hududlar' element={<OquVHududlar/>}/>
         <Route path='/dark-mode' element={<DarkMode/>}/>
         <Route path='/zaif' element={<Zaif/>}/>
+        <Route path='/dark-mode/zaif' element={<DarkZaif/>}/>
+        <Route path='/pink-mode' element={<PinkMode/>}/>
+        <Route path='/pink-mode/zaif' element={<PinkZaif/>}/>
+        <Route path='/togri'element={<Togri/>}/>
 
 
 
@@ -547,7 +554,6 @@ function App() {
         
       </Routes>
       <Footer/>
-      <Api/>
     </div>
   );
 }

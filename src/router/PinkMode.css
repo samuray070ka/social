@@ -1,0 +1,30 @@
+.pink-mode{
+    background-color: #cecece;
+    color: #fff;
+}
+.pink-mode-old{
+    background-color: #C0C0C0;
+    color: #fff;
+}
+.cirle{
+    outline: 20px solid #fff;
+}
+.mod:hover{
+    background-color: #cecece   ;
+}
+.pink-trans{
+    transform: translateY(-55px);
+    color: #fff;
+    position: absolute;
+    height: 60px;
+}
+.pink-tr{
+    position: absolute;
+}
+.circle-box:hover{
+    background: #cecece;
+
+}
+.cir:hover{
+    outline: 20px solid #fff;
+}

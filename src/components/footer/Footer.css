@@ -89,8 +89,9 @@
     font-size: 12px;
     font-weight: 400;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1225px) {
     .footer{
-        width: 100%;
+        width: 1260px;
+        padding: 0 20px;
     }
 }

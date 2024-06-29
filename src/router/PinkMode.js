@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import './DarkMode.css'
+import './PinkMode.css'
 import homeImgOne from '../assets/IJTIMOIY logo 2 1.png'
 import banner from '../assets/Rectangle 3.png'
 import imgTwo from '../assets/Rectangle 11.png'
@@ -30,7 +30,8 @@ import Location from '../icons/location'
 import img from '../assets/Rectangle 54.png'
 import Mail from '../icons/mail'
 import Print from '../icons/print'
-function DarkMode() {
+import reco7 from '../assets/Rectangle 7.png'
+function PinkMode() {
   async function fetchSilider() {
     const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/slider/list');
     const data = await response.json();
@@ -49,8 +50,8 @@ useEffect(() => {
 }, []);
   return (
     <div>
-         <div className='home dark-mode'>
-         <div className='navbar transform'>
+         <div className='home pink-mode'>
+         <div className='navbar pink-trans pink-mode'>
       <div className="container">
         <div className='navbar_flex'>
           <div className='navbar_loc'>
@@ -62,7 +63,7 @@ useEffect(() => {
             <p className='navbar_p'>Manzil: Toshkent shahar, Chilonzor tumani, Nurxon ko'chasi 21-uy</p>
           </div>
           <div className='navbar_loc'>
-          <Link className='link tooo' to={'/dark-mode/zaif'}>
+          <Link className='link tooo' to={'/pink-mode/zaif'}>
           <Visible/>
           <h3  className='navbar_h3' id='visibility'> Zarif ko'ruvchilar uchun</h3>
           </Link>
@@ -120,14 +121,14 @@ useEffect(() => {
        clickable: true,
      }}
      modules={[Pagination]}
-     className="mySwiper dark-mode"
+     className="mySwiper "
       >
         {
           silider.map((item, inx) =>  
           <SwiperSlide>
           <div className='container ' key={inx} >
             <img className='banner_photo' src={item.photo} alt="" />
-            <img className='banner_photo_two' src={IMG} alt="" />
+            <img className='banner_photo_two' src={reco7} alt="" />
             <div className='ul_flex '>
             </div>
             <h1 className='banner_h1'>{item.title.luz}</h1>
@@ -148,7 +149,7 @@ useEffect(() => {
               <img className='two_div_img' src={imgTwo} alt="" />
             </div>
 
-            <div className='two_div_text dark-mode'>
+            <div className='two_div_text pink-mode-old '>
               <h3 className='div_text_h3'>Ijtimoiy xizmatlar ko‘rsatish sifatini oshirish
                 maqsadida hamkorlik memorandumi imzolandi</h3>
               <div className='hr'></div>
@@ -193,42 +194,42 @@ useEffect(() => {
           </div>
         </div>
         <Link className='link' to={'/batafsil'}>
-        <button className='home_btn_two dark-mode'>Batafsil</button>
+        <button className='home_btn_two pink-mode mod'>Batafsil</button>
         </Link>
         
       </div>
       <div>
-      <div className="banner_three dark-mode ">
+      <div className="banner_three  pink-mode-old">
           <div className='container'>
           <h3 className='three_h3'>O‘rganilgan obyektlar</h3>
           <div className='three_flex'>
             <Link to={'/qulay-muhit'} className='link'>
-                <div className='flex_box dark-mode-old'>
-                  <div className='circle dark-mode-old dark-circle'>
+                <div className='flex_box pink-mode circle-box '>
+                  <div className='circle pink-mode cirle circle-box cir'>
                     <h2 className='circle_h2'>80</h2>
                   </div>
                   <p className='flex_p'>Qulay muhit</p>
                 </div>
             </Link>
            <Link className='link' to={'/katta-yoshdagilar'}>
-                <div className='flex_box dark-mode-old' >
-                    <div className='circle dark-mode-old dark-circle'>
+                <div className='flex_box pink-mode circle-box ' >
+                    <div className='circle  pink-mode cirle circle-box cir'>
                       <h2 className='circle_h2'>185</h2>
                     </div>
                     <p className='flex_p'>Katta yoshdagilar</p>
                 </div>
            </Link>
            <Link className='link' to={'/voyaga'}>
-           <div className='flex_box dark-mode-old'>
-              <div className='circle dark-mode-old dark-circle'>
+           <div className='flex_box pink-mode circle-box'>
+              <div className='circle pink-mode cirle circle-box cir'>
                 <h2 className='circle_h2'>365</h2>
               </div>
               <p className='flex_p'>Voyaga yetmaganlar</p>
             </div>
            </Link>
            <Link className='link' to={'/nogiron'}>
-           <div className='flex_box dark-mode-old'>
-              <div className='circle dark-mode-old dark-circle'>
+           <div className='flex_box pink-mode circle-box'>
+              <div className='circle pink-mode cirle circle-box cir'> 
                 <h2 className='circle_h2'>985</h2>
               </div>
               <p className='flex_p'>Nogironlikni belgilash</p>
@@ -258,7 +259,7 @@ useEffect(() => {
         </div>
       </div>
     </div>
-    <div className='footer trans'>
+    <div className='footer pink-mode-old pink-tr'>
       <div className="container">
         <div className="footer_flex">
           <div className='footer_box'>
@@ -311,4 +312,4 @@ useEffect(() => {
   )
 }
 
-export default DarkMode
+export default PinkMode

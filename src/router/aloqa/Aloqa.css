@@ -136,3 +136,181 @@
 .link{
     color: #000000;
 }
+.online_murojat{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 50px 140px;
+}
+.murojat_img_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.img_flex_img{
+    width: 110px;
+    height: 110px;
+}
+.img_flex_h6{
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 10px;
+    width: 50%;
+}
+.murojat_flex_inp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.murojat_flex_inp h6{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 5px;
+}
+.flex_inp_box{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.muojat_inp{
+    width: 380px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 1px #0008;
+}
+.muojat_inp2{
+    width: 260px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 400;
+    outline: none;
+    margin-left: 20px;
+    border: none;
+    box-shadow: 0px 0px 1px #0008;
+}
+.muojat_inp3{
+    width: 260px;
+    height: 50px;
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 1px #0008;
+}
+.end{
+    width: 20px;
+    height: 20px;
+    margin-top:  50px;
+}
+.hh6{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.murojat-desc{
+    width: 100%;
+    height: 150px;
+    border: none;    
+    outline: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0px 0px 1px #0008;
+}
+.clas{
+    width: 100%;
+}
+.h66{
+    margin-left: 20px;
+}
+.murojat_btn{
+    width: 180px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #689B63;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: .15s;
+}
+.murojat_btn_qa{
+    width: 180px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #689B63;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #Fff;
+    margin-top: 20px;
+    border: 1px solid #689B63;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: .15s;
+}
+.murojat_btn_qa:hover{
+    border: none;
+    background-color: #689B63;
+    color: #fff;
+}
+.murojat_btn:hover{
+    border: 1px solid #689B63;
+    background-color: #fff;
+    color: #689B63;
+}
+.hu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mor{
+    width: 80%;
+    margin: auto;
+    border: 6px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #689B63;
+}
+.muroja{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #689B63;
+    margin-left: 10px;
+}
+.mor img{
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+.d{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}

@@ -2,10 +2,31 @@ import React from 'react'
 import '../../normativ/Normativ.css'
 import {Link} from 'react-router-dom'
 import ArrowBottom from '../../../icons/arrowBottom'
+import useBreadcrumbs from "use-react-router-breadcrumbs";
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
 
 function Xalqaro() {
+  const userNamesById = { 1: "John" };
+  
+  const DynamicUserBreadcrumb = ({ match }) => (
+    <span>{userNamesById[match.params.userId]}</span>
+  );
+  
+  const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
+  
+  // define custom breadcrumbs for certain routes.
+  // breadcrumbs can be components or strings.
+  const routes = [
+    { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
+    { path: "/example", breadcrumb: "Custom Example" },
+    {
+      path: "/custom-props",
+      breadcrumb: CustomPropsBreadcrumb,
+      props: { someProp: "Hi" },
+    },
+  ];
+  const breadcrumbs = useBreadcrumbs(routes);
   return (
     <div>
       <div className='container'>
@@ -41,6 +62,13 @@ function Xalqaro() {
                 </Link>
         </ul>
         </div>
+        <div className='container tor'>
+          {breadcrumbs.map(({ match, breadcrumb }) => (
+          <Link className='link tod' key={match.pathname}  to={match.pathname}>
+            { breadcrumb}
+          </Link>
+        ))}
+          </div>
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>

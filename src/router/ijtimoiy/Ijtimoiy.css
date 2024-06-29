@@ -5,6 +5,16 @@
     transform: translateY(2px);
     cursor: pointer;
 }
+.tod{
+    padding-top: 10px;
+    font-size: 16px;
+    font-style: italic;
+    color: #000000;
+    font-weight: 400;
+}
+.tor{
+    transform: translateY(35px);
+}
 .ijtimoiy_logo{
     display: flex;
     align-items: center;

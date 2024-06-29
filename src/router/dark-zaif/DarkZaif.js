@@ -1,36 +1,37 @@
-import React, {useState, useEffect} from 'react'
-import './DarkMode.css'
-import homeImgOne from '../assets/IJTIMOIY logo 2 1.png'
-import banner from '../assets/Rectangle 3.png'
-import imgTwo from '../assets/Rectangle 11.png'
-import threeImg from '../assets/Rectangle 9.png'
-import threeImg2 from '../assets/Rectangle 10.png'
-import threeImg3 from '../assets/Rectangle 8.png'
-import group27 from '../assets/Group 27.png'
-import group26 from '../assets/Group 26.png'
-import group25 from '../assets/Group 25.png'
-import group24 from '../assets/Group 24.png'
-import grandfather from '../assets/grandfather.jpg'
-import child from '../assets/yosh bolalar.jpg'
-import invalid from '../assets/nogironlar.jpg'
+import './DarkZaif.css'
+import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
+import banner from '../../assets/Rectangle 3.png'
+import imgTwo from '../../assets/Rectangle 11.png'
+import threeImg from '../../assets/Rectangle 9.png'
+import threeImg2 from '../../assets/Rectangle 10.png'
+import threeImg3 from '../../assets/Rectangle 8.png'
+import grandfather from '../../assets/grandfather.jpg'
+import child from '../../assets/yosh bolalar.jpg'
+import invalid from '../../assets/nogironlar.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom'
-import IMG from '../assets/Rectangle 7.png'
-import ImG from '../assets/Rectangle 61.png'
+import IMG from '../../assets/Rectangle 7.png'
+import ImG from '../../assets/Rectangle 61.png'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import ArrowBottom from '../icons/arrowBottom'
-import Calendar from '../icons/calendar'
-import Map from '../icons/map'
-import Phone from '../icons/phone'
-import Visible from '../icons/visible'
-import Location from '../icons/location'
-import img from '../assets/Rectangle 54.png'
-import Mail from '../icons/mail'
-import Print from '../icons/print'
-function DarkMode() {
+import ArrowBottom from '../../icons/arrowBottom'
+import Calendar from '../../icons/calendar'
+import Map from '../../icons/map'
+import Phone from '../../icons/phone'
+import Visible from '../../icons/visible'
+import Location from '../../icons/location'
+import imgd from '../../assets/Rectangle 12.png'
+import img from '../../assets/Rectangle 54.png'
+import Mail from '../../icons/mail'
+import Print from '../../icons/print'
+import Rasm from '../../assets/image_not_supported.png'
+import Volume from '../../assets/volume_up.png'
+import Remove from '../../assets/remove_red_eye.png'
+import React, {useState, useEffect} from 'react'
+
+function DarkZaif() {
   async function fetchSilider() {
     const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/slider/list');
     const data = await response.json();
@@ -50,40 +51,46 @@ useEffect(() => {
   return (
     <div>
          <div className='home dark-mode'>
-         <div className='navbar transform'>
-      <div className="container">
-        <div className='navbar_flex'>
-          <div className='navbar_loc'>
-          <Phone/>
-            <h2 className='navbar_h2'> +998 77 207 97 98</h2>
-          </div>
-          <div className='navbar_loc'>
-          <Location/> 
-            <p className='navbar_p'>Manzil: Toshkent shahar, Chilonzor tumani, Nurxon ko'chasi 21-uy</p>
-          </div>
-          <div className='navbar_loc'>
-          <Link className='link tooo' to={'/dark-mode/zaif'}>
-          <Visible/>
-          <h3  className='navbar_h3' id='visibility'> Zarif ko'ruvchilar uchun</h3>
-          </Link>
-          </div>
-          <div className='navbar_loc'>
-          <Map/>
-          <Link className='link ' to={'/xarita'}>
-            <h4 className='navbar_h4'>Sayt xaritasi</h4>
-          </Link>
-          </div>
-          <button className='navbar_btn'>Uz</button>
-
+         <div className="zaif dark-mode zaiff">
+            <div className="container fle">
+                <div className='siza_box'>
+                    <h6 className='shrift'>Shrift</h6>
+                        <h6 className='siza_small'>A</h6>
+                        <h6 className='siza_middle'>A</h6>
+                        <h6 className='siza_big'>A</h6>
+                </div>
+                <div className='color_flex'>
+                    <h6 className='rang'>Rang</h6>
+                    <Link className='link' to={'/'}>
+                      <h6 className='rang_green'>r</h6>
+                    </Link>
+                    <Link className='link' to={'/dark-mode'}> 
+                        <h6 className='rang_dark'>r</h6>
+                    </Link>
+                    <Link className='link' to={'/pink-mode'}>
+                      <h6 className='rang_pink'>r</h6>
+                    </Link>
+                </div>
+                <div className='rasm'>
+                    <h6 className='rasm_h6'>Rasm yo'q</h6>
+                    <div className='rasm_img'>
+                        <img className='rasmm' src={Rasm} alt="" />
+                    </div>
+                </div>
+                <div className='rasm_ovoz'>
+                    <h6 className='rasm_h6'>Oddiy holat</h6>
+                    <div className='rasm_img'>
+                        <img className='rasmm' src={Volume} alt="" />
+                    </div>
+                </div>
+                <div className='rasm_koz'>
+                    <h6 className='rasm_h6'>Ovozli</h6>
+                    <div className='rasm_img'>
+                        <img className='rasmm' src={Remove} alt="" />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      {/* <div id="color-container" style="display: none;">
-          <div class="color-box" style={'background-color: red;'} onclick={changeBackgroundColor('red')}></div>
-          <div class="color-box" style={"background-color: blue;"} onclick={changeBackgroundColor('blue')}></div>
-          <div class="color-box" style={"background-color: green;"} onclick={changeBackgroundColor('green')}></div>
-          <div class="color-box" style={"background-color: yellow;"} onclick={changeBackgroundColor('yellow')}></div>
-      </div> */}
-    </div>
       <div className='container'>
 
       <ul className=' collaction'>
@@ -122,7 +129,7 @@ useEffect(() => {
      modules={[Pagination]}
      className="mySwiper dark-mode"
       >
-        {
+         {
           silider.map((item, inx) =>  
           <SwiperSlide>
           <div className='container ' key={inx} >
@@ -311,4 +318,4 @@ useEffect(() => {
   )
 }
 
-export default DarkMode
+export default DarkZaif

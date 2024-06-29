@@ -5,42 +5,46 @@ import Visible from '../../icons/visible'
 import Map from '../../icons/map'
 import Location from '../../icons/location'
 import {Link} from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
-//   function showColors() {
-//     document.getElementById('color-container').style.display = 'block';
-// }
+  const { t, i18n } = useTranslation();
 
-// function changeBackgroundColor(color) {
-//     document.body.style.backgroundColor = color;
-//     document.getElementById('color-container').style.display = 'none';
-// }
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <div className='navbar'>
       <div className="container">
         <div className='navbar_flex'>
+          <button className='nux'>3nu</button>
           <div className='navbar_loc'>
           <Phone/>
             <h2 className='navbar_h2'> +998 77 207 97 98</h2>
           </div>
-          <div className='navbar_loc'>
+          <div className='navbar_locc'>
           <Location/> 
             <p className='navbar_p'>Manzil: Toshkent shahar, Chilonzor tumani, Nurxon ko'chasi 21-uy</p>
           </div>
-          <div className='navbar_loc'>
+          <div className='navbar_loccc'>
           <Link className='link tooo' to={'/zaif'}>
           <Visible/>
           <h3  className='navbar_h3' id='visibility'> Zarif ko'ruvchilar uchun</h3>
           </Link>
           </div>
-          <div className='navbar_loc'>
+          <div className='navbar_locccc'>
           <Map/>
           <Link className='link ' to={'/xarita'}>
             <h4 className='navbar_h4'>Sayt xaritasi</h4>
           </Link>
           </div>
           <button className='navbar_btn'>Uz</button>
+          {/* <button onClick={() => changeLanguage('en')}>English</button>
+          <button onClick={() => changeLanguage('ru')}>Русский</button>
+          <button onClick={() => changeLanguage('uz')}>O'zbekcha</button>
+          <h1>{t('assalomu')}</h1>
+        <p>{}</p> */}
 
         </div>
       </div>

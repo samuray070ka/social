@@ -6,9 +6,30 @@ import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
 import IshImg from '../../../assets/208A3050 13.png'
 import Location from '../../../icons/location'
+import useBreadcrumbs from "use-react-router-breadcrumbs";
 import Phone from '../../../icons/phone'
 
 function IshOrni() {
+  const userNamesById = { 1: "John" };
+  
+  const DynamicUserBreadcrumb = ({ match }) => (
+    <span>{userNamesById[match.params.userId]}</span>
+  );
+  
+  const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
+  
+  // define custom breadcrumbs for certain routes.
+  // breadcrumbs can be components or strings.
+  const routes = [
+    { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
+    { path: "/example", breadcrumb: "Custom Example" },
+    {
+      path: "/custom-props",
+      breadcrumb: CustomPropsBreadcrumb,
+      props: { someProp: "Hi" },
+    },
+  ];
+  const breadcrumbs = useBreadcrumbs(routes);
   return (
     <div>
       <div className='container'>
@@ -16,7 +37,7 @@ function IshOrni() {
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
             <h2 className='ijtimoiy_h2'>Ijtimoiy inspeksiya</h2>
-          </Link>
+          </Link> 
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
@@ -44,6 +65,13 @@ function IshOrni() {
                 </Link>
         </ul>
         </div>
+        <div className='container tor'>
+          {breadcrumbs.map(({ match, breadcrumb }) => (
+          <Link className='link tod' key={match.pathname}  to={match.pathname}>
+            { breadcrumb}
+          </Link>
+        ))}
+          </div>
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big '>

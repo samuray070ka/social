@@ -6,10 +6,32 @@ import Search from '../../../icons/search'
 import YangilikImg from '../../../assets/Rectangle 59 (3).png'
 // import YangilikImg2 from '../../../assets/Rectangle 60.png'
 // import YangilikImg3 from '../../../assets/Rectangle 61.png'
+import useBreadcrumbs from "use-react-router-breadcrumbs";
 import JamoArrow from '../../../assets/arrow_right_alt.png'
 import { PRODUCTS } from '../../../static/Index'
 
 function VideoRolik() {
+
+  const userNamesById = { 1: "John" };
+  
+  const DynamicUserBreadcrumb = ({ match }) => (
+    <span>{userNamesById[match.params.userId]}</span>
+  );
+  
+  const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
+  
+  // define custom breadcrumbs for certain routes.
+  // breadcrumbs can be components or strings.
+  const routes = [
+    { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
+    { path: "/example", breadcrumb: "Custom Example" },
+    {
+      path: "/custom-props",
+      breadcrumb: CustomPropsBreadcrumb,
+      props: { someProp: "Hi" },
+    },
+  ];
+  const breadcrumbs = useBreadcrumbs(routes);
   return (
     <div>
          <div className='container'>
@@ -45,6 +67,13 @@ function VideoRolik() {
                 </Link>
         </ul>
         </div>
+        <div className='container tor'>
+          {breadcrumbs.map(({ match, breadcrumb }) => (
+          <Link className='link tod' key={match.pathname}  to={match.pathname}>
+            { breadcrumb}
+          </Link>
+        ))}
+          </div>
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           <div className='banner_big'>

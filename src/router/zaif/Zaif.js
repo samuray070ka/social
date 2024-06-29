@@ -1,4 +1,3 @@
-import React from 'react'
 import './Zaif.css'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import banner from '../../assets/Rectangle 3.png'
@@ -18,6 +17,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom'
 import Rasm from '../../assets/image_not_supported.png'
 import Volume from '../../assets/volume_up.png'
+import React, {useState, useEffect} from 'react'
 import Remove from '../../assets/remove_red_eye.png'
 
 import 'swiper/css';
@@ -25,7 +25,24 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import ArrowBottom from '../../icons/arrowBottom'
 import Calendar from '../../icons/calendar'
+
 function Zaif() {
+  async function fetchSilider() {
+    const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/slider/list');
+    const data = await response.json();
+    return data;
+}
+const [silider, setSilider] = useState([]);
+
+useEffect(() => {
+    async function getData() {
+        const result = await fetchSilider();
+        setSilider(result);
+    }
+    
+    getData();
+    console.log(silider);
+}, []);
   return (
     <div>
          <div className='home'>
@@ -45,7 +62,9 @@ function Zaif() {
                     <Link className='link' to={'/dark-mode'}> 
                         <h6 className='rang_dark'>r</h6>
                     </Link>
-                    <h6 className='rang_pink'>r</h6>
+                    <Link className='link' to={'/pink-mode'}>
+                      <h6 className='rang_pink'>r</h6>
+                    </Link>
                 </div>
                 <div className='rasm'>
                     <h6 className='rasm_h6'>Rasm yo'q</h6>
@@ -105,64 +124,19 @@ function Zaif() {
      modules={[Pagination]}
      className="mySwiper"
       >
-        <SwiperSlide>
-          <div className='container ' >
-            <img className='banner_photo' src={banner} alt="" />
+         {
+          silider.map((item, inx) =>  
+          <SwiperSlide>
+          <div className='container ' key={inx} >
+            <img className='banner_photo' src={item.photo} alt="" />
             <img className='banner_photo_two' src={img} alt="" />
             <div className='ul_flex '>
             </div>
-            <h1 className='banner_h1'>Nogironlarga qulay muhit va to'siqsiz sharoitlar yaratilishi, paralimpiya sport turlari jalb qilinishi hamda ularga ajratilgan ish va o'qish o'rinlari</h1>
+            <h1 className='banner_h1'>{item.title.luz}</h1>
             <button className='home_btn'>Batafsil</button>
           </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='container'>
-            <img className='banner_photo' src={grandfather} alt="" />
-            <img className='banner_photo_two' src={img} alt="" />
-            <div className='ul_flex '>
-            </div>
-            <h1 className='banner_h1 '>Katta yoshdagilarga ijtiomoiy xizmatlar
-              ko‘rsatilishi ustidan nazorat qilish</h1>
-            <button className='home_btn'>Batafsil</button>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='container'>
-            <img className='banner_photo' src={child} alt="" />
-            <img className='banner_photo_two' src={img} alt="" />
-            <div className='ul_flex '>
-            </div>
-            <h1 className='banner_h1 '>Voyaga yetmaganlar uchun ijtimoiy
-              xizmatlar koʻrsatilishini nazorat qilish</h1>
-            <button className='home_btn'>Batafsil</button>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='container'>
-            <img className='banner_photo' src={invalid} alt="" />
-            <img className='banner_photo_two' src={img} alt="" />
-            <div className='ul_flex '>
-            </div>
-            <h1 className='banner_h1 '>Nogironligi boʻlgan shaxslarga ijtimoiy
-              xizmatlar koʻrsatilishini nazorat qilish</h1>
-            <button className='home_btn'>Batafsil</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='container'>
-            <img className='banner_photo' src={banner} alt="" />
-            <img className='banner_photo_two' src={img} alt="" />
-            <div className='ul_flex '>
-            </div>
-            <h1 className='banner_h1'>Nogironlarga qulay muhit va to'siqsiz sharoitlar yaratilishi, paralimpiya sport turlari jalb qilinishi hamda ularga ajratilgan ish va o'qish o'rinlari</h1>
-              <button className='home_btn'>Batafsil</button>
-            
-          </div>
-
-        </SwiperSlide>
+        </SwiperSlide>)
+        }
       </Swiper>
       <div className="container">
         <div className='banner'>
@@ -285,7 +259,7 @@ function Zaif() {
           </div>
         </div>
       </div>
-    </div>
+        </div>
     </div>
   )
 }

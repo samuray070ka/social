@@ -10,12 +10,33 @@ import Phone from '../../../icons/phone'
 import RahbarImg from '../../../assets/208A3050 1.png'
 import RahbarImgTwo from '../../../assets/208A3050 2.png'
 import Twitter from '../../../assets/twitter.png'
+import useBreadcrumbs from "use-react-router-breadcrumbs";
 import Facebook from '../../../assets/facebook.png'
 import LinkEdin from '../../../assets/Group.png'
 
 function Rahbaryat() {
+  const userNamesById = { 1: "John" };
+  
+  const DynamicUserBreadcrumb = ({ match }) => (
+    <span>{userNamesById[match.params.userId]}</span>
+  );
+  
+  const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
+  
+  // define custom breadcrumbs for certain routes.
+  // breadcrumbs can be components or strings.
+  const routes = [
+    { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
+    { path: "/example", breadcrumb: "Custom Example" },
+    {
+      path: "/custom-props",
+      breadcrumb: CustomPropsBreadcrumb,
+      props: { someProp: "Hi" },
+    },
+  ];
+  const breadcrumbs = useBreadcrumbs(routes);
   return (
-    <div>
+    <div> 
       <div className='container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
@@ -49,6 +70,13 @@ function Rahbaryat() {
                 </Link>
         </ul>
         </div>
+        <div className='container tor'>
+          {breadcrumbs.map(({ match, breadcrumb }) => (
+          <Link className='link tod' key={match.pathname}  to={match.pathname}>
+            { breadcrumb}
+          </Link>
+        ))}
+          </div>
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container'>
           

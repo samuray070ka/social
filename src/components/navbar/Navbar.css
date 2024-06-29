@@ -29,11 +29,35 @@
     fill: #fff !important;
     transform: translateY(2px) translateX(-1px);
 }
+.navbar_locc{
+    display: flex;
+}
+.navbar_locc svg{
+    fill: #fff !important;
+    transform: translateY(2px) translateX(-1px);
+}
+.navbar_loccc{
+    display: flex;
+}
+.navbar_loccc svg{
+    fill: #fff !important;
+    transform: translateY(2px) translateX(-1px);
+}
+.navbar_locccc{
+    display: flex;
+}
+.navbar_locccc svg{
+    fill: #fff !important;
+    transform: translateY(2px) translateX(-1px);
+}
 .navbar_tel{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
+}
+.nux{
+    display: none;
 }
 .svg_tel{
     color: #fff;
@@ -43,8 +67,72 @@
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width: 1100px) {
+
+@media screen and (max-width: 1225px) {
     .navbar{
-        width: 100%;
+        width: 1260px;
+    }
+    .navbar_btn{
+        margin-right: 20px;
+    }
+    .navbar_loc{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .navbar{
+        width: 1260px;
+        height: 70px;
+        display: flex;
+    }
+    .navbar_h2,
+    .navbar_p,
+    .navbar_h4,
+    .navbar_h3{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .navbar_loc svg{
+        width: 25px;
+        height: 25px;
+    }
+    .navbar_btn{
+        transform: translateX(10px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .nux{
+        display: block;
+    }
+    .navbar_locc,
+    .navbar_loccc,
+    .navbar_locccc{
+        display: none;
+    }
+    .navbar{
+        padding: 0 50px;
+    }
+    .navbar_h2{
+        font-size: 30px;
+    }
+    .navbar_loc svg{
+        width: 30px;
+        height: 30px;
+        transform: translateY(2px);
+    }
+    .nux{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .navbar_btn{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .navbar_btn{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
     }
 }

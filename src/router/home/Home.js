@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Home.css'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import banner from '../../assets/Rectangle 3.png'
@@ -19,22 +19,60 @@ import { Link } from 'react-router-dom'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules'; 
 import ArrowBottom from '../../icons/arrowBottom'
 import Calendar from '../../icons/calendar'
 
 function Home() {
+  async function fetchSilider() {
+    const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/slider/list');
+    const data = await response.json();
+    return data;
+}
+const [silider, setSilider] = useState([]);
+
+useEffect(() => {
+    async function getData() {
+        const result = await fetchSilider();
+        setSilider(result);
+    }
+    
+    getData();
+    console.log(silider);
+}, []);
+
+
+async function fetchData() {
+  const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/menu');
+  const data = await response.json();
+  return data;
+}
+const [data, setData] = useState([]);
+
+useEffect(() => {
+  async function getData() {
+      const result = await fetchData();
+      setData(result);
+  }
+  
+  getData();
+  console.log(data);
+}, []);
   return (
     <div className='home'>
       <div className='container'>
 
       <ul className=' collaction'>
-                <Link to={'/'} className='link'>
+                <Link to={'/'} className='link lo'>
       <img className=' banner_img' src={homeImgOne} alt="" />
                 </Link>
-                <Link to={'/ijtimoiy'} className='link'>
-                  <li className='item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
-                </Link>
+                {/* {
+                  data.map((item,inx) => 
+                    <Link to={`${item.id}`} className='link' key={inx}>
+                        <li className='item'><ArrowBottom/> {item.name.uzl}</li>
+                    </Link>
+                )
+                } */}
                 <Link to={'/faoliyat'} className='link'>
                   <li className='item'><ArrowBottom/> Faoliyat</li>
                 </Link>
@@ -64,64 +102,19 @@ function Home() {
      modules={[Pagination]}
      className="mySwiper"
       >
-        <SwiperSlide>
-          <div className='container ' >
-            <img className='banner_photo' src={banner} alt="" />
+        {
+          silider.map((item, inx) =>  
+          <SwiperSlide>
+          <div className='container med' key={inx} >
+            <img className='banner_photo' src={item.photo} alt="" />
             <img className='banner_photo_two' src={img} alt="" />
             <div className='ul_flex '>
             </div>
-            <h1 className='banner_h1'>Nogironlarga qulay muhit va to'siqsiz sharoitlar yaratilishi, paralimpiya sport turlari jalb qilinishi hamda ularga ajratilgan ish va o'qish o'rinlari</h1>
+            <h1 className='banner_h1'>{item.title.luz}</h1>
             <button className='home_btn'>Batafsil</button>
           </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='container'>
-            <img className='banner_photo' src={grandfather} alt="" />
-            <img className='banner_photo_two' src={img} alt="" />
-            <div className='ul_flex '>
-            </div>
-            <h1 className='banner_h1 '>Katta yoshdagilarga ijtiomoiy xizmatlar
-              ko‘rsatilishi ustidan nazorat qilish</h1>
-            <button className='home_btn'>Batafsil</button>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='container'>
-            <img className='banner_photo' src={child} alt="" />
-            <img className='banner_photo_two' src={img} alt="" />
-            <div className='ul_flex '>
-            </div>
-            <h1 className='banner_h1 '>Voyaga yetmaganlar uchun ijtimoiy
-              xizmatlar koʻrsatilishini nazorat qilish</h1>
-            <button className='home_btn'>Batafsil</button>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className='container'>
-            <img className='banner_photo' src={invalid} alt="" />
-            <img className='banner_photo_two' src={img} alt="" />
-            <div className='ul_flex '>
-            </div>
-            <h1 className='banner_h1 '>Nogironligi boʻlgan shaxslarga ijtimoiy
-              xizmatlar koʻrsatilishini nazorat qilish</h1>
-            <button className='home_btn'>Batafsil</button>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='container'>
-            <img className='banner_photo' src={banner} alt="" />
-            <img className='banner_photo_two' src={img} alt="" />
-            <div className='ul_flex '>
-            </div>
-            <h1 className='banner_h1'>Nogironlarga qulay muhit va to'siqsiz sharoitlar yaratilishi, paralimpiya sport turlari jalb qilinishi hamda ularga ajratilgan ish va o'qish o'rinlari</h1>
-              <button className='home_btn'>Batafsil</button>
-            
-          </div>
-
-        </SwiperSlide>
+        </SwiperSlide>)
+        }
       </Swiper>
       <div className="container">
         <div className='banner'>
@@ -158,6 +151,15 @@ function Home() {
               </div>
               <h4 className='three_cart_h4'>O‘zbekistonda Global akseleratorning ustuvor yo‘nalishlarini muhokama qilish va tasdiqlash bo‘yicha Maslahat seminari bo‘lib o‘tdi</h4>
               <p className='three_cart_p'>Joriy yil 8-aprel kuni O‘zbekistonda Global akseleratorning ustuvor yo‘nalishlarini muhokama qilish va tasdiqlash bo‘yicha Maslahat seminari bo‘lib o‘tdi, unda akseleratsiya nuqtalari va sektorning potentsial...</p>
+            </div>
+            <div className='three_cart'>
+              <img src={threeImg} alt="" />
+              <div className='icon_flex'>
+              <Calendar/>
+                <h3 className='three_cart_h3'>12:05 / 03.02.2024</h3>
+              </div>
+              <h4 className='three_cart_h4'>BMTning oziq-ovqat va qishloq xo'jaligi tashkiloti (FAO) ning O'zbekiston Respublikasidagi vakolatxonasi vakillari bilan uchrashuv bo'lib o'tdi</h4>
+              <p className='three_cart_p'>5-mart kuni Ijtimoiy himoya milliy agentligida BMTning oziq-ovqat va qishloq xo’jaligi tashkiloti (FAO) ning O’zbekiston Respublikasidagi vakolatxonasi rahbari o’rinbosari Sherzod Umarov bilan...</p>
             </div>
             <div className='three_cart'>
               <img src={threeImg} alt="" />

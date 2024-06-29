@@ -3,6 +3,7 @@ import '../../aloqa/Aloqa.css'
 import {Link} from 'react-router-dom'
 import ArrowBottom from '../../../icons/arrowBottom'
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
+import useBreadcrumbs from "use-react-router-breadcrumbs";
 import Search from '../../../icons/search'
 import sideImg from '../../../assets/Rectangle 69.png'
 import sideImgOne from '../../../assets/Rectangle 103.png'
@@ -11,6 +12,26 @@ import Mail from '../../../icons/mail'
 import Clock from '../../../assets/access_time.png'
 import Location from '../../../icons/location'
 function Qoraqalpoq() {
+  const userNamesById = { 1: "John" };
+  
+  const DynamicUserBreadcrumb = ({ match }) => (
+    <span>{userNamesById[match.params.userId]}</span>
+  );
+  
+  const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
+  
+  // define custom breadcrumbs for certain routes.
+  // breadcrumbs can be components or strings.
+  const routes = [
+    { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
+    { path: "/example", breadcrumb: "Custom Example" },
+    {
+      path: "/custom-props",
+      breadcrumb: CustomPropsBreadcrumb,
+      props: { someProp: "Hi" },
+    },
+  ];
+  const breadcrumbs = useBreadcrumbs(routes);
   return (
     <div>
         <div className='container'>
@@ -46,6 +67,13 @@ function Qoraqalpoq() {
                 </Link>
         </ul>
         </div>
+        <div className='container tor'>
+          {breadcrumbs.map(({ match, breadcrumb }) => (
+          <Link className='link tod' key={match.pathname}  to={match.pathname}>
+            { breadcrumb}
+          </Link>
+        ))}
+          </div>
       <div className="ijtimoiy_banner ">
         <div className='ijti_ban  container sidee'>
           <div className='sidebar'>

@@ -58,10 +58,16 @@ useEffect(() => {
   getData();
   console.log(data);
 }, []);
-// const faoliyatBack = document.querySelector('.faoliya')
+// const faoliyatBack = document.querySelector('.faoliyat_ro')
+// faoliyatBack.addEventListener(('click', () => {
+//   console.log('hello');
+// }))
+const [isDropdownVisible, setDropdownVisible] = useState(false);
 
-// faoliyatBack.classList.add('yangi_class_berish')
-// faoliyatBack.classList.remove('yangi_class_berish')
+const toggleDropdown = () => {
+  setDropdownVisible(!isDropdownVisible);
+}
+
   return (
     <div className='home'>
       <div className='container'>
@@ -77,7 +83,8 @@ useEffect(() => {
                     </Link>
                 )
                 } */}
-                  <li className='item rod'><ArrowBottom/> Ijtimoiy</li>
+                  <li  onClick={toggleDropdown} className='item rod'><ArrowBottom/> Ijtimoiy</li>
+                  {isDropdownVisible && (
                 <div className='faoliyat_ro faoliyat_back'>
                 <ul className='banner_collaction'>
                   <Link className='link' to={'/ijtimoiy'}>
@@ -106,6 +113,7 @@ useEffect(() => {
               </Link>
             </ul>
                 </div>
+)}
                 <Link to={'/faoliyat'} className='link'>
                   <li className='item ro'><ArrowBottom/> Faoliyat</li>
                 </Link>

@@ -73,6 +73,9 @@ useEffect(() => {
                     </Link>
                 )
                 } */}
+                <Link to={'/ijtimoiy'} className='link'>
+                  <li className='item'><ArrowBottom/> Faoliyat</li>
+                </Link>
                 <Link to={'/faoliyat'} className='link'>
                   <li className='item'><ArrowBottom/> Faoliyat</li>
                 </Link>

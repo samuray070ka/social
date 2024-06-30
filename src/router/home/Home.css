@@ -335,9 +335,14 @@
     width: 1260px;
    }
 }
+@media screen and (max-width: 1070px) {
+    .collaction{
+        width: 1200px;
+    }
+}
 @media screen and (max-width: 950px) {
    .collaction{
-    width: 1000px;
+    width: 1200px;
    }
 }
 @media screen and (max-width: 600px) {
@@ -347,7 +352,7 @@
    .banner_img{
     width: 150px;
     margin-top: 10px;
-    transform: translateX(120px);
+    transform: translateX(40px);
     height: 150px;
    }
    .lo{
@@ -441,13 +446,12 @@
    .banner_small{
     display: flex;
     flex-wrap: wrap;
+    padding: 20px 50px;
    }
    .flex_img{
-    width: 600px;
-    height: 500px;
+    width: 550px;
    }
    .img{
-    height: 450px;
     width: 100%;
    }
    .circle{

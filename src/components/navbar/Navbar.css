@@ -11,6 +11,15 @@
     justify-content: space-between;
     color: #fff;
 }
+.svg svg{
+    fill: #fff !important;
+    width: 50px;
+    height: 50px;
+}
+.svg{
+    display: flex;
+    align-items: center;
+}
 .navbar_h2,
 .navbar_p,
 .navbar_h3,

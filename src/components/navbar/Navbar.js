@@ -6,6 +6,7 @@ import Map from '../../icons/map'
 import Location from '../../icons/location'
 import {Link} from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
+import Reordar from '../../icons/reordar'
 
 function Navbar() {
   const { t, i18n } = useTranslation();
@@ -18,7 +19,10 @@ function Navbar() {
     <div className='navbar'>
       <div className="container">
         <div className='navbar_flex'>
-          <button className='nux'>3nu</button>
+          <div className='svg'>
+            <Reordar/>
+          </div>
+            
           <div className='navbar_loc'>
           <Phone/>
             <h2 className='navbar_h2'> +998 77 207 97 98</h2>

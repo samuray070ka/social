@@ -16,8 +16,6 @@ function Ijtimoiy() {
   
   const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
   
-  // define custom breadcrumbs for certain routes.
-  // breadcrumbs can be components or strings.
   const routes = [
     { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
     { path: "/example", breadcrumb: "Custom Example" },
@@ -71,17 +69,16 @@ function Ijtimoiy() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className=' container ols'>
           <div className='banner_big '>
-            <h3>O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiya</h3>
+            <h3 className='oz'>O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiya</h3>
 
-            <p>O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiya (keyingi o‘rinlarda Inspeksiya deb yuritiladi) O‘zbekiston Respublikasi Prezidentining 2023-yil 1-iyundagi “Aholiga sifatli ijtimoiy xizmat va yordam ko‘rsatish hamda uning samarali nazorat tizimini yo‘lga qo‘yish bo‘yicha kompleks chora-tadbirlar to‘g‘risida”gi Farmoni bilan tashkil etilgan.
+            <p className='ps'>O‘zbekiston Respublikasi Prezidenti huzuridagi Ijtimoiy himoya milliy agentligi huzuridagi Ijtimoiy inspeksiya (keyingi o‘rinlarda Inspeksiya deb yuritiladi) O‘zbekiston Respublikasi Prezidentining 2023-yil 1-iyundagi “Aholiga sifatli ijtimoiy xizmat va yordam ko‘rsatish hamda uning samarali nazorat tizimini yo‘lga qo‘yish bo‘yicha kompleks chora-tadbirlar to‘g‘risida”gi Farmoni bilan tashkil etilgan.
             </p>
 
-            <p>Inspeksiya ijtimoiy himoya sohasida huquqbuzarliklar profilaktikasini, aholini ijtimoiy himoya qilish va ijtimoiy xizmatlarva yordam ko‘rsatish sohasida qonunchilik hujjatlari talablariga rioya etilishi ustidan davlat nazoratini amalga oshiruvchi vakolatli davlat boshqaruvi organi hisobalanadi.</p>
+            <p className='ps'>Inspeksiya ijtimoiy himoya sohasida huquqbuzarliklar profilaktikasini, aholini ijtimoiy himoya qilish va ijtimoiy xizmatlarva yordam ko‘rsatish sohasida qonunchilik hujjatlari talablariga rioya etilishi ustidan davlat nazoratini amalga oshiruvchi vakolatli davlat boshqaruvi organi hisobalanadi.</p>
 
-            <h2>Ijtimoiy inspeksiyaning vazifalari</h2>
+            <h2 className='oz'>Ijtimoiy inspeksiyaning vazifalari</h2>
             <ul className='text_collaction'>
               
               <li className='text_item'><span>ijtimoiy himoya sohasiga doir </span>  qonunchilikka rioya etilishi ustidan <span>davlat nazoratini amalga oshirish;</span></li>
@@ -105,7 +102,7 @@ function Ijtimoiy() {
             <br />
             <h4>Ijtimoiy inspeksiyaning funksiyalari</h4>
             <div className='nimadur'>
-              <h1>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <h1 className='oz'>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>
@@ -316,7 +313,6 @@ function Ijtimoiy() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

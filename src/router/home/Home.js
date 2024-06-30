@@ -58,6 +58,10 @@ useEffect(() => {
   getData();
   console.log(data);
 }, []);
+// const faoliyatBack = document.querySelector('.faoliya')
+
+// faoliyatBack.classList.add('yangi_class_berish')
+// faoliyatBack.classList.remove('yangi_class_berish')
   return (
     <div className='home'>
       <div className='container'>
@@ -73,26 +77,52 @@ useEffect(() => {
                     </Link>
                 )
                 } */}
-                <Link to={'/ijtimoiy'} className='link'>
-                  <li className='item'><ArrowBottom/> Faoliyat</li>
-                </Link>
+                  <li className='item rod'><ArrowBottom/> Ijtimoiy</li>
+                <div className='faoliyat_ro faoliyat_back'>
+                <ul className='banner_collaction'>
+                  <Link className='link' to={'/ijtimoiy'}>
+              <li className='banner_item  faoliyat_roo'>Inspeksiya haqida</li>
+                  </Link>
+              <Link to={'/ijtimoiy/nizom'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Nizom</li>
+              </Link>
+              <Link to={'/ijtimoiy/tuzilma'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Tuzilma</li>
+              </Link>
+              <Link to={'/ijtimoiy/rahbaryat'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Rahbariyat</li>
+              </Link>
+              <Link to={'/ijtimoiy/markaziy'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Markaziy apparat</li>
+              </Link>
+              <Link to={'/ijtimoiy/hududiy'} className='link'>
+                <li className='banner_item faoliyat_roo '>Hududiy boshqarmalar</li>
+              </Link>
+              <Link to={'/ijtimoiy/hamkorlik'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Hamkorlik</li>
+              </Link>
+              <Link to={'/ijtimoiy/ish-orni'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Bo'sh ish o'rnlari</li>
+              </Link>
+            </ul>
+                </div>
                 <Link to={'/faoliyat'} className='link'>
-                  <li className='item'><ArrowBottom/> Faoliyat</li>
+                  <li className='item ro'><ArrowBottom/> Faoliyat</li>
                 </Link>
                 <Link to={'/normativ'} className='link'>
-                  <li className='item'><ArrowBottom/>Normativ hujjatlar</li>
+                  <li className='item ro'><ArrowBottom/>Normativ hujjatlar</li>
                 </Link>
                 <Link to={'/jamoatchilik'} className='link'>
-                  <li className='item'><ArrowBottom/>Jamoatchilik</li>
+                  <li className='item ro'><ArrowBottom/>Jamoatchilik</li>
                 </Link>
                 <Link to={'/statistica'} className='link'>
-                  <li className='item'><ArrowBottom/>Statistika</li>
+                  <li className='item ro'><ArrowBottom/>Statistika</li>
                 </Link>
                 <Link to={'/ochiq'} className='link'>
-                  <li className='item'><ArrowBottom/>Ochiq ma'lumotlar</li>
+                  <li className='item ro'><ArrowBottom/>Ochiq ma'lumotlar</li>
                 </Link>
                 <Link to={'/aloqa'} className='link'>
-                  <li className='item'><ArrowBottom/>Aloqa</li>
+                  <li className='item ro'><ArrowBottom/>Aloqa</li>
                 </Link>
               </ul>
       </div>

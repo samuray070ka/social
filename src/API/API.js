@@ -37,6 +37,24 @@ function API() {
         getData();
         console.log(silider);
     }, []);
+
+    async function fetchCategory() {
+        const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/statistic-category');
+        const data = await response.json();
+        return data;
+    }
+    const [category, setCategory] = useState([]);
+
+    useEffect(() => {
+        async function getData() {
+            const result = await fetchCategory();
+            setCategory(result);
+        }
+        
+        getData();
+        console.log(category);
+    }, []);
+    
   return (
     <div>
          <h1>API Ma'lumotlari</h1>

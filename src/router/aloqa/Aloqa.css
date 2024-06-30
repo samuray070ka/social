@@ -323,18 +323,18 @@
     transform: translateX(20px) translateY(-10px);
 }
 .location {
-    position: relative;
+    /* position: relative; */
     width: 100%;
     min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
     background-color: #fff;
   }
   .location .mapdiv {
     width: 70%;
-    margin: auto;
+    /* margin: auto; */
   }
   .mapdiv .map path {
     fill: #689B63;
@@ -343,7 +343,7 @@
     cursor: pointer;
   }
   .mapdiv_logo {
-    position: absolute;
+    /* position: absolute; */
     top: 33%;
     right: 17%;
     cursor: pointer;
@@ -356,4 +356,22 @@
     position: absolute;
     top: 39%;
     right: 18%;
+  }
+  .sid{
+    border: 1px solid #689B63;
+  }
+  .ed{
+    display: flex;
+  }
+  .location{
+    width: 700px;
+    position: relative;
+    left: -17%;
+    top: -3%;
+    padding: 0;
+    border: 1px solid #689B63;
+
+  }
+  .olss{
+    max-width:  600px;
   }

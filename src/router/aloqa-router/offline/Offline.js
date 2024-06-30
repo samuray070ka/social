@@ -69,9 +69,28 @@ function Offline() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
-          <div className='banner_big'>
+        <div className='ols  container'>
+        <div className='sidebar sid'>
+            <h1>Hududiy manzillarimiz:</h1>
+            <ul className='side_collaction'>
+                <li className='side_item'>Andijon viloyati</li>
+                <li className='side_item'>Namangan viloyati</li>
+                <li className='side_item'>Farg‘ona viloyati</li>
+                <li className='side_item'>Sirdaryo viloyati</li>
+                <li className='side_item'>Jizzax viloyati</li>
+                <li className='side_item'>Samarqand viloyati</li>
+                <li className='side_item'>Surxondaryo viloyati</li>
+                <li className='side_item'>Qashqadaryo viloyati</li>
+                <li className='side_item'>Navoiy viloyati</li>
+                <li className='side_item'>Buxoro viloyati</li>
+                <li className='side_item'>Toshkent viloyati</li>
+                <li className='side_item'>Toshkent shahri</li>
+                <li className='side_item'>Xorazm viloyati</li>
+                <li className='side_item'>Qoraqalpog‘iston Respublikasi</li>
+
+            </ul>
+          </div>
+          <div className='banner_big olss'>
             
           <div class="location">
       <div class="mapdiv">
@@ -157,7 +176,6 @@ function Offline() {
         </svg>
       </div>
     </div>
-            <Xarita/>
           </div>
           <div className='banner_text '>
             <ul className='banner_collaction'>
@@ -176,7 +194,6 @@ function Offline() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

@@ -3,7 +3,33 @@
     min-height: 90vh;
     position: relative;
 }
-
+.faoliyat_ro{
+    width: 230px;
+    background-color: #406C3B;
+    /* display: none; */
+    position: absolute;
+    left: 120px;
+    top: 85px;
+    /* opacity: 0.9; */
+    z-index: 1;
+}
+.faoliyat_roo{
+    width: 100%;
+}
+.faoliyat_roo:hover{
+    background-color: #fff;
+    color: #406C3B;
+}
+.faoliyat_roo:active{
+    color: #fff;
+}
+.faoliyat_ro li{
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #fff;
+}
 .banner_photo{
     width: 100%;
     position: absolute;

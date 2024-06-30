@@ -23,7 +23,8 @@ function Navbar() {
             <Reordar/>
           </div>
             
-          <div className='navbar_loc'>
+         <div className='navbar_flex'>
+         <div className='navbar_loc'>
           <Phone/>
             <h2 className='navbar_h2'> +998 77 207 97 98</h2>
           </div>
@@ -43,6 +44,7 @@ function Navbar() {
             <h4 className='navbar_h4'>Sayt xaritasi</h4>
           </Link>
           </div>
+         </div>
           <button className='navbar_btn'>Uz</button>
           {/* <button onClick={() => changeLanguage('en')}>English</button>
           <button onClick={() => changeLanguage('ru')}>Русский</button>

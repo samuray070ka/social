@@ -314,3 +314,46 @@
     font-size: 16px;
     font-weight: 400;
 }
+.exs{
+    display: flex;
+    align-items: center;
+    transform: translateY(30px);
+}
+.end{
+    transform: translateX(20px) translateY(-10px);
+}
+.location {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    background-color: #fff;
+  }
+  .location .mapdiv {
+    width: 70%;
+    margin: auto;
+  }
+  .mapdiv .map path {
+    fill: #689B63;
+    stroke: #fff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .mapdiv_logo {
+    position: absolute;
+    top: 33%;
+    right: 17%;
+    cursor: pointer;
+  }
+  .mapdiv .map path:hover {
+    fill: #406c3b;
+    transform: scale(1.005);
+  }
+  .map_item {
+    position: absolute;
+    top: 39%;
+    right: 18%;
+  }

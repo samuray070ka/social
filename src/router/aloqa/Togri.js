@@ -68,8 +68,7 @@ function Togri() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='online_murojat'>
             <div className='murojat_img_flex'>
               <img className='img_fle_img' src={homeImgOne} alt="" />
@@ -92,12 +91,8 @@ function Togri() {
                 </Link>
               </div>
           </div>
-          <Link className='link' to={'/aloqa/offline'}>
-            <button className='end'>ex</button>
-          </Link>
         </div>
         </div>
-    </div>
   )
 }
 

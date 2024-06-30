@@ -107,15 +107,21 @@ function Aloqa() {
                 </Link>
         </ul>
         </div>
-        <div className='container tor'>
+       <div className='exs container'>
+       <div className='container tor'>
           {breadcrumbs.map(({ match, breadcrumb }) => (
           <Link className='link tod' key={match.pathname}  to={match.pathname}>
             { breadcrumb}
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+          <div>
+          <Link className='link' to={'/aloqa/offline'}>
+            <button className='end'>ex</button>
+          </Link>
+          </div>
+       </div>
+        <div className=' ols  container '>
           <div className='online_murojat'>
             <div className='murojat_img_flex'>
               <img className='img_fle_img' src={homeImgOne} alt="" />
@@ -166,10 +172,7 @@ function Aloqa() {
               <button className='murojat_btn' type='submit'>Yuborish</button>
             </Link>
           </div>
-          <Link className='link' to={'/aloqa/offline'}>
-            <button className='end'>ex</button>
-          </Link>
-        </div>
+          
         </div>
     </div>
   )

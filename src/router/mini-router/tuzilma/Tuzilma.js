@@ -5,6 +5,7 @@ import ArrowBottom from '../../../icons/arrowBottom'
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
+import Reorder from '../../../icons/reordar'
 import TuzulmaImg from '../../../assets/image 1.png'
 
 function Tuzilma() {
@@ -39,6 +40,10 @@ function Tuzilma() {
           <input type="text" /> <Search/>
         </div> 
         <hr  className='ijtimoiy_hr'/>
+        <div className='re'>
+        <Reorder/>
+
+        </div>
         <ul className='ijtimoiy_collaction'>
         <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
@@ -70,8 +75,7 @@ function Tuzilma() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big '>
             <h1 className='tuzilma_h1'>Tuzilma</h1>
            <img className='tuzilma_img' src={TuzulmaImg} alt="" />
@@ -113,7 +117,6 @@ function Tuzilma() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

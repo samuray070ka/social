@@ -10,6 +10,7 @@ import YangilikImg3 from '../../assets/Rectangle 61.png'
 import JamoArrow from '../../assets/arrow_right_alt.png'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import { PRODUCTS } from '../../static/Index'
+import Reorder from '../../icons/reordar'
 
 function Jamoatchilik() {
   const userNamesById = { 1: "John" };
@@ -43,6 +44,10 @@ function Jamoatchilik() {
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
+        <div className='re'>
+        <Reorder/>
+
+        </div>
         <ul className='ijtimoiy_collaction'>
                 <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>

@@ -16,6 +16,7 @@ import MaskGroupImg from '../../../assets/Mask group.png'
 import MaskGroupImg1 from '../../../assets/Mask group (1).png'
 import MaskGroupImg2 from '../../../assets/Mask group (2).png'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
+import Reorder from '../../../icons/reordar'
 import MaskGroupImg3 from '../../../assets/Mask group (3).png'
 function Markaziy() {
   const userNamesById = { 1: "John" };
@@ -49,6 +50,10 @@ function Markaziy() {
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
+        <div className='re'>
+        <Reorder/>
+
+        </div>
         <ul className='ijtimoiy_collaction'>
         <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
@@ -80,8 +85,7 @@ function Markaziy() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big '>
           <h1 className='tuzilma_h1'>Markaziy apparat</h1>
             <div className='rahbar_flex'>
@@ -245,7 +249,6 @@ function Markaziy() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

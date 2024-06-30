@@ -8,6 +8,7 @@ import IshImg from '../../../assets/208A3050 13.png'
 import Location from '../../../icons/location'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import Phone from '../../../icons/phone'
+import Reorder from '../../../icons/reordar'
 
 function IshOrni() {
   const userNamesById = { 1: "John" };
@@ -41,6 +42,10 @@ function IshOrni() {
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
+        <div className='re'>
+        <Reorder/>
+
+        </div>
         <ul className='ijtimoiy_collaction'>
         <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
@@ -72,8 +77,7 @@ function IshOrni() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big '>
             <h1 className='tuzilma_h1'>Bo'sh ish o'rnlari</h1>
             <div className='ish_flex'>
@@ -134,7 +138,6 @@ function IshOrni() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import ArrowBottom from '../../../icons/arrowBottom'
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
+import Reorder from '../../../icons/reordar'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 
 function Nizom() {
@@ -43,6 +44,10 @@ function Nizom() {
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
+        <div className='re'>
+        <Reorder/>
+
+        </div>
         <ul className='ijtimoiy_collaction'>
         <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
@@ -74,8 +79,7 @@ function Nizom() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big '> 
             <b className='nizom_h3'>Ijtimoiy inspeksiya nizomi</b>
             <br />
@@ -417,7 +421,6 @@ function Nizom() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

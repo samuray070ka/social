@@ -11,6 +11,7 @@ import RahbarImg from '../../../assets/208A3050 1.png'
 import RahbarImgTwo from '../../../assets/208A3050 2.png'
 import Twitter from '../../../assets/twitter.png'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
+import Reorder from '../../../icons/reordar'
 import Facebook from '../../../assets/facebook.png'
 import LinkEdin from '../../../assets/Group.png'
 
@@ -46,6 +47,10 @@ function Rahbaryat() {
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
+        <div className='re'>
+        <Reorder/>
+
+        </div>
         <ul className='ijtimoiy_collaction'>
         <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
@@ -77,8 +82,7 @@ function Rahbaryat() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           
           <div className="banner_big ">
             <h1 className='tuzilma_h1'>Rahbaryat</h1>
@@ -184,7 +188,6 @@ function Rahbaryat() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

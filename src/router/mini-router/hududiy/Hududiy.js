@@ -16,6 +16,7 @@ import MaskGroupImg2 from '../../../assets/Mask group (2).png'
 import MaskGroupImg3 from '../../../assets/Mask group (3).png'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import Location from '../../../icons/location'
+import Reorder from '../../../icons/reordar'
 
  
 function Hududiy() {
@@ -50,6 +51,10 @@ function Hududiy() {
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
+        <div className='re'>
+        <Reorder/>
+
+        </div>
         <ul className='ijtimoiy_collaction'>
         <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
@@ -81,8 +86,7 @@ function Hududiy() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big '>
             <h1 className='tuzilma_h1'>Hududiy boshqarmalar</h1>
             <div className='rahbar_flex'>
@@ -241,7 +245,6 @@ function Hududiy() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

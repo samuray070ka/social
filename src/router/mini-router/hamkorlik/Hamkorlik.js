@@ -9,6 +9,7 @@ import HamkorImg2 from '../../../assets/Rectangle 83.png'
 import HamkorImg3 from '../../../assets/Rectangle 84.png'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import { PRODUCTS } from '../../../static/Index'
+import Reorder from '../../../icons/reordar'
 
 function Hamkorlik() {
   const param = useParams  
@@ -45,6 +46,10 @@ function Hamkorlik() {
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
+        <div className='re'>
+        <Reorder/>
+
+        </div>
         <ul className='ijtimoiy_collaction'>
         <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
@@ -76,8 +81,7 @@ function Hamkorlik() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big '>
             <h6 className='tuzilma_h1'>Xalqaro xamkorlik</h6>
             <div className='wrapper'>
@@ -131,7 +135,6 @@ function Hamkorlik() {
           </div>
         </div>
         </div>
-    </div>
   )
 }
 

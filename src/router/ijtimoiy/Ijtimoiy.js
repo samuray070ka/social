@@ -102,7 +102,7 @@ function Ijtimoiy() {
             <br />
             <h4>Ijtimoiy inspeksiyaning funksiyalari</h4>
             <div className='nimadur'>
-              <h1 className='oz'>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
+              <h1 className=''>I. Ijtimoiy sohaga oid qonunchilik hujjatlariga rioya etilishi ustidan davlat nazoratini amalga oshirish sohasida:</h1>
               <ul className='funksiya_collaction'>
 
                 <li className='funksiya_item'>ijtimoiy xizmatlar va yordam ko‘rsatish   sohasida qonunchilik hujjatlari talablariga rioya etilishini nazorat qilish;</li>

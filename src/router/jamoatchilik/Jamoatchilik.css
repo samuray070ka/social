@@ -27,8 +27,73 @@
     font-weight: 400;
     padding: 20px;
 }
+.re{
+    display: none;
+}
 .jamo_h6{
     font-size: 12px;
     font-weight: 400;
     color: #D9DADA;
+}
+@media screen and (max-width:710px) {
+    .jamo_box{
+        width: 450px;
+        min-height: 500px;
+    }
+    .hamkor_img{
+        min-height: 270px;
+    }
+    .jamo_h6{
+        font-size: 16px;
+    }
+    .box_h6{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .banner_collaction li{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .ijtimoiy_logo h6{
+        font-size: 30px;
+    }
+    .ijtimoiy_collaction{
+        display: none;
+    }
+    .ijtimoiy_collaction li{
+        display: none;
+
+    }
+    .ijtimoiy_hr{
+        display: none;
+    }
+    .re{
+        display: block;
+        padding: 20px;
+        
+    }
+    .re svg{
+        width: 50px;
+        margin-left: 10px;
+        height: 50px;
+        fill: #689B63 !important;
+    }
+    .jamo_box{
+        width: 850px;
+        min-height: 600px;
+    }
+    .hamkor_img{
+        min-height: 400px;
+    }
+    .jamo_h6{
+        font-size: 16px;
+    }
+    .box_h6{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .banner_collaction li{
+        font-size: 16px;
+    }
 }

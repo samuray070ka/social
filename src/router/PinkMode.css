@@ -2,6 +2,9 @@
     background-color: #cecece;
     color: #fff;
 }
+.pink-mode .banner_collaction li:hover{
+    color: #cecece;
+}
 .pink-mode-old{
     background-color: #C0C0C0;
     color: #fff;

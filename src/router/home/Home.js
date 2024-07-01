@@ -109,7 +109,7 @@ const toggleDropdownSeven = () => {
     <div className='home'>
       <div className='container'>
 
-      <ul className=' collaction'>
+      <ul className=' collaction'> 
                 <Link to={'/'} className='link lo'>
       <img className=' banner_img' src={homeImgOne} alt="" />
                 </Link>

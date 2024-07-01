@@ -42,30 +42,67 @@ useEffect(() => {
 }, []);
 
 
-async function fetchData() {
-  const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/menu');
-  const data = await response.json();
-  return data;
-}
-const [data, setData] = useState([]);
+// async function fetchData() {
+//   const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/menu');
+//   const data = await response.json();
+//   return data;
+// }
+// const [data, setData] = useState([]);
 
-useEffect(() => {
-  async function getData() {
-      const result = await fetchData();
-      setData(result);
-  }
+// useEffect(() => {
+//   async function getData() {
+//       const result = await fetchData();
+//       setData(result);
+//   }
   
-  getData();
-  console.log(data);
-}, []);
-// const faoliyatBack = document.querySelector('.faoliyat_ro')
-// faoliyatBack.addEventListener(('click', () => {
-//   console.log('hello');
-// }))
+//   getData();
+//   console.log(data);
+// }, []);
 const [isDropdownVisible, setDropdownVisible] = useState(false);
 
 const toggleDropdown = () => {
   setDropdownVisible(!isDropdownVisible);
+  setDropdownVisible(!setDropdown() && !isDropdownVisible && !setFive() && !setSix() && !setThree() && !setSeven()   && !setFour())
+}
+const [DropdownVisible, setDropdown] = useState(false);
+
+const toggleDropdowntwo = () => {
+  setDropdown(!DropdownVisible );
+  setDropdown(!setDropdownVisible() && !DropdownVisible && !setFive() && !setSix() && !setThree() && !setSeven()   && !setFour())
+}
+const [three, setThree] = useState(false);
+
+const toggleDropdownthree = () => {
+  setThree(!three );
+  setThree(!setDropdownVisible() && !three && !setDropdown() && !setFive() && !setSix() && !setSeven()   && !setFour())
+}
+const [four, setFour] = useState(false);
+
+const toggleDropdownFour = () => {
+  setFour(!four );
+  setFour(!setDropdownVisible() && !setThree() && !four && !setFive() && !setSix() && !setSeven()   && !setDropdown())
+}
+
+const [five, setFive] = useState(false);
+
+
+const toggleDropdownFive = () => {
+  setFive(!five );
+  setFive(!setDropdownVisible() && !setThree() && !setFour() && !five && !setSix()  && !setSeven()   && !setDropdown())
+}
+
+const [six, setSix] = useState(false);
+
+const toggleDropdownSix = () => {
+  setSix(!six );
+  setSix(!setDropdownVisible() && !setThree() && !setFour() && !setFive() && !six && !setSeven()  && !setDropdown())
+}
+
+const [seven, setSeven] = useState(false);
+
+const toggleDropdownSeven = () => {
+  setSeven(!seven );
+  setSeven(!setDropdownVisible() && !setThree() && !setFour() && !setFive() && !setSix() && !seven  && !setDropdown())
 }
 
   return (
@@ -114,24 +151,122 @@ const toggleDropdown = () => {
             </ul>
                 </div>
 )}
-                <Link to={'/faoliyat'} className='link'>
-                  <li className='item ro'><ArrowBottom/> Faoliyat</li>
-                </Link>
+                  <li className='item ro' onClick={toggleDropdowntwo}><ArrowBottom/> Faoliyat</li>
+                {DropdownVisible && (
+                <div className='faoliyat_ro faoliyat_back qu'>
+                <ul className='banner_collaction'>
+                  <Link className='link' to={'/faoliyat'}>
+              <li className='banner_item  faoliyat_roo '>Qulay muhit</li>
+                  </Link>
+              <Link to={'/faoliyat/katta-yoshdagilar'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Katta yoshdagilar</li>
+              </Link>
+              <Link to={'/faoliyat/voyaga'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Voyaga yetmaganlar</li>
+              </Link>
+              <Link to={'/faoliyat/nogironlik'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Nogironlikni belgilash</li>
+              </Link>
+              <Link to={'/faoliyat/korupsiya'} className='link'>
+                <li className='banner_item  faoliyat_roo'>Korrupsiyaga qarshi kurash</li>
+              </Link>
+            </ul>
+                </div>
+)}
+                  <li className='item ro' onClick={toggleDropdownthree}><ArrowBottom/>Normativ hujjatlar</li>
+                {three && (
+                <div className='faoliyat_ro faoliyat_back xa'>
+                <ul className='banner_collaction'>
                 <Link to={'/normativ'} className='link'>
-                  <li className='item ro'><ArrowBottom/>Normativ hujjatlar</li>
-                </Link>
+                <li className='banner_item faoliyat_roo'>Xalqaro normativ hujjatlar</li>
+              </Link>
+              <Link to={'/normativ/ozbekiston'} className='link'>
+                <li className='banner_item faoliyat_roo'>O‘zbekiston Respublikasi qonunlari</li>
+              </Link>
+              <Link to={'/normativ/prezident'} className='link'>
+                <li className='banner_item faoliyat_roo'>Prezident farmon va qarorlari</li>
+              </Link>
+              <Link to={'/normativ/vazirlar'} className='link'>
+                <li className='banner_item faoliyat_roo'>Vazirlar mahkamasi qarorlari</li>
+              </Link>
+              <Link to={'/normativ/idoraviy'} className='link'>
+                <li className='banner_item faoliyat_roo'>Idoraviy normativ-huquqiy hujjatlar</li>
+              </Link>
+            </ul>
+                </div>
+)}
+                  <li className='item ro' onClick={toggleDropdownFour}><ArrowBottom/>Jamoatchilik</li>
+                {four && (
+                <div className='faoliyat_ro faoliyat_back ya'>
+                <ul className='banner_collaction'>
                 <Link to={'/jamoatchilik'} className='link'>
-                  <li className='item ro'><ArrowBottom/>Jamoatchilik</li>
-                </Link>
-                <Link to={'/statistica'} className='link'>
-                  <li className='item ro'><ArrowBottom/>Statistika</li>
-                </Link>
-                <Link to={'/ochiq'} className='link'>
-                  <li className='item ro'><ArrowBottom/>Ochiq ma'lumotlar</li>
-                </Link>
-                <Link to={'/aloqa'} className='link'>
-                  <li className='item ro'><ArrowBottom/>Aloqa</li>
-                </Link>
+                <li className='banner_item faoliyat_roo'>Yangiliklar</li>
+              </Link>
+              <Link to={'/jamoatchilik/pressreliz'} className='link'>
+                <li className='banner_item faoliyat_roo'>Pressreliz</li>
+              </Link>
+              <Link to={'/jamoatchilik/videodarsliklar'} className='link'>
+                <li className='banner_item faoliyat_roo'>Videodarsliklar</li>
+              </Link>
+              <Link to={'/jamoatchilik/videoroliklar'} className='link'>
+                <li className='banner_item faoliyat_roo'>Videoroliklar</li>
+              </Link>
+              <Link to={'/jamoatchilik/elonlar'} className='link'>
+                <li className='banner_item faoliyat_roo'>E’lonlar</li>
+              </Link>
+            </ul>
+                </div>
+)}
+                  <li className='item ro' onClick={toggleDropdownFive}><ArrowBottom/>Statistika</li>
+                  {five && (
+                <div className='faoliyat_ro faoliyat_back te'>
+                <ul className='banner_collaction'>
+                {/* <Link to={'/jamoatchilik'} className='link'> */}
+                <li className='banner_item faoliyat_roo'>Tekshiruv va profilaktika ishlari</li>
+              {/* </Link> */}
+              {/* <Link to={'/jamoatchilik/pressreliz'} className='link'> */}
+                <li className='banner_item faoliyat_roo'>Murojaatlarni ko‘rib chiqish</li>
+              {/* </Link> */}
+              {/* <Link to={'/jamoatchilik/videodarsliklar'} className='link'> */}
+                <li className='banner_item faoliyat_roo'>OAVda chiqishlar</li>
+              {/* </Link> */}
+            </ul>
+                </div>
+)}
+                
+                  <li className='item ro' onClick={toggleDropdownSix}><ArrowBottom/>Ochiq ma'lumotlar</li>
+                {six && (
+                <div className='faoliyat_ro faoliyat_back da'>
+                <ul className='banner_collaction'>
+                {/* <Link to={'/jamoatchilik'} className='link'> */}
+                <li className='banner_item faoliyat_roo '>Davlat xaridlari</li>
+              {/* </Link> */}
+              {/* <Link to={'/jamoatchilik/pressreliz'} className='link'> */}
+                <li className='banner_item faoliyat_roo '>Moliyaviy</li>
+              {/* </Link> */}
+              {/* <Link to={'/jamoatchilik/videodarsliklar'} className='link'> */}
+                <li className='banner_item faoliyat_roo '>Inspeksiya faoliyati</li>
+              {/* </Link> */}
+            </ul>
+                </div>
+)}
+      
+                  <li className='item ro' onClick={toggleDropdownSeven}><ArrowBottom/>Aloqa</li>
+                  {seven && (
+                <div className='faoliyat_ro faoliyat_back onn'>
+                <ul className='banner_collaction'>
+                <Link to={'/aloqa'} className='link to'>
+                <li className='banner_item faoliyat_roo'>Online murojaat</li>
+              </Link>
+              <Link to={'/aloqa/offline'} className='link'>
+                <li className='banner_item faoliyat_roo'>Offline murojaat</li>
+              </Link>
+              <Link to={'/aloqa/boglanish'} className='link'>
+                <li className='banner_item faoliyat_roo'>Biz bilan bog‘lanish</li>
+              </Link>
+            </ul>
+                </div>
+)}
               </ul>
       </div>
 

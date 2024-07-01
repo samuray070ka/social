@@ -30,3 +30,236 @@
 .tra{
     color: #fff;
 }
+
+@media screen and (max-width: 1225px) {
+    .navbar{
+        width: 1260px;
+    }
+    .navbar_btn{
+        margin-right: 20px;
+    }
+    .navbar_loc{
+        margin-left: 20px;
+    }
+    .mySwiper{
+        width: 1260px;
+       }
+       .collaction{
+        padding-left: 20px;
+       }
+       .med{
+        padding-left: 20px;
+       }
+       .logo{
+        padding-left: 20px;
+       }
+       .banner_two{
+        padding: 0 20px;
+       }
+       .banner_three{
+        width: 1260px;
+       }
+       .home_h4{
+        padding-left: 20px;
+       }
+       .banner_small{
+        padding-left: 25px;
+       }
+       .footer{
+        width: 1260px;
+       }
+       .home{
+        width: 1260px;
+       }
+}
+@media screen and (max-width: 1070px) {
+    .collaction{
+        width: 1200px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .navbar{
+        width: 1260px;
+        height: 70px;
+        display: flex;
+    }
+    .edas{
+        height: 80px;
+        display: flex;
+        transform: translateY(-75px);
+    }
+    .navbar_h2,
+    .navbar_p,
+    .navbar_h4,
+    .navbar_h3{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .navbar_loc svg{
+        width: 25px;
+        height: 25px;
+    }
+    .navbar_btn{
+        transform: translateX(10px);
+    }
+}
+@media screen and (max-width: 950px) {
+    .collaction{
+     width: 1200px;
+    }
+ }
+@media screen and (max-width: 600px) {
+    .nux{
+        display: block;
+    }
+    .navbar_locc,
+    .navbar_loccc,
+    
+    .navbar_locccc{
+        display: none;
+    }
+    .navbar{
+        padding: 0 50px;
+    }
+    .navbar_h2{
+        font-size: 30px;
+    }
+    .navbar_loc svg{
+        width: 30px;
+        height: 30px;
+        transform: translateY(2px);
+    }
+    .nux{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .navbar_btn{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .navbar_btn{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .collaction li{
+        display: none;
+       }
+       .banner_img{
+        width: 150px;
+        margin-top: 10px;
+        transform: translateX(40px);
+        height: 150px;
+       }
+       .lo{
+        margin: auto;
+       }
+       .banner_h1{
+        margin-top: 200px;
+        text-align: center;
+       }
+       .div_text_h3{
+        font-size: 30px;
+       }
+       .div_text_p{
+        font-size: 20px;
+       }
+       .two_div_text{
+        padding: 30px 40px;
+       }
+       .home_btn{
+        width: 300px;
+        height: 60px;
+        font-size: 30px;
+       }
+       .three_cart_h3{
+        font-size: 20px;
+       }
+       .icon_flex svg{
+        width: 26px;
+        transform: translateY(10px);
+        height: 26px;
+       }
+       .three_cart_h4{
+        font-size: 24px;
+       }
+       .three_cart_p{
+        font-size: 20px;
+       }
+       .home_btn_two{
+        width: 300px;
+        height: 60px;
+        font-size: 30px;
+       }
+       .three_h3{
+        font-size: 30px;
+       }
+       .home_btn{
+        margin: auto;
+        display: block;
+       }
+       .logo{
+        font-size: 40px;
+       }
+       .two_div{
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .two_div_img{
+        width: 1200px;
+        height: 450px;
+       }
+       .div_text_icons svg{
+        left: 60px;
+       }
+       .div_text_icons h4{
+        left: 80px;
+       }
+       .three_div{
+        display: flex;
+       }
+       .three_cart{
+        width: 600px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+       }
+       .three_cart img{
+        width: 100%;
+       }
+       .three_flex{
+        display: flex;
+        padding: 0 20px;
+        flex-wrap: wrap;
+       }
+       .flex_box{
+        width: 580px;
+        margin-bottom: 40px;
+        height: 400px;
+       }
+       .home_h4{
+        font-size: 30px;
+       }
+       .banner_small{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 50px;
+       }
+       .flex_img{
+        width: 550px;
+       }
+       .img{
+        width: 100%;
+       }
+       .circle{
+        width: 250px;
+        height: 250px;
+        outline: 25px solid #fff;
+        padding-top: 20px;
+       }
+       .circle_h2{
+        font-size: 60px;
+    
+       }
+}

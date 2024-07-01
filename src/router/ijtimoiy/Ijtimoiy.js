@@ -22,7 +22,7 @@ function Ijtimoiy() {
     {
       path: "/custom-props",
       breadcrumb: CustomPropsBreadcrumb,
-      props: { someProp: "Hi" },
+      props: { someProp: "Hi" }, 
     },
   ];
   const breadcrumbs = useBreadcrumbs(routes);

@@ -13,6 +13,24 @@
     /* opacity: 0.9; */
     z-index: 1;
 }
+.qu{
+    margin-left: 120px;
+}
+.xa{
+    margin-left: 235px;
+}
+.ya{
+    margin-left: 420px;
+}
+.te{
+    margin-left: 565px;
+}
+.da{
+    margin-left: 687px;
+}
+.onn{
+    transform: translateX(865px);
+}
 .faoliyat_roo{
     width: 100%;
 }

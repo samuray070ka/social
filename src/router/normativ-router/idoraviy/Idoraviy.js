@@ -70,8 +70,7 @@ function Idoraviy() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big'>
             <h6 className='tuzilma_h1'>Idoraviy normativ-huquqiy hujjatlar</h6>
             <div className='flex_wrapper'>
@@ -214,7 +213,6 @@ function Idoraviy() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

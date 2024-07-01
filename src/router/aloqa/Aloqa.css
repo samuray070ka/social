@@ -6,6 +6,12 @@
     display: flex;
     margin-bottom: 20px;
 }
+.close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: translateY(-27px) translateX(-5px);
+}
 .sidebar{
     width: 300px;
     background-color: #fff;
@@ -374,4 +380,15 @@
   }
   .olss{
     max-width:  600px;
+  }
+  @media screen and (max-width:1291px) {
+    .close{
+        position: relative;
+        transform: translateY(15px);
+    }
+  }
+  @media screen and (max-width: 1225px) {
+    .close{
+        transform: translateX(12px) translateY(14px);
+    }
   }

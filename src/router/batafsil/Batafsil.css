@@ -23,3 +23,8 @@
     background: linear-gradient(45deg, #8fac8d, #A0C09C, #81a77d);
     border-radius: 6px;
 }
+@media screen and (max-width: 1225px) {
+    .batafsil{
+        width: 1260px;
+    }
+}

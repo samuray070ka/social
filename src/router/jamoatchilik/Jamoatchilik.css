@@ -38,10 +38,10 @@
 @media screen and (max-width:710px) {
     .jamo_box{
         width: 450px;
-        min-height: 500px;
+        min-height: 450px;
     }
     .hamkor_img{
-        min-height: 270px;
+        min-height:300px;
     }
     .jamo_h6{
         font-size: 16px;
@@ -58,16 +58,6 @@
     .ijtimoiy_logo h6{
         font-size: 30px;
     }
-    .ijtimoiy_collaction{
-        display: none;
-    }
-    .ijtimoiy_collaction li{
-        display: none;
-
-    }
-    .ijtimoiy_hr{
-        display: none;
-    }
     .re{
         display: block;
         padding: 20px;
@@ -80,7 +70,7 @@
         fill: #689B63 !important;
     }
     .jamo_box{
-        width: 850px;
+        width: 450px;
         min-height: 600px;
     }
     .hamkor_img{

@@ -73,8 +73,7 @@ function Pressreliz() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big'>
             <h6 className='tuzilma_h1'>Pressreliz</h6>
             <div className="jamo_wrapper">
@@ -117,7 +116,6 @@ function Pressreliz() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

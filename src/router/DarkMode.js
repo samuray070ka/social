@@ -50,24 +50,24 @@ useEffect(() => {
   return (
     <div>
          <div className='home dark-mode'>
-         <div className='navbar transform'>
+         <div className='navbar transform edas'>
       <div className="container">
         <div className='navbar_flex'>
           <div className='navbar_loc'>
           <Phone/>
             <h2 className='navbar_h2'> +998 77 207 97 98</h2>
           </div>
-          <div className='navbar_loc'>
+          <div className='navbar_locc'>
           <Location/> 
             <p className='navbar_p'>Manzil: Toshkent shahar, Chilonzor tumani, Nurxon ko'chasi 21-uy</p>
           </div>
-          <div className='navbar_loc'>
+          <div className='navbar_loccc'>
           <Link className='link tooo' to={'/dark-mode/zaif'}>
           <Visible/>
           <h3  className='navbar_h3' id='visibility'> Zarif ko'ruvchilar uchun</h3>
           </Link>
           </div>
-          <div className='navbar_loc'>
+          <div className='navbar_locccc'>
           <Map/>
           <Link className='link ' to={'/xarita'}>
             <h4 className='navbar_h4'>Sayt xaritasi</h4>

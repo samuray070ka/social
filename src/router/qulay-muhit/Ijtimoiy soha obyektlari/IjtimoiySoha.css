@@ -168,3 +168,14 @@
 .r{
     margin-left: 10px;
 }
+@media screen and (max-width:1225px) {
+    .soha{
+        width: 1260px;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:585px) {
+    .sohaa{
+        padding: 0 40px;
+    }
+}

@@ -5,6 +5,7 @@ import ArrowBottom from '../../icons/arrowBottom'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import Search from '../../icons/search'
+import Close from '../../assets/close.png'
 
 function Aloqa() {
   const userNamesById = { 1: "John" };
@@ -117,7 +118,7 @@ function Aloqa() {
           </div>
           <div>
           <Link className='link' to={'/aloqa/offline'}>
-            <button className='end'>ex</button>
+            <img className='close' src={Close} alt="" />
           </Link>
           </div>
        </div>

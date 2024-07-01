@@ -72,8 +72,7 @@ function Yangiliklar() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big'>
             <h6>Jamoatchilik</h6>
           </div>
@@ -104,7 +103,6 @@ function Yangiliklar() {
           </div>
         </div>
         </div>
-    </div>
   )
 }
 

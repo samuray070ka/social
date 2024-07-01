@@ -69,8 +69,7 @@ function Xalqaro() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big'>
             <h6>Xalqaro</h6>
           </div>
@@ -99,7 +98,6 @@ function Xalqaro() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

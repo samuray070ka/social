@@ -69,8 +69,7 @@ function Korupsiya() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container'>
+        <div className='ols  container'>
           <div className='banner_big'>
             <h6 className='tuzilma_h1'>Korrupsiyaga qarshi kurash</h6>
             <div className='right_flex'>
@@ -164,7 +163,6 @@ function Korupsiya() {
               </Link>
             </ul>
           </div>
-        </div>
         </div>
     </div>
   )

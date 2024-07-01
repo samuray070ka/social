@@ -44,10 +44,6 @@ function Jamoatchilik() {
           <input type="text" /> <Search/>
         </div>
         <hr  className='ijtimoiy_hr'/>
-        <div className='re'>
-        <Reorder/>
-
-        </div>
         <ul className='ijtimoiy_collaction'>
                 <Link to={'/ijtimoiy'} className='link'>
                   <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>

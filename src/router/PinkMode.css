@@ -28,3 +28,46 @@
 .cir:hover{
     outline: 20px solid #fff;
 }
+@media screen and (max-width:990px) {
+    .za{
+        height: 80px;
+        display: flex;
+        transform: translateY(-75px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .nux{
+        display: block;
+    }
+    .navbar_locc,
+    .navbar_loccc,
+    .navbar_locccc{
+        display: none;
+    }
+    .navbar{
+        padding: 0 50px;
+    }
+    .navbar_h2{
+        font-size: 30px;
+    }
+    .navbar_loc svg{
+        width: 30px;
+        height: 30px;
+        transform: translateY(2px);
+    }
+    .nux{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .navbar_btn{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .navbar_btn{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}

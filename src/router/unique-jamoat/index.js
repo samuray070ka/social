@@ -4,15 +4,33 @@ import {Link, useParams} from 'react-router-dom'
 import ArrowBottom from '../../icons/arrowBottom'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../icons/search'
-import {PRODUCTS, UNIQUEPAGE} from '../../static/Index'
 import Youtube from '../../assets/youtube.png'
 import Telegram from '../../assets/telegram.png'
 import Instagram from '../../assets/instagram.png'
 import Facebook from '../../assets/facebook.png'
 import Calendar from '../../icons/calendar'
+// import useBreadcrumbs from "use-react-router-breadcrumbs";
 import Img from '../../assets/Rectangle 69.png'
 
 function index() {
+  // const userNamesById = { 1: "John" };
+  
+  // const DynamicUserBreadcrumb = ({ match }) => (
+  //   <span>{userNamesById[match.params.userId]}</span>
+  // );
+  
+  // const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
+  
+  // const routes = [
+  //   { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
+  //   { path: "/example", breadcrumb: "Custom Example" },
+  //   {
+  //     path: "/custom-props",
+  //     breadcrumb: CustomPropsBreadcrumb,
+  //     props: { someProp: "Hi" },
+  //   },
+  // ];
+  // const breadcrumbs = useBreadcrumbs(routes);
   return (
     <div>
          <div className='container'>
@@ -48,8 +66,14 @@ function index() {
                 </Link>
         </ul>
         </div>
-        <div className="ijtimoiy_banner ">
-            <div className='ijti_ban  container'>
+        {/* <div className='container tor'>
+          {breadcrumbs.map(({ match, breadcrumb }) => (
+          <Link className='link tod' key={match.pathname}  to={match.pathname}>
+            { breadcrumb}
+          </Link>
+        ))}
+          </div> */}
+            <div className='ols  container'>
                 <div className='banner_big '>
                   <img src={Img} className='unique_img' alt="" />
                   <h6 className='big_h6'>UNFPA O‘zbekistonda 2021-2025 yillarga mo‘ljallangan beshinchi mamlakat dasturini amalga oshirmoqda</h6>
@@ -98,7 +122,6 @@ function index() {
                 <li className='banner_item '>E’lonlar</li>
               </Link>
             </ul>
-          </div>
             </div>
         </div>
     </div>

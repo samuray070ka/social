@@ -75,8 +75,7 @@ function Boglanish() {
           </Link>
         ))}
           </div>
-      <div className="ijtimoiy_banner ">
-        <div className='ijti_ban  container sidee'>
+        <div className='ols  container sidee'>
           <div className='sidebar'>
             <h1>Hududiy manzillarimiz:</h1>
             <ul className='side_collaction'>
@@ -181,7 +180,6 @@ function Boglanish() {
           </div>
         </div>
         </div>
-    </div>
   )
 }
 

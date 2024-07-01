@@ -5,6 +5,7 @@ import ArrowBottom from '../../../icons/arrowBottom'
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 import Search from '../../../icons/search'
+import close from '../../../assets/close.png'
 function Online() {
   const userNamesById = { 1: "John" };
   

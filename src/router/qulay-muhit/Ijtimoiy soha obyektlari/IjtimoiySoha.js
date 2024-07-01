@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './IjtimoiySoha.css'
 // import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
 // import banner from '../../../assets/Rectangle 3.png'
@@ -15,7 +15,7 @@ import './IjtimoiySoha.css'
 // import child from '../../../assets/yosh bolalar.jpg'
 // import invalid from '../../../assets/nogironlar.jpg'
 // import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom' 
 import Build from '../../../assets/building 2.png'
 import Factory from '../../../assets/factory 1.png'
 import Public from '../../../assets/public-transport 1.png'
@@ -37,6 +37,22 @@ function IjtimoiySoha() {
     //     //   return '<span class="' + className + '">' + (index + 1) + '</span>';
     //     // },
     //   };
+    async function fetchCategory() {
+        const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/statistic-category');
+        const data = await response.json();
+        return data;
+    }
+    const [category, setCategory] = useState([]);
+
+    useEffect(() => {
+        async function getData() {
+            const result = await fetchCategory();
+            setCategory(result);
+        }
+        
+        getData();
+        console.log(category);
+    }, []);
   return (
     
     <div>
@@ -65,13 +81,18 @@ function IjtimoiySoha() {
                 </div>
             </div>
             <div className='saha_biig'>
-                <Link to={'/qulay-muhit/inson'} className='link'>
+                {
+                    category.map((item, inx) => 
+                <Link to={`qulay${item.id}`} className='link'>
                     <div className='biig_flex'>
                         <img className='biig_img' src={Build} alt="" />
-                        <h6 className='biig_h6'>Ijtimoiy soha obyektlari</h6>
+                        <h6 className='biig_h6'>{item.name.luz}</h6>
                     </div>
                 </Link>
-                <Link className='link' to={'/qulay-muhit/chorraha'}>
+                    )
+                }
+                
+                {/* <Link className='link' to={'/qulay-muhit/chorraha'}>
                 <div className='biig_flex'>
                     <img className='biig_img' src={Factory} alt="" />
                     <h6 className='biig_h6'>Infratuzilma obyektlari</h6>
@@ -107,7 +128,7 @@ function IjtimoiySoha() {
                     <img className='biig_img' src={Paralimpic} alt="" />
                     <h6 className='biig_h6'>paralimpiyaga jalb qilish</h6>
                 </div>
-                </Link>
+                </Link> */}
 
             </div>
             </div>

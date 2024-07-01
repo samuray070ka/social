@@ -146,3 +146,15 @@
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width: 1225px) {
+    .zaif{
+        width: 1260px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .zaif{
+        height: 80px;
+        display: flex;
+        transform: translateY(-70px);
+    }
+}

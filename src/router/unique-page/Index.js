@@ -51,8 +51,7 @@ function Index() {
                 </Link>
         </ul>
         </div>
-        <div className="ijtimoiy_banner ">
-            <div className='ijti_ban  container'>
+            <div className='ols  container'>
                 <div className='banner_big '>
                   <img src={Img} className='unique_img' alt="" />
                   <h6 className='big_h6'>UNFPA O‘zbekistonda 2021-2025 yillarga mo‘ljallangan beshinchi mamlakat dasturini amalga oshirmoqda</h6>
@@ -115,7 +114,6 @@ function Index() {
             </ul>
           </div>
             </div>
-        </div>
     </div>
   )
 }

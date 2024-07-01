@@ -1,121 +1,9 @@
-import React, {useState} from 'react'
-import '../../aloqa/Aloqa.css'
-import {Link} from 'react-router-dom'
-import useBreadcrumbs from "use-react-router-breadcrumbs";
-import ArrowBottom from '../../../icons/arrowBottom'
-import homeImgOne from '../../../assets/IJTIMOIY logo 2 1.png'
-import Search from '../../../icons/search'
-import Xarita from '../../../icons/xarita'
-import UzbekistanMap from '../../../icons/uzbekistanmap'
-function Offline() {
-  const userNamesById = { 1: "John" };
-  
-  const DynamicUserBreadcrumb = ({ match }) => (
-    <span>{userNamesById[match.params.userId]}</span>
-  );
-  
-  const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
-  
-  // define custom breadcrumbs for certain routes.
-  // breadcrumbs can be components or strings.
-  const routes = [
-    { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
-    { path: "/example", breadcrumb: "Custom Example" },
-    {
-      path: "/custom-props",
-      breadcrumb: CustomPropsBreadcrumb,
-      props: { someProp: "Hi" },
-    },
-  ];
-  const breadcrumbs = useBreadcrumbs(routes);
+import React from 'react'
 
-  const regions = [
-    'Andijon', 'Buxoro', 'Fargʻona', 'Jizzax', 'Xorazm', 
-    'Namangan', 'Navoiy', 'Qashqadaryo', 'Qoraqalpogʻiston', 
-    'Samarqand', 'Sirdaryo', 'Surxondaryo', 'Toshkent'
-  ];
-  const [activeRegion, setActiveRegion] = useState('');
-
-  const handleRegionClick = (region) => {
-    setActiveRegion(region);
-  };
+function uzbekistanmap() {
   return (
     <div>
-        <div className='container'>
-        <div className="ijtimoiy_logo">
-          <Link to={'/'} className='ijtimoiy_logo link to'>
-            <img src={homeImgOne} alt="" />
-            <h2 className='ijtimoiy_h2'>Aloqa</h2>
-          </Link>
-          <input type="text" /> <Search/>
-        </div>
-        <hr  className='ijtimoiy_hr'/>
-        <ul className='ijtimoiy_collaction'>
-                <Link to={'/ijtimoiy'} className='link'>
-                  <li className='ijtimoiy_item'><ArrowBottom/> Ijtimoiy inspeksiya</li>
-                </Link>
-                <Link to={'/faoliyat'} className='link'>
-                  <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/> Faoliyat</li>
-                </Link>
-                <Link to={'/normativ'} className='link'>
-                  <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Normativ hujjatlar</li>
-                </Link>
-                <Link to={'/jamoatchilik'} className='link'>
-                  <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Jamoatchilik</li>
-                </Link>
-                <Link to={'/statistica'} className='link'>
-                  <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Statistika</li>
-                </Link>
-                <Link to={'/ochiq'} className='link'>
-                  <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Ochiq ma'lumotlar</li>
-                </Link>
-                <Link to={'/aloqa'} className='link'>
-                  <li className='ijtimoiy_item ijtimoiy_item_ml'><ArrowBottom/>Aloqa</li>
-                </Link>
-        </ul>
-        </div>
-        <div className='container tor'>
-          {breadcrumbs.map(({ match, breadcrumb }) => (
-          <Link className='link tod' key={match.pathname}  to={match.pathname}>
-            { breadcrumb}
-          </Link>
-        ))}
-          </div>
-        <div className='ols  container'>
-        <div className='sidebar sid'>
-            <h1>Hududiy manzillarimiz:</h1>
-            {regions.map((region) => (
-          <div 
-            key={region} 
-            className={`side_item ${activeRegion === region ? 'activeee' : ''}`}
-            onClick={() => handleRegionClick(region)}
-          >
-            {region}
-          </div>
-        ))}
-            {/* <ul className='side_collaction'>
-                <li className='side_item'>Andijon viloyati</li>
-                <li className='side_item'>Namangan viloyati</li>
-                <li className='side_item'>Farg‘ona viloyati</li>
-                <li className='side_item'>Sirdaryo viloyati</li>
-                <li className='side_item'>Jizzax viloyati</li>
-                <li className='side_item'>Samarqand viloyati</li>
-                <li className='side_item'>Surxondaryo viloyati</li>
-                <li className='side_item'>Qashqadaryo viloyati</li>
-                <li className='side_item'>Navoiy viloyati</li>
-                <li className='side_item'>Buxoro viloyati</li>
-                <li className='side_item'>Toshkent viloyati</li>
-                <li className='side_item'>Toshkent shahri</li>
-                <li className='side_item'>Xorazm viloyati</li>
-                <li className='side_item'>Qoraqalpog‘iston Respublikasi</li>
-
-            </ul> */}
-          </div>
-          <div className='banner_big olss'>
-            
-          <div class="location">
-      <div class="mapdiv">
-      <svg class="map" viewBox="0 0 750 500">
+         <svg class="map" viewBox="0 0 750 500">
           <path
             d="m 676.69007,291.55972 -1.51,-1.77 -1.2,-0.52 0.27,-0.37 -0.73,0.55 -0.27,0.48 0.19,0.67 1.01,0.03 1.22,0.9 3.18,4.31 0.2,-0.35 -0.64,-1.58 -0.77,-0.98 z"
             title="Sarvan (Sughd Province, Tajikistan)"
@@ -195,42 +83,8 @@ function Offline() {
             id="Xorazm"
           ></path>
         </svg>
-      {/* <div className="map-container">
-        <svg className="map" viewBox="0 0 800 600">
-          <use xlinkHref={UzbekistanMap} className={activeRegion} />
-          {regions.map((region) => (
-            <path 
-              key={region} 
-              id={region} 
-              className={`region ${activeRegion === region ? 'active' : ''}`}
-            />
-          ))}
-        </svg>
-      </div> */}
-      </div>
-    </div>
-    
-          </div>
-          <div className='banner_text '>
-            <ul className='banner_collaction'>
-              <li className='banner_item one'>Aloqa</li>
-              <hr />
-              <Link to={'/aloqa'} className='link to'>
-                <li className='banner_item '>Online murojaat</li>
-              </Link>
-              <hr />
-              <Link to={'/aloqa/offline'} className='link'>
-                <li className='banner_item '>Offline murojaat</li>
-              </Link>
-              <hr />
-              <Link to={'/aloqa/boglanish'} className='link'>
-                <li className='banner_item '>Biz bilan bog‘lanish</li>
-              </Link>
-            </ul>
-          </div>
-        </div>
     </div>
   )
 }
 
-export default Offline
+export default uzbekistanmap

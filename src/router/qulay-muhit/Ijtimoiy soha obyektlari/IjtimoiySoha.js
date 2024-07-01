@@ -83,7 +83,7 @@ function IjtimoiySoha() {
             <div className='saha_biig'>
                 {
                     category.map((item, inx) => 
-                <Link to={`qulay${item.id}`} className='link'>
+                <Link to={`?id=${item.id}`} className='link'>
                     <div className='biig_flex'>
                         <img className='biig_img' src={Build} alt="" />
                         <h6 className='biig_h6'>{item.name.luz}</h6>

@@ -41,23 +41,23 @@ useEffect(() => {
     console.log(silider);
 }, []);
 
+async function fetchData() {
+  const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/menu');
+  const data = await response.json();
+  return data;
+}
+const [data, setData] = useState([]);
 
-// async function fetchData() {
-//   const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/menu');
-//   const data = await response.json();
-//   return data;
-// }
-// const [data, setData] = useState([]);
-
-// useEffect(() => {
-//   async function getData() {
-//       const result = await fetchData();
-//       setData(result);
-//   }
+useEffect(() => {
+  async function getData() {
+      const result = await fetchData();
+      setData(result);
+  }
   
-//   getData();
-//   console.log(data);
-// }, []);
+  getData();
+  console.log(data);
+}, []);
+
 const [isDropdownVisible, setDropdownVisible] = useState(false);
 
 const toggleDropdown = () => {
@@ -114,11 +114,11 @@ const toggleDropdownSeven = () => {
       <img className=' banner_img' src={homeImgOne} alt="" />
                 </Link>
                 {/* {
-                  data.map((item,inx) => 
-                    <Link to={`${item.id}`} className='link' key={inx}>
-                        <li className='item'><ArrowBottom/> {item.name.uzl}</li>
+                  data.map((item, inx) => 
+                    <Link to='' className='link' key={inx}>
+                      <li className='item'><ArrowBottom/> {item.name.luz}</li>
                     </Link>
-                )
+              )
                 } */}
                   <li  onClick={toggleDropdown} className='item rod'><ArrowBottom/> Ijtimoiy</li>
                   {isDropdownVisible && (

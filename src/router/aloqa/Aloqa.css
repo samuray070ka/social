@@ -6,7 +6,7 @@
     display: flex;
     margin-bottom: 20px;
 }
-.close{
+.close svg{
     width: 40px;
     height: 40px;
     position: absolute;
@@ -23,6 +23,9 @@
     height: 380px;
     background-color: #fff;
 
+}
+.activeee{
+    color: #406c3b;
 }
 .yashil{
     width: 100%;

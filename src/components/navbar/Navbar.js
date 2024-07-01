@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className="container">
-        <div className='navbar_flex'>
+        <div className='navbar_flexe'>
           <div className='svg'>
             <Reordar/>
           </div>

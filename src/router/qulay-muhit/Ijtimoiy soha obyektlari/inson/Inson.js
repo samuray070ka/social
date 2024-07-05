@@ -18,24 +18,7 @@ function Inson() {
             <Link className='link' to={'/qulay-muhit'}>
                     <h6 className='soha-h6'>Qulay muhit obyektlari</h6>
                 </Link>
-            <div className='soha_flex'>
-                <div className='soha_small o'>Jami</div>
-                <div className='soha_small on '>
-                    <h6 className='soha_h6'>I Chorak</h6>
-                </div>
-                <div className='soha_small on '>
-                    <h6 className='soha_h6'>II Chorak</h6>
-                </div>
-                <div className='soha_small on'>
-                    <h6 className='soha_h6'>III Chorak</h6>
-                </div>
-                <div className='soha_small on'>
-                    <h6 className='soha_h6'>IV Chorak</h6>
-                </div>
-                <div className='soha_small on'>
-                    <h6 className='soha_h6'>2023-yilda</h6>
-                </div>
-            </div>
+            
             <div className='box_fle'>
             <div className='saha_biig'>
                 <Link to={'/qulay-muhit'} className='link'>

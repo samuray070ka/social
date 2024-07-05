@@ -36,3 +36,9 @@
     margin: auto;
     display: block;
 }
+
+.tod span{
+    margin-left: 5px;
+    font-size: 14px;
+    color: #000000;
+}

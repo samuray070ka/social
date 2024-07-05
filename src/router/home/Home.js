@@ -16,12 +16,17 @@ import child from '../../assets/yosh bolalar.jpg'
 import invalid from '../../assets/nogironlar.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom'
+import Nogiron from '../../components/nogiron/Nogiron'
+import Voyaga from '../../components/voyaga/Voyaga'
+import HoMe from '../home/Home'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules'; 
 import ArrowBottom from '../../icons/arrowBottom'
 import Calendar from '../../icons/calendar'
+import Qulay from '../../components/qulay-muhit/Qulay'
+import Katta from '../../components/katta/Katta'
 
 function Home() {
   async function fetchSilider() {
@@ -53,10 +58,24 @@ useEffect(() => {
       const result = await fetchData();
       setData(result);
   }
-  
   getData();
-  console.log(data);
 }, []);
+console.log(data);
+async function fetchData() {
+  const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/statistic-category');
+  const data = await response.json();
+  return data;
+}
+const [muhit, setMuhit] = useState([]);
+
+useEffect(() => {
+  async function getData() {
+      const result = await fetchData();
+      setMuhit(result);
+  }
+  getData();
+}, []);
+console.log(muhit);
 
 const [isDropdownVisible, setDropdownVisible] = useState(false);
 
@@ -98,6 +117,7 @@ const toggleDropdownSix = () => {
   setSix(!setDropdownVisible() && !setThree() && !setFour() && !setFive() && !six && !setSeven()  && !setDropdown())
 }
 
+
 const [seven, setSeven] = useState(false);
 
 const toggleDropdownSeven = () => {
@@ -105,6 +125,52 @@ const toggleDropdownSeven = () => {
   setSeven(!setDropdownVisible() && !setThree() && !setFour() && !setFive() && !setSix() && !seven  && !setDropdown())
 }
 
+const [activeDiv, setActiveDiv] = useState('div5');
+
+  const handleButtonClick = (divName) => {
+    setActiveDiv(divName);
+  };
+
+  const renderDiv = () => {
+    switch (activeDiv) {
+      case 'div1':
+        return <Qulay/>
+      case 'div2':
+        return <Nogiron/>
+      case 'div3':
+        return <Voyaga/>
+      case 'div4':
+        return <Katta/>
+      case 'div5':
+        return <div></div>
+        default:
+    }
+  };
+
+ 
+  const date = [
+    {
+      Link: '/ijtimoiy'
+    },
+    {
+      Link: '/aoliyat'
+    },
+    {
+      Link: '/normativ'
+    },
+    {
+      Link: '/jamoatchilik'
+    },
+    {
+      Link: '/statistica'
+    },
+    {
+      Link: '/ochiq'
+    },
+    {
+      Link: '/aloqa'
+    },
+  ]
   return (
     <div className='home'>
       <div className='container'>
@@ -114,12 +180,13 @@ const toggleDropdownSeven = () => {
       <img className=' banner_img' src={homeImgOne} alt="" />
                 </Link>
                 {/* {
-                  data.map((item, inx) => 
-                    <Link to='' className='link' key={inx}>
+                  data.map((item, inx) =>
+                    <Link to='{item.Link}' className='link' key={inx}>
                       <li className='item'><ArrowBottom/> {item.name.luz}</li>
-                    </Link>
+                    </Link> 
               )
                 } */}
+                
                   <li  onClick={toggleDropdown} className='item rod'><ArrowBottom/> Ijtimoiy</li>
                   {isDropdownVisible && (
                 <div className='faoliyat_ro faoliyat_back'>
@@ -367,41 +434,35 @@ const toggleDropdownSeven = () => {
           <div className='container'>
           <h3 className='three_h3'>O‘rganilgan obyektlar</h3>
           <div className='three_flex'>
-            <Link to={'/qulay-muhit'} className='link'>
-                <div className='flex_box'>
+                    <div onClick={() => handleButtonClick('div1')} className='flex_box'>
                   <div className='circle'>
                     <h2 className='circle_h2'>80</h2>
                   </div>
-                  <p className='flex_p'>Qulay muhit</p>
+                  <p className='flex_p'>Qulay-muhit</p>
                 </div>
-            </Link>
-           <Link className='link' to={'/katta-yoshdagilar'}>
-                <div className='flex_box'>
+                <div onClick={() => handleButtonClick('div2')} className='flex_box'>
                     <div className='circle'>
                       <h2 className='circle_h2'>185</h2>
                     </div>
                     <p className='flex_p'>Katta yoshdagilar</p>
                 </div>
-           </Link>
-           <Link className='link' to={'/voyaga'}>
-           <div className='flex_box'>
+                
+           <div onClick={() => handleButtonClick('div3')} className='flex_box'>
               <div className='circle'>
                 <h2 className='circle_h2'>365</h2>
               </div>
               <p className='flex_p'>Voyaga yetmaganlar</p>
             </div>
-           </Link>
-           <Link className='link' to={'/nogiron'}>
-           <div className='flex_box'>
+           <div onClick={() => handleButtonClick('div4')} className='flex_box'>
               <div className='circle'>
                 <h2 className='circle_h2'>985</h2>
               </div>
               <p className='flex_p'>Nogironlikni belgilash</p>
             </div>
-           </Link>
           </div>
           </div>
         </div>
+        <div>{renderDiv()}</div>
         <h4 className='home_h4 container'>Hukumat portallari</h4>
         <div className="banner_small container">
           <div className='flex_img'>
@@ -421,6 +482,7 @@ const toggleDropdownSeven = () => {
             <button className='flex_btn'></button>
           </div>
         </div>
+        
       </div>
     </div>
   )

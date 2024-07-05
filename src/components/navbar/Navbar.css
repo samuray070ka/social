@@ -8,7 +8,7 @@
     height: 54px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: #fff;
 }
 .svg svg{
@@ -55,6 +55,7 @@
 }
 .navbar_locccc{
     display: flex;
+    transform: translateX(-50px);
 }
 .navbar_locccc svg{
     fill: #fff !important;
@@ -69,9 +70,7 @@
 .navbar_flexe{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
-    border: 1px solid red;
 }
 .nux{
     display: none;

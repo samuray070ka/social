@@ -179,13 +179,13 @@ const [activeDiv, setActiveDiv] = useState('div5');
                 <Link to={'/'} className='link lo'>
       <img className=' banner_img' src={homeImgOne} alt="" />
                 </Link>
-                {/* {
+                {
                   data.map((item, inx) =>
-                    <Link to='{item.Link}' className='link' key={inx}>
+                    <Link to={`/ijtimoiy/inspeksiya/${item.id}`} className='link' key={inx}>
                       <li className='item'><ArrowBottom/> {item.name.luz}</li>
                     </Link> 
               )
-                } */}
+                }
                 
                   <li  onClick={toggleDropdown} className='item rod'><ArrowBottom/> Ijtimoiy</li>
                   {isDropdownVisible && (
@@ -288,16 +288,10 @@ const [activeDiv, setActiveDiv] = useState('div5');
                   {five && (
                 <div className='faoliyat_ro faoliyat_back te'>
                 <ul className='banner_collaction'>
-                {/* <Link to={'/jamoatchilik'} className='link'> */}
                 <li className='banner_item faoliyat_roo'>Tekshiruv va profilaktika ishlari</li>
-              {/* </Link> */}
-              {/* <Link to={'/jamoatchilik/pressreliz'} className='link'> */}
                 <li className='banner_item faoliyat_roo'>Murojaatlarni ko‘rib chiqish</li>
-              {/* </Link> */}
-              {/* <Link to={'/jamoatchilik/videodarsliklar'} className='link'> */}
                 <li className='banner_item faoliyat_roo'>OAVda chiqishlar</li>
-              {/* </Link> */}
-            </ul>
+              </ul>
                 </div>
 )}
                 
@@ -305,15 +299,9 @@ const [activeDiv, setActiveDiv] = useState('div5');
                 {six && (
                 <div className='faoliyat_ro faoliyat_back da'>
                 <ul className='banner_collaction'>
-                {/* <Link to={'/jamoatchilik'} className='link'> */}
                 <li className='banner_item faoliyat_roo '>Davlat xaridlari</li>
-              {/* </Link> */}
-              {/* <Link to={'/jamoatchilik/pressreliz'} className='link'> */}
                 <li className='banner_item faoliyat_roo '>Moliyaviy</li>
-              {/* </Link> */}
-              {/* <Link to={'/jamoatchilik/videodarsliklar'} className='link'> */}
                 <li className='banner_item faoliyat_roo '>Inspeksiya faoliyati</li>
-              {/* </Link> */}
             </ul>
                 </div>
 )}

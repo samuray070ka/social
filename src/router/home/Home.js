@@ -59,8 +59,8 @@ useEffect(() => {
       setData(result);
   }
   getData();
+  console.log(data);
 }, []);
-console.log(data);
 async function fetchData() {
   const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/statistic-category');
   const data = await response.json();
@@ -74,8 +74,24 @@ useEffect(() => {
       setMuhit(result);
   }
   getData();
+  console.log(muhit);
 }, []);
-console.log(muhit);
+
+async function fetchData() {
+  const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/article');
+  const data = await response.json();
+  return data;
+}
+const [yangilik, setYangilik] = useState([]);
+
+useEffect(() => {
+  async function getData() {
+      const result = await fetchData();
+      setYangilik(result);
+  }
+  getData();
+  console.log(yangilik);
+}, []);
 
 const [isDropdownVisible, setDropdownVisible] = useState(false);
 
@@ -179,13 +195,13 @@ const [activeDiv, setActiveDiv] = useState('div5');
                 <Link to={'/'} className='link lo'>
       <img className=' banner_img' src={homeImgOne} alt="" />
                 </Link>
-                {
+                {/* {
                   data.map((item, inx) =>
                     <Link to={`/ijtimoiy/inspeksiya/${item.id}`} className='link' key={inx}>
                       <li className='item'><ArrowBottom/> {item.name.luz}</li>
                     </Link> 
               )
-                }
+                } */}
                 
                   <li  onClick={toggleDropdown} className='item rod'><ArrowBottom/> Ijtimoiy</li>
                   {isDropdownVisible && (
@@ -353,26 +369,29 @@ const [activeDiv, setActiveDiv] = useState('div5');
 
         <div className="banner_two">
           <h3 className='logo'>Yangiliklar</h3>
-          <div className='two_div'>
+         {/* {
+          yangilik.map((item, inx) => 
+            <div className='two_div' key={inx}>
 
-            <div className='two_div_imgs'>
-              <img className='two_div_img' src={imgTwo} alt="" />
-            </div>
+          <div className='two_div_imgs'>
+            <img className='two_div_img' src={imgTwo} alt="" /> 
+          </div>
 
-            <div className='two_div_text '>
-              <h3 className='div_text_h3'>Ijtimoiy xizmatlar ko‘rsatish sifatini oshirish
-                maqsadida hamkorlik memorandumi imzolandi</h3>
-              <div className='hr'></div>
-              <p className='div_text_p'>Joriy yilning 28-dekabr kuni Ijtimoiy himoya milliy agentligi hamda O‘zbekiston
-                volontyorlari assotsiatsiyasi o‘rtasida hamkorlik memorandumi imzolandi.
-                Hamkorlikning asosiy maqsadi o‘zgalar parvarishiga muhtoj bo‘lgan yolg‘iz yashovchi
-                yoki yolg‘iz keksa va nogironligi bo‘lgan shaxslarni aniqlashga, “Inson” ijtimoiy xizmatlar markazlariga tashrif buyuradigan aholiga markazdagi mavjud...</p>
-              <div className='div_text_icons'>
-                <Calendar/>
-                <h4 className='text_icon'>15:12 / 01.01.2024</h4>
-              </div>
+          <div className='two_div_text '>
+            <h3 className='div_text_h3'>{item.items[4].title.luz}</h3>
+            <div className='hr'></div>
+            <p className='div_text_p'>Joriy yilning 28-dekabr kuni Ijtimoiy himoya milliy agentligi hamda O‘zbekiston
+              volontyorlari assotsiatsiyasi o‘rtasida hamkorlik memorandumi imzolandi.
+              Hamkorlikning asosiy maqsadi o‘zgalar parvarishiga muhtoj bo‘lgan yolg‘iz yashovchi
+              yoki yolg‘iz keksa va nogironligi bo‘lgan shaxslarni aniqlashga, “Inson” ijtimoiy xizmatlar markazlariga tashrif buyuradigan aholiga markazdagi mavjud...</p>
+            <div className='div_text_icons'>
+              <Calendar/>
+              <h4 className='text_icon'>15:12 / 01.01.2024</h4>
             </div>
           </div>
+        </div>
+        )
+         } */}
           <div className='three_div'>
             <div className='three_cart'>
               <img src={threeImg3} alt="" />

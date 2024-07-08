@@ -21,7 +21,7 @@ useEffect(() => {
 }, []);
 
 async function fetchStatic() {
-  const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/statistic-category/view?id=1');
+  const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/statistic-category');
   const data = await response.json();
   return data;
 }
@@ -55,7 +55,6 @@ const [activeDiv, setActiveDiv] = useState('div5');
       case 'div5':
         return <div></div>
       default:
-        // return <Home/>
     }
   };
   return (
@@ -96,7 +95,7 @@ const [activeDiv, setActiveDiv] = useState('div5');
                 
                 </div>
                 <div className='big_box'>
-               
+                {/* <div>{renderDiv()}</div> */}
                 </div>
             </div>
             </div>

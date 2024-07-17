@@ -75,6 +75,7 @@
 .ols{
     display: flex;
     justify-content: space-between;
+    min-height: 100vh;
     margin-bottom: 20px;
     flex-wrap: wrap;
     border: 1px solid #689B63;

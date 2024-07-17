@@ -10,7 +10,7 @@
     position: absolute;
     left: 120px;
     top: 85px;
-    /* opacity: 0.9; */
+    opacity: 0.9;
     z-index: 1;
 }
 .qu{

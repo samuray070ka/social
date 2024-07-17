@@ -313,7 +313,7 @@ const toggleDropdownSeven = () => {
           <SwiperSlide>
           <div className='container ' key={inx} >
             <img className='banner_photo' src={item.photo} alt="" />
-            <img className='banner_photo_two' src={IMG} alt="" />
+            <img className='banner_photo_two' src={ImG} alt="" />
             <div className='ul_flex '>
             </div>
             <h1 className='banner_h1'>{item.title.luz}</h1>

@@ -71,7 +71,7 @@ import Xorazmm from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududla
 import Qoraqalpoqq from './router/qulay-muhit/Ijtimoiy soha obyektlari/inson/hududlar/viloyat/qoraqalpoq';
 import Davlat from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat/Davlat';
 import Hududlarr from './router/qulay-muhit/Ijtimoiy soha obyektlari/davlat/hududlarr/Hududlarr';
-import Ayollar from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/ayollar';
+import Ayollar from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/Ayollar';
 import Hud from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/Hud';
 import Anjan from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/anjan';
 import Far from './router/qulay-muhit/Ijtimoiy soha obyektlari/ayollar/hud/viloyat/far';
@@ -261,9 +261,12 @@ import DarkZaif from './router/dark-zaif/DarkZaif';
 import PinkMode from './router/PinkMode';
 import PinkZaif from './router/pink-zaif/PinkZaif';
 import Togri from './router/aloqa/Togri';
-
-
-
+import UniqueNavbar from './router/unique-navbar/Index'
+import UniqueQulay from './router/unique-qulay/Index'
+import UniqueStaff from './router/unique-staff/Index'
+import UniqueDocument from './router/unique-document/Index'
+import UniqueLink from './router/unique-link/Index'
+import UniquePost from './router/unique-post/Index'
 
 function App() {
   return (
@@ -302,6 +305,13 @@ function App() {
         <Route path='/jamoatchilik/videoroliklar' element={<VideoRolik/>}/>
         <Route path='/jamoatchilik/elonlar' element={<Elonlar/>}/>
         <Route path='/ijtimoiy/products/:proID' element={<UniquePage/>}/>
+        <Route path='/Page/:proID' element={<UniqueNavbar/>}/>
+        <Route path='/Staff/:proID' element={<UniqueStaff/>}/>
+        <Route path='/document-category/:proID' element={<UniqueDocument/>}/>
+        <Route path='/Link//:proID' element={<UniqueLink/>}/>
+        <Route path='/Post Category/:proID' element={<UniquePost/>}/>
+        
+        <Route path='/qulay-muhit/:proID' element={<UniqueQulay/>}/>
         <Route path='/jamoatchilik/products/:proID' element={<UniqueJamoat/>}/>
         <Route path='/aloqa/online' element={<Online/>}/>
         <Route path='/aloqa/offline' element={<Offline/>}/>

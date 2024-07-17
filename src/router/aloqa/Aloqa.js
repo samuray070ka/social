@@ -75,7 +75,7 @@ function Aloqa() {
   };
   return (
     <div>
-      <div className='container'>
+      <div className=' container'>
         <div className="ijtimoiy_logo">
           <Link to={'/'} className='ijtimoiy_logo link to'>
             <img src={homeImgOne} alt="" />
@@ -108,7 +108,7 @@ function Aloqa() {
                 </Link>
         </ul>
         </div>
-       <div className='exs container'>
+       <div className=' exs container'>
        <div className='container tor'>
           {breadcrumbs.map(({ match, breadcrumb }) => (
           <Link className='link tod' key={match.pathname}  to={match.pathname}>
@@ -123,7 +123,7 @@ function Aloqa() {
           </div>
        </div>
         <div className=' ols  container '>
-          <div className='online_murojat'>
+          <div className=' online_murojat'>
             <div className='murojat_img_flex'>
               <img className='img_fle_img' src={homeImgOne} alt="" />
               <h6 className='img_flex_h6'>Sizda shikoyat yoki taklif bormi?

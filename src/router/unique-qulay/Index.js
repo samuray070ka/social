@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import './Home.css'
+import './index.css'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import img from '../../assets/Rectangle 12.png'
 import threeImg from '../../assets/Rectangle 9.png'
@@ -80,27 +80,6 @@ const [slider, setSlider] = useState([]);
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
-  async function fetchInspeksiya(slug) {
-    const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/page/view?slug=${slug}&expand=body,photo,keywords,description,meta_title`);
-    const data = await response.json();
-    return data;
-  }
-  const [inspeksiya, setInspeksiya] = useState(null); // Initially null
-
-  useEffect(() => {
-    async function getIns() {
-      const result = await fetchInspeksiya();
-      // API dan kelayotgan ma'lumotlarni tekshirish
-      console.log(result);
-      // Agar ma'lumot array bo'lsa, o'zgaruvchiga saqlash
-      if (Array.isArray(result)) {
-        setInspeksiya(result);
-      } else {
-        setInspeksiya([result]); // Agar massiv bo'lmasa, uni massivsimon qilib o'zgartirish
-      }
-    }
-    getIns();
-  }, []);
   return (
     <div className='home'>
       <div className='container'>
@@ -120,7 +99,7 @@ const [slider, setSlider] = useState([]);
               <div className='faoliyat_ro faoliyat_back' key={index}>
                 <ul className='banner_collaction'>
                   {item.menus.map((item, inx) => (
-                    <Link className='link' onClick={()=> fetchInspeksiya(item.item)} to={`/${item.type.label}/${item.item}`}>
+                    <Link className='link' to={`/${item.type.label}/${item.item}`}>
                       <li className='banner_item faoliyat_roo' key={inx}>{item.name.luz}</li>
                     </Link>
                   ))}
@@ -245,6 +224,52 @@ const [slider, setSlider] = useState([]);
             }
           </div>
           </div>
+        </div>
+        <div className='soha'>
+            <div className='container sohaa'>
+            <Link className='link' to={'/'}>
+                    <h6 className='soha-h6'>Qulay muhit obyektlari</h6>
+                </Link>
+            <div className='soha_flex'>
+                <div className='soha_small o'>Jami</div>
+                <div className='soha_small on '>
+                    <h6 className='soha_h6'>I Chorak</h6>
+                </div>
+                <div className='soha_small on '>
+                    <h6 className='soha_h6'>II Chorak</h6>
+                </div>
+                <div className='soha_small on'>
+                    <h6 className='soha_h6'>III Chorak</h6>
+                </div>
+                <div className='soha_small on'>
+                    <h6 className='soha_h6'>IV Chorak</h6>
+                </div>
+                <div className='soha_small on'>
+                    <h6 className='soha_h6'>2023-yilda</h6>
+                </div>
+            </div>
+            <div className='box_fle'>
+            <div className='saha_biig'>
+                {
+                  staticc.map((item, inx) => 
+                    <div key={inx}>
+                  {
+                    item.items.map((item,inx) => (
+                      <Link to={`/qulay-muhit/${item.id}`} className='link' key={inx}>
+                      <div className='biig_flex biiig_flex'>
+                      <img className='biig_img' alt="" src={item.icon}/>
+                      <h6 className='biig_h6'>{item.name.luz}</h6>
+                      </div>
+                  </Link>
+                     ))
+                  }
+                  </div>
+                  )
+                }
+                
+            </div>
+            </div>
+            </div>
         </div>
         <h4 className='home_h4 container'>Hukumat portallari</h4>
         <div className="banner_small container">

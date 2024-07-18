@@ -83,6 +83,39 @@
     align-items: center;
     justify-content: center;
 }
+.navbar_btn{
+    width: 30px;
+    background-color: #77A572;
+    border: none;
+    outline: none;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+}
+.dropdown_menu{
+    list-style: none;
+    color: #fff;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #77a5729c;
+    width: 30px;
+    text-align: center;
+    justify-content: center;
+    outline: 2px solid #77A572;
+    position: absolute;
+    z-index: 10;
+}
+.dropdown_menu li {
+    cursor: pointer;
+}
+.til{
+    display: flex;
+    flex-direction: column;
+}
 
 @media screen and (max-width: 1225px) {
     .navbar{

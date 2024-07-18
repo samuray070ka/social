@@ -305,11 +305,11 @@ function App() {
         <Route path='/jamoatchilik/videoroliklar' element={<VideoRolik/>}/>
         <Route path='/jamoatchilik/elonlar' element={<Elonlar/>}/>
         <Route path='/ijtimoiy/products/:proID' element={<UniquePage/>}/>
-        <Route path='/Page/:proID' element={<UniqueNavbar/>}/>
+        <Route path='/Page/:slug' element={<UniqueNavbar/>}/>
         <Route path='/Staff/:proID' element={<UniqueStaff/>}/>
         <Route path='/document-category/:proID' element={<UniqueDocument/>}/>
         <Route path='/Link//:proID' element={<UniqueLink/>}/>
-        <Route path='/Post Category/:proID' element={<UniquePost/>}/>
+        <Route path='/category/:proID' element={<UniquePost/>}/>
         
         <Route path='/qulay-muhit/:proID' element={<UniqueQulay/>}/>
         <Route path='/jamoatchilik/products/:proID' element={<UniqueJamoat/>}/>

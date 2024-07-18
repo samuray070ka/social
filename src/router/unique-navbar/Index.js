@@ -1,70 +1,69 @@
 import React, { useState, useEffect } from 'react';
-import './index.css';
 import { Link, useParams } from 'react-router-dom';
+import './index.css';
 import ArrowBottom from '../../icons/arrowBottom';
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png';
 import Search from '../../icons/search';
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 
 function Index() {
-  async function fetchData() {
-    const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/menu');
-    const data = await response.json();
-    return data;
-  }
+  const { slug } = useParams(); // useParams yordamida slugni olish
   const [data, setData] = useState([]);
+  const [pageContent, setPageContent] = useState(null);
+  const [menuContent, setMenuContent] = useState(null);
 
+  // Menyu ma'lumotlarini olish
   useEffect(() => {
-    async function getData() {
-      const result = await fetchData();
-      setData(result);
-    }
-    getData();
-  }, []);
-  console.log(data);
-
-  async function fetchInspeksiya(slug) {
-    const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/page/view?slug=${slug}&expand=body,photo,keywords,description,meta_title`);
-    const data = await response.json();
-    return data;
-  }
-  const [inspeksiya, setInspeksiya] = useState(null); // Initially null
-
-  useEffect(() => {
-    async function getIns() {
-      const result = await fetchInspeksiya();
-      // API dan kelayotgan ma'lumotlarni tekshirish
-      console.log(result);
-      // Agar ma'lumot array bo'lsa, o'zgaruvchiga saqlash
-      if (Array.isArray(result)) {
-        setInspeksiya(result);
-      } else {
-        setInspeksiya([result]); // Agar massiv bo'lmasa, uni massivsimon qilib o'zgartirish
+    async function fetchData() {
+      try {
+        const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/menu');
+        const data = await response.json();
+        console.log("Menyu ma'lumotlari:", data); // Ma'lumotlarni tekshirish uchun log
+        setData(data);
+      } catch (error) {
+        console.error("Menyu ma'lumotlarini olishda xatolik:", error);
       }
     }
-    getIns();
+
+    fetchData();
   }, []);
 
-  const param = useParams();
-  let oneItem = data.find((item) => item.id === param.proID);
+  // Sahifa mazmunini olish
+  useEffect(() => {
+    async function fetchPageContent() {
+      try {
+        const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/page/view?slug=${slug}&expand=body,photo,keywords,description,meta_title`);
+        const data = await response.json();
+        console.log("Sahifa mazmuni:", data); // Ma'lumotlarni tekshirish uchun log
+        setPageContent(data);
+      } catch (error) {
+        console.error("Sahifa mazmunini olishda xatolik:", error);
+      }
+    }
 
-  const userNamesById = { 1: "John" };
-  const DynamicUserBreadcrumb = ({ match }) => (
-    <span>{userNamesById[match.params.userId]}</span>
-  );
+    if (slug) {
+      fetchPageContent();
+    }
+  }, [slug]);
 
-  const CustomPropsBreadcrumb = ({ someProp }) => <span>{someProp}</span>;
+  useEffect(() => {
+    async function fetchMenuContent() {
+      try {
+        const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/page/view?slug=${slug}&expand=body,photo,keywords,description,meta_title`);
+        const data = await response.json();
+        console.log("Sahifa mazmuni:", data); // Ma'lumotlarni tekshirish uchun log
+        setMenuContent(data);
+      } catch (error) {
+        console.error("Sahifa mazmunini olishda xatolik:", error);
+      }
+    }
 
-  const routes = [
-    { path: "/users/:userId", breadcrumb: DynamicUserBreadcrumb },
-    { path: "/example", breadcrumb: "Custom Example" },
-    {
-      path: "/custom-props",
-      breadcrumb: CustomPropsBreadcrumb,
-      props: { someProp: "Hi" },
-    },
-  ];
-  const breadcrumbs = useBreadcrumbs(routes);
+    if (slug) {
+      fetchMenuContent();
+    }
+  }, [slug]);
+
+  const breadcrumbs = useBreadcrumbs();
 
   return (
     <div>
@@ -79,13 +78,11 @@ function Index() {
           </div>
           <hr className='ijtimoiy_hr' />
           <ul className='ijtimoiy_collaction'>
-            {
-              data.map((item, inx) =>
-                <Link to={``} className='link' key={inx}>
-                  <li className='ijtimoiy_item go'><ArrowBottom /> {item.name.luz}</li>
-                </Link>
-              )
-            }
+            {data.map((item, inx) => (
+              <Link to={`/page/${item.slug}`} className='link' key={inx}>
+                <li className='ijtimoiy_item go'><ArrowBottom /> {item.name.luz}</li>
+              </Link>
+            ))}
           </ul>
         </div>
         <div className='container tor'>
@@ -97,37 +94,29 @@ function Index() {
         </div>
         <div className='container ols'>
           <div className='banner_big'>
+            {pageContent && (
+              <div>
+                <h1>{pageContent.title?.luz}</h1>
+                <p dangerouslySetInnerHTML={{ __html: pageContent.body?.luz }}></p>
+              </div>
+            )}
+          </div>
+          <div className='banner_text'>
             {
-              inspeksiya && inspeksiya.map((item, inx) => // inspeksiya mavjudligini tekshirish
-                <div key={inx}>
-                  <h1>{item.title?.luz}</h1>
-                  <p>{item.body?.luz}</p>
-                </div>
-              )
+              data.map((item, inx) => (
+                <React.Fragment key={inx}>
+                  <li className='banner_item one'>{item.name.luz}</li>
+                  {item.menus && item.menus.map((subItem, subInx) => (
+                    <Link className='link' to={`/${subItem.type.label}/${subItem.item}`} key={subInx}>
+                      <hr />
+                      <li className='banner_item'>{subItem.name.luz}</li>
+                    </Link>
+                  ))}
+                  <hr />
+                </React.Fragment>
+              ))
             }
           </div>
-          
-          <div className='banner_text'>
-            <ul className='banner_collaction'>
-              {
-                data.map((item, inx) => (
-                  <React.Fragment key={inx}>
-                    <li className='banner_item one'>{item.name.luz}</li>
-                    {
-                      item.menus.map((subItem, subInx) => (
-                        <Link className='link' to={`/${subItem.type.label}/${subItem.item}`} key={subInx}>
-                          <hr />
-                          <li className='banner_item '>{subItem.name.luz}</li>
-                        </Link>
-                      ))
-                    }
-                    <hr />
-                  </React.Fragment>
-                ))
-              }
-            </ul>
-          </div>
-          
         </div>
       </div>
     </div>

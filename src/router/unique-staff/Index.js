@@ -34,14 +34,13 @@ function Index() {
       const [staff, setStaff] = useState([]);
       
       useEffect(() => {
-        async function getStaff() {
-            const result = await fetchStaff();
-            setStaff(result);
-        }
-        getStaff();
-        console.log(staff);
+          async function getStaff() {
+              const result = await fetchStaff();
+              setStaff(result);
+          }
+          getStaff();
     }, []);
-
+    console.log(staff);
 
 
     
@@ -106,42 +105,47 @@ function Index() {
           <div className="banner_big ">
             <h1 className='tuzilma_h1'>Rahbaryat</h1>
             {
-                staff.map((item,inx) => 
-                    <div className='rahbar_flex' key={inx}>
-            <div className='rahbar_img'>
-              <img src={item.photo} alt="" />
+    Array.isArray(staff) && staff.map((item, inx) => 
+      <div className='rahbar_flex' key={inx}>
+           {
+            item.items.map((item, inx) => (
+              <>
+               <div className='rahbar_img' key={inx}>
+                <img src={item.photo} alt="" />
             </div>
             <div className='rahbar_text'>
-              <h6>{item.name.luz}</h6>
-              <h5 className='rahbar_h6'>{item.role.luz}</h5>
-              <div className='rahbar_hr'></div>
-              <div className='rahbar_icons'>
-                <div className='icon_one'>
-                  <Mail/>
-                  <p>{item.description.mail}</p>
+                <h6>{item}</h6>
+                <h5 className='rahbar_h6'>{item}</h5>
+                <div className='rahbar_hr'></div>
+                <div className='rahbar_icons'>
+                    <div className='icon_one'>
+                        <Mail/>
+                        <p>{item}</p>
+                    </div>
+                    <div className='icon_one'>
+                        <Phone/>
+                        <p>{item}</p>
+                    </div>
+                    <div className='icon_one'>
+                        <Mail/>
+                        <p>{item}</p>
+                    </div>
                 </div>
-                <div className='icon_one'>
-                  <Phone/>
-                  <p>{item.description.phone}</p>
+                <div className='rahbar_hr'></div>
+                <div className='rahbar_icon'>
+                    {/* <img className='icon_img' src={item.description.links[0].icon} alt="" />
+                    <img className='icon_img ml' src={item.description.links[1].icon} alt="" />
+                    <img className='icon_img ml ' src={item.description.links[2].icon} alt="" />
+                    <img className='icon_img ml ' src={item.description.links[3].icon} alt="" /> */}
                 </div>
-                <div className='icon_one'>
-                  <Mail/>
-                  <p>{item.description.date.luz}</p>
-                </div>
-              </div>
-              <div className='rahbar_hr'></div>
-              <div className='rahbar_icon'>
-                {/* <img className='icon_img' src={item.description.links[0].icon} alt="" />
-                <img className='icon_img ml' src={item.description.links[1].icon} alt="" />
-                <img className='icon_img ml ' src={item.description.links[2].icon} alt="" />
-                <img className='icon_img ml ' src={item.description.links[3].icon} alt="" /> */}
-              </div>
-              <button className='rahbar_btn'>Tarjimai hol</button>
+                <button className='rahbar_btn'>Tarjimai hol</button>
             </div>
-
-            </div>
-                )
-            }
+              </>
+            ))
+           }
+        </div>
+    )
+}
             
           </div>
             <div className='banner_text '>

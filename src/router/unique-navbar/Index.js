@@ -27,6 +27,7 @@ function Index() {
 
     fetchData();
   }, []);
+  console.log(data);
 
   // Sahifa mazmunini olish
   useEffect(() => {

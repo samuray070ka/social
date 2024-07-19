@@ -345,10 +345,13 @@
     transition: .1s;
 }
 .flex_btn:hover{
-    background: #ffffff46;
+    background: #ffffffaf;
     color: #689B63;
 }
-
+.img{
+    width: 300px;
+    height: 200px;
+}
 
 @media screen and (max-width: 1225px) {
    .mySwiper{

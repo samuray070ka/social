@@ -7,6 +7,7 @@ import Location from '../../icons/location';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Reordar from '../../icons/reordar';
+import Home from '../../router/home/Home';
 
 function Navbar() {
   const [slider, setSlider] = useState([]);
@@ -19,7 +20,7 @@ function Navbar() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng); // Change language using i18next hook
-    setCurrentLanguage(lng); // Update current language state
+    setCurrentLanguage(lng);// Update current language state
   };
 
   useEffect(() => {

@@ -255,7 +255,7 @@ const [slider, setSlider] = useState([]);
                     <div key={inx}>
                   {
                     item.items.map((item,inx) => (
-                      <Link to={`/qulay-muhit/${item.id}`} className='link' key={inx}>
+                      <Link to={`/qulay-muhit/${item.name.luz}`} className='link' key={inx}>
                       <div className='biig_flex biiig_flex'>
                       <img className='biig_img' alt="" src={item.icon}/>
                       <h6 className='biig_h6'>{item.name.luz}</h6>

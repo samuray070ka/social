@@ -47,10 +47,27 @@ function Index() {
     }
   }, [slug]);
 
+  // useEffect(() => {
+  //   async function fetchMenuContent() {
+  //     try {
+  //       const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/page/view?slug=${slug}&expand=body,photo,keywords,description,meta_title`);
+  //       const data = await response.json();
+  //       console.log("Sahifa mazmuni:", data); // Ma'lumotlarni tekshirish uchun log
+  //       setMenuContent(data);
+  //     } catch (error) {
+  //       console.error("Sahifa mazmunini olishda xatolik:", error);
+  //     }
+  //   }
+
+  //   if (slug) {
+  //     fetchMenuContent();
+  //   }
+  // }, [slug]);
+
   useEffect(() => {
     async function fetchMenuContent() {
       try {
-        const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/page/view?slug=${slug}&expand=body,photo,keywords,description,meta_title`);
+        const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/menu/sidebar?item=${slug}`);
         const data = await response.json();
         console.log("Sahifa mazmuni:", data); // Ma'lumotlarni tekshirish uchun log
         setMenuContent(data);
@@ -63,6 +80,7 @@ function Index() {
       fetchMenuContent();
     }
   }, [slug]);
+  
 
   const breadcrumbs = useBreadcrumbs();
 
@@ -104,19 +122,18 @@ function Index() {
           </div>
           <div className='banner_text'>
             {
-              data.map((item, inx) => (
-                <React.Fragment key={inx}>
-                  <li className='banner_item one'>{item.name.luz}</li>
-                  {item.menus && item.menus.map((subItem, subInx) => (
-                    <Link className='link' to={`/${subItem.type.label}/${subItem.item}`} key={subInx}>
-                      <hr />
-                      <li className='banner_item'>{subItem.name.luz}</li>
-                    </Link>
-                  ))}
+              menuContent && (
+                  <div>
+                    <li className='banner_item one'>{menuContent.parent.name.luz}</li>
+                    {menuContent.parent.menus.map((item, inx) => (
+                      <Link className='link' to={`/${item.type.label}/${item.item}`} key={inx}>
+                        <hr />
+                        <li className='banner_item'>{item.name.luz}</li>
+                      </Link>
+                    ))}
                   <hr />
-                </React.Fragment>
-              ))
-            }
+                  </div>
+            )}
           </div>
         </div>
       </div>

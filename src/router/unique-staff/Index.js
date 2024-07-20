@@ -23,7 +23,6 @@ function Index() {
             setData(result);
         }
         getData();
-        console.log(data);
     }, []);
 
     async function fetchStaff() {
@@ -40,7 +39,6 @@ function Index() {
           }
           getStaff();
     }, []);
-    console.log(staff);
 
 
     
@@ -65,7 +63,26 @@ function Index() {
             props: { someProp: "Hi" }, 
           },
         ];
+        const { slug } = useParams(); 
+        const [menuContent, setMenuContent] = useState(null);
         const breadcrumbs = useBreadcrumbs(routes);
+        useEffect(() => {
+          async function fetchMenuContent() {
+            try {
+              const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/menu/sidebar?item=${slug}`);
+              const stafff = await response.json();
+              console.log("Sahifa mazmuni:", stafff); // Ma'lumotlarni tekshirish uchun log
+              setMenuContent(stafff);
+            } catch (error) {
+              console.error("Sahifa mazmunini olishda xatolik:", error);
+            }
+          }
+      
+          if (slug) {
+            fetchMenuContent();
+          }
+        }, [slug]);
+        
   return (
     <div>
         <div className='ijtimoiy'>
@@ -103,32 +120,30 @@ function Index() {
         <div className='ols  container'>
           
           <div className="banner_big ">
-            <h1 className='tuzilma_h1'>Rahbaryat</h1>
+            <h1 className='tuzilma_h1'>dasdadas</h1>
             {
     Array.isArray(staff) && staff.map((item, inx) => 
       <div className='rahbar_flex' key={inx}>
-           {
-            item.items.map((item, inx) => (
-              <>
+           
                <div className='rahbar_img' key={inx}>
-                <img src={item.photo} alt="" />
+                <img src={item.items[0].photo} alt="" />
             </div>
             <div className='rahbar_text'>
-                <h6>{item}</h6>
-                <h5 className='rahbar_h6'>{item}</h5>
+                <h6>{item.items[0].name.luz}</h6>
+                <h5 className='rahbar_h6'>{item.tems[0].role.luz}</h5>
                 <div className='rahbar_hr'></div>
                 <div className='rahbar_icons'>
                     <div className='icon_one'>
                         <Mail/>
-                        <p>{item}</p>
+                        <p>{item.items[0].description.date.luz}</p>
                     </div>
                     <div className='icon_one'>
                         <Phone/>
-                        <p>{item}</p>
+                        <p>{item.items[0].description.phone}</p>
                     </div>
                     <div className='icon_one'>
                         <Mail/>
-                        <p>{item}</p>
+                        <p>{item.items[0].description.mail}</p>
                     </div>
                 </div>
                 <div className='rahbar_hr'></div>
@@ -140,23 +155,26 @@ function Index() {
                 </div>
                 <button className='rahbar_btn'>Tarjimai hol</button>
             </div>
-              </>
-            ))
-           }
+          
         </div>
     )
 }
             
           </div>
             <div className='banner_text '>
-            <ul className='banner_collaction'>
-              <li className='banner_item one'>Ijtimoiy inspeksiya</li>
-              <hr />
-              <Link to={'/ijtimoiy'} className='link'>
-                <li className='banner_item '>Inspeksiya haqida</li>
-              </Link>
-              <hr />
-            </ul>
+           {
+              menuContent && (
+                  <div>
+                    <li className='banner_item one'>{menuContent.parent.name.luz}</li>
+                    {menuContent.parent.menus.map((item, inx) => (
+                      <Link className='link' to={`/${item.type.label}/${item.item}`} key={inx}>
+                        <hr />
+                        <li className='banner_item'>{item.name.luz}</li>
+                      </Link>
+                    ))}
+                  <hr />
+                  </div>
+            )}
           </div>
         </div>
         </div>

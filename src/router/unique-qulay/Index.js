@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { useParams } from 'react-router-dom'
 import './index.css'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import img from '../../assets/Rectangle 12.png'
@@ -18,6 +19,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules'; 
 import ArrowBottom from '../../icons/arrowBottom'
 import Calendar from '../../icons/calendar'
+import axios from 'axios'
 
 function Home() {
 //   async function fetchSilider() {
@@ -36,10 +38,11 @@ function Home() {
 //     getData();
 //     console.log(silider);
 // }, []);
-
+const { slug } = useParams();
 const [slider, setSlider] = useState([]);
   const [data, setData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [idContent, setIDContent] = useState(null);
 
   useEffect(() => {
     async function fetchSlider() {
@@ -56,7 +59,6 @@ const [slider, setSlider] = useState([]);
 
     fetchSlider();
     fetchData();
-    console.log(data);
   }, []);
 
 
@@ -74,7 +76,33 @@ const [slider, setSlider] = useState([]);
     }
     getStatic();
   }, []);
-  console.log(staticc);
+
+  // useEffect(() => {
+  //   async function fetchID() {
+  //     try {
+  //       const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/statistic-category/view?id=1`);
+  //       const data = await response.json();
+  //       setIDContent(data);
+  //       console.log(data);
+  //     } catch (error) {
+  //       console.error("Sahifa mazmunini olishda xatolik:", error);
+  //     }
+  //   }
+
+  //   if (slug) {
+  //     fetchID();
+  //   }
+  // }, [slug]);
+
+  const [getId,setGetId] = useState([])
+  const getAllId = async () =>{
+    const {data} = await axios.get(`https://ijtimoiyinspeksiya.uz/api/v1/statistic-category/view?id=2`)
+    setGetId(data)
+    console.log(data.name.luz);
+  }
+  useEffect(() =>{
+    getAllId()
+  },[])
   
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
@@ -250,22 +278,20 @@ const [slider, setSlider] = useState([]);
             </div>
             <div className='box_fle'>
             <div className='saha_biig'>
-                {
-                  staticc.map((item, inx) => 
-                    <div key={inx}>
-                  {
-                    item.items.map((item,inx) => (
-                      <Link to={`/qulay-muhit/${item.name.luz}`} className='link' key={inx}>
-                      <div className='biig_flex biiig_flex'>
-                      <img className='biig_img' alt="" src={item.icon}/>
-                      <h6 className='biig_h6'>{item.name.luz}</h6>
-                      </div>
-                  </Link>
-                     ))
-                  }
-                  </div>
-                  )
-                }
+            {Array.isArray(getId) && getId.map((item, outerIndex) => (
+  <div key={outerIndex}>
+    {item.items.map((subItem, innerIndex) => (
+      <Link to={`/qulay-muhit/${subItem.name.luz}`} className='link' key={innerIndex}>
+        <div className='biig_flex biiig_flex'>
+          <img className='biig_img' alt="" src={subItem.icon} />
+          <h6 className='biig_h6'>{subItem.name.luz}</h6>
+        </div>
+      </Link>
+    ))}
+  </div>
+))}
+
+                    
                 
             </div>
             </div>

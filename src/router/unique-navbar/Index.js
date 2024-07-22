@@ -44,7 +44,7 @@ function Index() {
 
     if (slug) {
       fetchPageContent();
-    }
+    }console.log(slug);
   }, [slug]);
 
   // useEffect(() => {

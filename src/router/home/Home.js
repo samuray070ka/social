@@ -71,7 +71,9 @@ function Home() {
     getService();
     getNews();
   }, [currentLanguage]); // Fetch data whenever currentLanguage changes
-
+  const toggleDropdown2 = (index) => {
+    setActiveDropdown(activeDropdown === index ? null : index);
+  };
   return (
     <div className='home'>
       {/* Language selection buttons */}
@@ -84,10 +86,14 @@ function Home() {
           <Link to={'/'} className='link lo'>
             <img className='banner_img' src={homeImgOne} alt='' />
           </Link>
-          {/* Mapping over data for dropdown menu */}
+          
           {data.map((item, index) => (
-            <li key={index} onClick={() => toggleDropdown(index)} className='item rod'>
-              <ArrowBottom /> {item.name[currentLanguage] || item.name['luz']} {/* Display name based on current language */}
+            <li 
+              key={index} 
+              onClick={() => toggleDropdown(index)} 
+              className={`item rod ${activeDropdown === index ? 'active' : ''}`} // Add 'active' class if activeDropdown
+            >
+              <ArrowBottom /> {item.name && item.name[currentLanguage] ? item.name[currentLanguage] : item.name['luz']} {/* Display name based on current language */}
             </li>
           ))}
           {/* Dropdown content */}
@@ -97,7 +103,7 @@ function Home() {
                 <ul className='banner_collaction'>
                   {item.menus.map((subItem, inx) => (
                     <Link className='link' to={`/${subItem.type.label}/${subItem.item}`} key={inx}>
-                      <li className='banner_item faoliyat_roo'>{subItem.name[currentLanguage] || subItem.name['luz']}</li> {/* Display name based on current language */}
+                      <li className='banner_item faoliyat_roo'>{subItem.name[currentLanguage] || subItem.name['luz']}</li> 
                     </Link>
                   ))}
                 </ul>
@@ -107,7 +113,6 @@ function Home() {
         </ul>
       </div>
 
-      {/* Slider component */}
       <Swiper
         spaceBetween={0}
         pagination={{ clickable: true }}
@@ -172,14 +177,13 @@ function Home() {
           </div>
         </div>
         <Link className='link' to={'/batafsil'}>
-          <button className='home_btn_two'>{t('Batafsil')}</button> {/* Translate button text using t function */}
+          <button className='home_btn_two'>{t('Batafsil')}</button> 
         </Link>
       </div>
 
-      {/* Example of displaying static categories */}
       <div className='banner_three '>
         <div className='container'>
-          <h3 className='three_h3'>{t('O‘rganilgan obyektlar')}</h3> {/* Translate static text using t function */}
+          <h3 className='three_h3'>{t('O‘rganilgan obyektlar')}</h3> 
           <div className='three_flex'>
             {staticc.map((item, inx) => (
               <Link className='link' to={`/qulay-muhit/${item.id}`} key={inx}>
@@ -187,7 +191,7 @@ function Home() {
                   <div className='circle'>
                     <h2 className='circle_h2'>80</h2>
                   </div>
-                  <p className='flex_p'>{item.name[currentLanguage]}</p> {/* Display name based on current language */}
+                  <p className='flex_p'>{item.name[currentLanguage]}</p> 
                 </div>
               </Link>
             ))}
@@ -195,13 +199,13 @@ function Home() {
         </div>
       </div>
 
-      <h4 className='home_h4 container'>{t('Hukumat portallari')}</h4> {/* Translate static text using t function */}
+      <h4 className='home_h4 container'>{t('Hukumat portallari')}</h4> 
       <div className='banner_small container'>
        {
         service.map((item, inx) => (
           <div className='flex_img' key={inx}>
             <img className='img' src={item.photo} alt="" />
-            <button className='flex_btn'>{item.title.luz}</button>
+            <button className='flex_btn'>{item.title[currentLanguage]}</button>
           </div>
         ))
        }

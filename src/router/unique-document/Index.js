@@ -38,23 +38,36 @@ function Index() {
         console.log(staff);
     }, []);
 
-    async function fetchDocument() {
-        const response = await fetch('https://ijtimoiyinspeksiya.uz/api/v1/document?document_category_id=1');
-        const data = await response.json();
-        return data;
-      }
-      const [document, setDocument] = useState([]);
-      
-      useEffect(() => {
-        async function getDocument() {
-            const result = await fetchDocument();
-            setDocument(result);
+    // async function fetchDocument() {
+    //     const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/document?document_category_id=${slug}`);
+    //     const data = await response.json();
+    //     return data;
+    //   }
+    
+    //   useEffect(() => {
+      //     async function getDocument() {
+        //         const result = await fetchDocument();
+        //         setDocument(result);
+        //     }
+        //     getDocument();
+        //     console.log(document);
+        // }, []);
+        const { slug } = useParams();
+          const [document, setDocument] = useState([]);
+        useEffect(() => {
+          async function fetchDocument() {
+        try {
+          const response = await fetch(`https://ijtimoiyinspeksiya.uz/api/v1/document?document_category_id=1`);
+          const data = await response.json();
+          console.log("Sahifa mazmuni:", data); // Ma'lumotlarni tekshirish uchun log
+          setDocument(data);
+        } catch (error) {
+          console.error("Sahifa mazmunini olishda xatolik:", error);
         }
-        getDocument();
-        console.log(document);
+      }
+  
+        fetchDocument();
     }, []);
-
-
 
     
       

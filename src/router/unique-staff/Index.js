@@ -13,7 +13,7 @@ function Index() {
     const [data, setData] = useState([]);
     const [staff, setStaff] = useState([]);
     const [menuContent, setMenuContent] = useState(null);
-    const { type } = useParams(); // Use `type` instead of `slug`
+    const { type } = useParams();
     const breadcrumbs = useBreadcrumbs();
 
     useEffect(() => {
@@ -103,9 +103,8 @@ function Index() {
                 </div>
                 <div className='ols container'>
                     <div className="banner_big">
-                        <h1 className='tuzilma_h1'>{type}</h1> {/* Display the type */}
-                        {staff.length > 0 ? (
-                            staff.map((item, inx) => (
+                        <h1 className='tuzilma_h1'>Staff</h1> {/* Display the type */}
+                            {staff.map((item, inx) => (
                                 <div className='rahbar_flex' key={inx}>
                                     <div className='rahbar_img'>
                                         <img src={item.photo} alt="staff" />
@@ -133,10 +132,7 @@ function Index() {
                                         <button className='rahbar_btn'>Tarjimai hol</button>
                                     </div>
                                 </div>
-                            ))
-                        ) : (
-                            <p>No staff data available</p>
-                        )}
+                            ))}
                     </div>
                     <div className='banner_text'>
                         {menuContent && menuContent.parent && (
@@ -145,7 +141,6 @@ function Index() {
                                 {menuContent.parent.menus.map((item, inx) => (
                                     <Link className='link' to={`/${item.type.label}/${item.item}`} key={inx}>
                                         <hr />
-
                                         <li className='banner_item'>{item.name.luz}</li>
                                     </Link>
                                 ))}

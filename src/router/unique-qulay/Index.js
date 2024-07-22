@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import './index.css'
 import homeImgOne from '../../assets/IJTIMOIY logo 2 1.png'
 import img from '../../assets/Rectangle 12.png'
@@ -38,7 +38,7 @@ function Home() {
 //     getData();
 //     console.log(silider);
 // }, []);
-const { slug } = useParams();
+const {proID} = useParams();
 const [slider, setSlider] = useState([]);
   const [data, setData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -93,16 +93,15 @@ const [slider, setSlider] = useState([]);
   //     fetchID();
   //   }
   // }, [slug]);
-
-  const [getId,setGetId] = useState([])
+  const [getId,setGetId] = useState([]);
   const getAllId = async () =>{
-    const {data} = await axios.get(`https://ijtimoiyinspeksiya.uz/api/v1/statistic-category/view?id=2`)
-    setGetId(data)
-    console.log(data.name.luz);
+    const {data} = await axios.get(`https://ijtimoiyinspeksiya.uz/api/v1/statistic-category/view?id=${proID}`)
+    setGetId([data])
+    console.log(data);
   }
   useEffect(() =>{
     getAllId()
-  },[])
+  },[proID])
   
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);

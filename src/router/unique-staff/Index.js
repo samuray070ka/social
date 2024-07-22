@@ -71,6 +71,7 @@ function Index() {
     }, [type]);
 
 
+
     return (
         <div>
             <div className='ijtimoiy'>

@@ -104,7 +104,7 @@ function Index() {
                 </div>
                 <div className='ols container'>
                     <div className="banner_big">
-                        <h1 className='tuzilma_h1'>Staff</h1> {/* Display the type */}
+                        <h1 className='tuzilma_h1'>Staff</h1> 
                             {staff.map((item, inx) => (
                                 <div className='rahbar_flex' key={inx}>
                                     <div className='rahbar_img'>
@@ -135,6 +135,7 @@ function Index() {
                                 </div>
                             ))}
                     </div>
+
                     <div className='banner_text'>
                         {menuContent && menuContent.parent && (
                             <div>

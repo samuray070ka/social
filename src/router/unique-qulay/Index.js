@@ -281,20 +281,17 @@ const [slider, setSlider] = useState([]);
             <div className='box_fle'>
             <div className='saha_biig'>
             {Array.isArray(getId) && getId.map((item, outerIndex) => (
-  <div key={outerIndex}>
-    {item.items.map((subItem, innerIndex) => (
-      <Link to={`/qulay-muhit/${subItem.name.luz}`} className='link' key={innerIndex}>
-        <div className='biig_flex biiig_flex'>
-          <img className='biig_img' alt="" src={subItem.icon} />
-          <h6 className='biig_h6'>{subItem.name.luz}</h6>
-        </div>
-      </Link>
-    ))}
-  </div>
-))}
-
-                    
-                
+                <div key={outerIndex}>
+                  {item.items.map((subItem, innerIndex) => (
+                    <Link to={`/qulay-muhit/${subItem.name.luz}`} className='link' key={innerIndex}>
+                      <div className='biig_flex biiig_flex'>
+                        <img className='biig_img' alt="" src={subItem.icon} />
+                        <h6 className='biig_h6'>{subItem.name.luz}</h6>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              ))}
             </div>
             </div>
             </div>

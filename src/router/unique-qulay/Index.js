@@ -93,6 +93,7 @@ const [slider, setSlider] = useState([]);
   //     fetchID();
   //   }
   // }, [slug]);
+  
   const [getId,setGetId] = useState([]);
   const getAllId = async () =>{
     const {data} = await axios.get(`https://ijtimoiyinspeksiya.uz/api/v1/statistic-category/view?id=${proID}`)
@@ -102,6 +103,7 @@ const [slider, setSlider] = useState([]);
   useEffect(() =>{
     getAllId()
   },[proID])
+  console.log(proID);
   
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);

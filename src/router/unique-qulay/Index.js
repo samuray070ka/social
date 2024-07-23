@@ -94,6 +94,7 @@ const [slider, setSlider] = useState([]);
   //   }
   // }, [slug]);
   
+  // get proID
   const [getId,setGetId] = useState([]);
   const getAllId = async () =>{
     const {data} = await axios.get(`https://ijtimoiyinspeksiya.uz/api/v1/statistic-category/view?id=${proID}`)
